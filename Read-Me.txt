@@ -1,0 +1,83 @@
+English/Français
+
+[English]
+----------
+
+A little history
+================
+
+Robin DR 400-120
+================
+
+Manufacturer                  : 
+Type                          : 
+Year                          : 
+Powerplant                    : 
+Wingspan                      : 
+Length                        : 
+Height                        : 
+weight                        : 
+Cruise speed                  : 
+Range                         : 
+Crew                          :  
+
+Some useful keys:
+=================
+
+d : canopy
+
+Thanks
+======
+
+Guillaume CHAUVAT for JSBSim FDM
+Laurent HAYVEL for texture
+
+===============
+BARANGER Emmanuel
+May, 25, 2007.
+August, 11, 2008.
+
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr
+
+
+[Français]
+----------
+
+Un peu d'histoire
+=================
+
+Robin DR 400-120
+================
+
+Constructeur                  :
+Type                          :
+Année                         :
+Moteur                        :
+Envergure                     :
+Longueur                      :
+Hauteur                       :
+Poids estimé au décollage     :
+Vitesse estimée de croisière  :
+Autonomie estimée             :
+Equipage                      :
+
+
+Quelques touches utiles :
+=========================
+
+d : cockpit
+
+Remerciements
+=============
+
+Guillaume CHAUVAT pour le FDM JSBSim
+Laurent HAYVEL pour la texture
+
+===============
+BARANGER Emmanuel
+25 Mai 2007.
+11 Août 2008.
+
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr

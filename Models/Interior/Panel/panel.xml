@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- asi -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.271 </y-m>
+      <z-m>  0.158 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.177 </y-m>
+      <z-m>  0.158 </z-m>
+    </offsets>
+  </model>
+
+  <!-- alt -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.080 </y-m>
+      <z-m>  0.158 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Ki206 -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m>  0.158 </z-m>
+    </offsets>
+  </model>
+
+  <!-- turn -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.271 </y-m>
+      <z-m>  0.061 </z-m>
+    </offsets>
+  </model>
+
+  <!-- hdg -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.177 </y-m>
+      <z-m>  0.061 </z-m>
+    </offsets>
+  </model>
+
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.080 </y-m>
+      <z-m>  0.061 </z-m>
+    </offsets>
+  </model>
+
+  <!-- adf -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/adf/adf.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m>  0.015 </y-m>
+      <z-m>  0.061 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
