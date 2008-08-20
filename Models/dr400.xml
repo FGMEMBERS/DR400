@@ -201,7 +201,11 @@
   <object-name>profondeur</object-name>
   <object-name>trimprof</object-name>
   <property>controls/flight/elevator</property>
-  <factor>11</factor>
+  <interpolation>
+    <entry><ind> -0.75 </ind><dep> -10.5 </dep></entry>
+    <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
+    <entry><ind>  0.75 </ind><dep>  25.0 </dep></entry>
+  </interpolation>
   <center>
    <x-m> 2.543 </x-m>
    <y-m> 0.000 </y-m>
@@ -214,43 +218,55 @@
   </axis>
  </animation>
 
- <!-- Gouverne de direction -->
- <animation>
-  <type>rotate</type>
-  <object-name>direction</object-name>
-  <property>controls/flight/rudder</property>
-  <factor>20</factor>
-  <axis>
-   <x1-m>  2.824 </x1-m>
-   <y1-m>  0.000 </y1-m>
-   <z1-m> -0.200 </z1-m>
-   <x2-m>  3.062 </x2-m>
-   <y2-m>  0.000 </y2-m>
-   <z2-m>  1.113 </z2-m>
-  </axis>
- </animation>
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>direction</object-name>
+    <property>controls/flight/rudder</property>
+    <interpolation>
+      <entry><ind> -0.75 </ind><dep> -25.0 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>  25.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  2.824 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m> -0.200 </z1-m>
+      <x2-m>  3.062 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  1.113 </z2-m>
+    </axis>
+  </animation>
 
- <!-- Animations des ailerons -->
- <animation>
-  <type>rotate</type>
-  <object-name>aileronG</object-name>
-  <property>surface-positions/left-aileron-pos-norm</property>
-  <factor>-15.0</factor>
-  <axis>
-   <x1-m> -0.457 </x1-m>
-   <y1-m> -2.752 </y1-m>
-   <z1-m> -0.382 </z1-m>
-   <x2-m> -1.058 </x2-m>
-   <y2-m> -4.331 </y2-m>
-   <z2-m>  0.006 </z2-m>
-  </axis>
- </animation>
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <interpolation>
+      <entry><ind> -0.75 </ind><dep>  15.0 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep> -10.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -0.457 </x1-m>
+      <y1-m> -2.752 </y1-m>
+      <z1-m> -0.382 </z1-m>
+      <x2-m> -1.058 </x2-m>
+      <y2-m> -4.331 </y2-m>
+      <z2-m>  0.006 </z2-m>
+    </axis>
+  </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>aileronD</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor>15.0</factor>
+    <interpolation>
+      <entry><ind> -0.75 </ind><dep> -10.0 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>  15.0 </dep></entry>
+    </interpolation>
     <axis>
       <x1-m> -0.457 </x1-m>
       <y1-m>  2.752 </y1-m>
@@ -267,7 +283,7 @@
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>55.0</factor>
+    <factor>60.0</factor>
     <center>
       <x-m> -0.211 </x-m>
       <y-m>  0.000 </y-m>

@@ -24,6 +24,12 @@
       </livery>
     </model>
 
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting> <!-- 15 deg -->
+      <setting>1.00</setting> <!-- 60 deg -->
+    </flaps>
+
     <multiplay>
       <chat_display>1</chat_display>
       <generic>

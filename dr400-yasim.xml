@@ -108,23 +108,23 @@
              <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" />
              <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
   </propeller>
-  
+
   <gear x="2.560" y="0" z="-1.115" 
-        compression=".15" 
-        spring=".6">
+        compression="0.15" 
+        spring="0.6">
         <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.1" dst1="0.1"/>
    </gear>
 
   <gear x="1.020" y="1.236" z="-1.115" 
-        compression=".1" 
-        spring=".6">
+        compression="0.10" 
+        spring="0.6">
         <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
   </gear>
 
   <gear x="1.020" y="-1.236" z="-1.115" 
-        compression=".1" 
-        spring=".6">
+        compression="0.10" 
+        spring="0.6">
         <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
         <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
   </gear>
