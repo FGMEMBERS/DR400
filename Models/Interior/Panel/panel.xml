@@ -13,6 +13,12 @@
     <object-name>panel2</object-name>
 
     <!-- Objets transparents -->
+    <object-name>panel3</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>panel3</object-name>
   </animation>
 
   <!-- asi -->
@@ -183,7 +189,7 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
       <x-m> 0.179 </x-m>
-      <y-m> 0.188 </y-m>
+      <y-m> 0.181 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
   </model>
@@ -192,7 +198,7 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
       <x-m> 0.179 </x-m>
-      <y-m> 0.213 </y-m>
+      <y-m> 0.203 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
   </model>
@@ -201,7 +207,7 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
       <x-m> 0.179 </x-m>
-      <y-m> 0.238 </y-m>
+      <y-m> 0.227 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
   </model>
@@ -210,7 +216,16 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
       <x-m> 0.179 </x-m>
-      <y-m> 0.263 </y-m>
+      <y-m> 0.250 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <offsets>
+      <x-m> 0.179 </x-m>
+      <y-m> 0.273 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
   </model>
