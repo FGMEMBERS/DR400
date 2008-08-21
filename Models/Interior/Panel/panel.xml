@@ -16,8 +16,8 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m>  0.112 </x-m>
-      <y-m> -0.271 </y-m>
-      <z-m>  0.158 </z-m>
+      <y-m> -0.300 </y-m>
+      <z-m>  0.208 </z-m>
     </offsets>
   </model>
 
@@ -25,9 +25,9 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.112 </x-m>
-      <y-m> -0.177 </y-m>
-      <z-m>  0.158 </z-m>
+      <x-m>  0.105 </x-m>
+      <y-m> -0.196 </y-m>
+      <z-m>  0.209 </z-m>
     </offsets>
   </model>
 
@@ -36,8 +36,8 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m>  0.112 </x-m>
-      <y-m> -0.080 </y-m>
-      <z-m>  0.158 </z-m>
+      <y-m> -0.093 </y-m>
+      <z-m>  0.208 </z-m>
     </offsets>
   </model>
 
@@ -46,8 +46,8 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
     <offsets>
       <x-m>  0.112 </x-m>
-      <y-m>  0.015 </y-m>
-      <z-m>  0.158 </z-m>
+      <y-m>  0.006 </y-m>
+      <z-m>  0.208 </z-m>
     </offsets>
   </model>
 
@@ -56,8 +56,8 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
       <x-m>  0.112 </x-m>
-      <y-m> -0.271 </y-m>
-      <z-m>  0.061 </z-m>
+      <y-m> -0.300 </y-m>
+      <z-m>  0.109 </z-m>
     </offsets>
   </model>
 
@@ -66,8 +66,8 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
     <offsets>
       <x-m>  0.112 </x-m>
-      <y-m> -0.177 </y-m>
-      <z-m>  0.061 </z-m>
+      <y-m> -0.196 </y-m>
+      <z-m>  0.109 </z-m>
     </offsets>
   </model>
 
@@ -76,8 +76,8 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m>  0.112 </x-m>
-      <y-m> -0.080 </y-m>
-      <z-m>  0.061 </z-m>
+      <y-m> -0.093 </y-m>
+      <z-m>  0.109 </z-m>
     </offsets>
   </model>
 
@@ -86,8 +86,8 @@
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/adf/adf.xml</path>
     <offsets>
       <x-m>  0.112 </x-m>
-      <y-m>  0.015 </y-m>
-      <z-m>  0.061 </z-m>
+      <y-m>  0.006 </y-m>
+      <z-m>  0.109 </z-m>
     </offsets>
   </model>
 
