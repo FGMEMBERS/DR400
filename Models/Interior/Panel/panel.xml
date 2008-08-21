@@ -111,6 +111,16 @@
     </offsets>
   </model>
 
+  <!-- rpm -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m> -0.094 </y-m>
+      <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
   <!-- Les alertes -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning01.xml</path>
@@ -246,6 +256,34 @@
       <x-m>  0.178 </x-m>
       <y-m> -0.017 </y-m>
       <z-m>  0.296 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Réglages des lumières -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/lights.xml</path>
+    <offsets>
+      <x-m> 0.181 </x-m>
+      <y-m> 0.054 </y-m>
+      <z-m> 0.294 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/lights.xml</path>
+    <offsets>
+      <x-m> 0.181 </x-m>
+      <y-m> 0.097 </y-m>
+      <z-m> 0.294 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/lights.xml</path>
+    <offsets>
+      <x-m> 0.181 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.294 </z-m>
     </offsets>
   </model>
 
