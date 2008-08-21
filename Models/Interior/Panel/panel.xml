@@ -2,11 +2,15 @@
 
 <PropertyList>
 
+  <!-- Based on http://www.aeroclub-montpellier.com/flotte/F-GOZZ/Tableau.jpg -->
+
   <path>panel.ac</path>
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>panel</object-name>
+    <object-name>panel0</object-name>
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
 
     <!-- Objets transparents -->
   </animation>
@@ -88,6 +92,145 @@
       <x-m>  0.112 </x-m>
       <y-m>  0.006 </y-m>
       <z-m>  0.109 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Horloge -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.110 </x-m>
+      <y-m> -0.392 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Les alertes -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning01.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.215 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning02.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.191 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning03.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.167 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning04.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.142 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning05.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.118 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning06.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.094 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning07.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.069 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning08.xml</path>
+    <offsets>
+      <x-m>  0.179 </x-m>
+      <y-m> -0.045 </y-m>
+      <z-m>  0.301 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Commutateurs -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <offsets>
+      <x-m> 0.179 </x-m>
+      <y-m> 0.188 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <offsets>
+      <x-m> 0.179 </x-m>
+      <y-m> 0.213 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <offsets>
+      <x-m> 0.179 </x-m>
+      <y-m> 0.238 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <offsets>
+      <x-m> 0.179 </x-m>
+      <y-m> 0.263 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Les switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.177 </x-m>
+      <y-m> -0.255 </y-m>
+      <z-m>  0.295 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.178 </x-m>
+      <y-m> -0.017 </y-m>
+      <z-m>  0.296 </z-m>
     </offsets>
   </model>
 

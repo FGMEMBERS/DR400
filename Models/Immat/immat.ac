@@ -1,7 +1,7 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "DefaultWhite.007" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "DefaultWhite.008" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite.012" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 24
 OBJECT poly
@@ -474,16 +474,16 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatPanel1"
-data 10
-ImatPanel1
-texture "immat.png"
+data 14
+ImatPanel1.001
+texture "immat-white.png"
 texrep 1 1
 crease 30.000000
 numvert 4
--1.765146 0.288709 0.019116
--1.765048 0.277052 0.019116
--1.765146 0.288709 0.028674
--1.765048 0.277052 0.028674
+-1.707169 0.391436 0.081014
+-1.707127 0.38118 0.081014
+-1.707169 0.391436 0.089819
+-1.707127 0.38118 0.089819
 numsurf 1
 SURF 0x00
 mat 2
@@ -495,16 +495,16 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatPanel2"
-data 10
-ImatPanel2
-texture "immat.png"
+data 14
+ImatPanel2.001
+texture "immat-white.png"
 texrep 1 1
 crease 30.000000
 numvert 4
--1.765146 0.288709 0.019116
--1.765146 0.288709 0.009558
--1.765048 0.277052 0.019116
--1.765048 0.277052 0.009558
+-1.707169 0.391436 0.081014
+-1.707169 0.391436 0.072208
+-1.707127 0.38118 0.081014
+-1.707127 0.38118 0.072208
 numsurf 1
 SURF 0x00
 mat 2
@@ -516,16 +516,16 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatPanel3"
-data 10
-ImatPanel3
-texture "immat.png"
+data 14
+ImatPanel3.001
+texture "immat-white.png"
 texrep 1 1
 crease 30.000000
 numvert 4
--1.765146 0.288709 0.009558
--1.765146 0.288709 0
--1.765048 0.277052 0.009558
--1.765048 0.277052 0
+-1.707169 0.391436 0.072208
+-1.707169 0.391436 0.063403
+-1.707127 0.38118 0.072208
+-1.707127 0.38118 0.063403
 numsurf 1
 SURF 0x00
 mat 2
@@ -537,16 +537,16 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatPanel4"
-data 10
-ImatPanel4
-texture "immat.png"
+data 14
+ImatPanel4.001
+texture "immat-white.png"
 texrep 1 1
 crease 30.000000
 numvert 4
--1.765146 0.288709 0
--1.765146 0.288709 -0.009557
--1.765048 0.277052 0
--1.765048 0.277052 -0.009557
+-1.707169 0.391436 0.063403
+-1.707169 0.391436 0.054599
+-1.707127 0.38118 0.063403
+-1.707127 0.38118 0.054599
 numsurf 1
 SURF 0x00
 mat 2
@@ -558,16 +558,16 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatPanel5"
-data 10
-ImatPanel5
-texture "immat.png"
+data 14
+ImatPanel5.001
+texture "immat-white.png"
 texrep 1 1
 crease 30.000000
 numvert 4
--1.765146 0.288709 -0.009557
--1.765146 0.288709 -0.019115
--1.765048 0.277052 -0.009557
--1.765048 0.277052 -0.019115
+-1.707169 0.391436 0.054599
+-1.707169 0.391436 0.045794
+-1.707127 0.38118 0.054599
+-1.707127 0.38118 0.045794
 numsurf 1
 SURF 0x00
 mat 2
@@ -579,16 +579,16 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatPanel6"
-data 10
-ImatPanel6
-texture "immat.png"
+data 14
+ImatPanel6.001
+texture "immat-white.png"
 texrep 1 1
 crease 30.000000
 numvert 4
--1.765146 0.288709 -0.019115
--1.765048 0.277052 -0.019115
--1.765048 0.277052 -0.028673
--1.765146 0.288709 -0.028673
+-1.707169 0.391436 0.045794
+-1.707127 0.38118 0.045794
+-1.707127 0.38118 0.036989
+-1.707169 0.391436 0.036989
 numsurf 1
 SURF 0x00
 mat 2
