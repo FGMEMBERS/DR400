@@ -36,7 +36,7 @@
         chord="1.780" 
         sweep="0" 
         dihedral="2"
-        camber="0.01">
+        camber="0.06">
         <stall aoa="20" width="1.0" peak="1.5"/>
         <flap0 start="0.04" end="0.59" lift="1.4" drag="1.5"/>
         <flap1 start="0.59" end="1.00" lift="1.2" drag="1.1"/>
@@ -130,13 +130,12 @@
   </gear>
 
   <!-- Fuel  -->
-  <tank x="-2.31" y="-1.16" z="-0.479" capacity="168" />
-  <tank x="-2.44" y="-2.32" z="-0.377" capacity="90" />
-  <tank x="-2.44" y="2.32" z="-0.377" capacity="90" />
-  <tank x="-2.31" y="1.16" z="-0.479" capacity="168" />
+  <tank x="0.899" y="1.487" z="-0.382" capacity="61.73" />
+  <tank x="-0.937" y="0.00" z="0.032" capacity="154.36" />
+  <tank x="0.899" y="-1.487" z="-0.382" capacity="61.73" />
  
   <!-- CG théorique x=0.896 y=0 z=-0.384 -->
   <!-- Mais roue en x="1.020" donc x au moins identique voir plus en avant -->
-  <ballast x="5.00" y="0" z="-1.431" mass="350"/>
+  <ballast x="1.0" y="0" z="-1.431" mass="350"/>
 
 </airplane>

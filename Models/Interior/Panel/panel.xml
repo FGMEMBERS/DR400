@@ -21,7 +21,7 @@
     <object-name>panel3</object-name>
   </animation>
 
-  <!-- asi -->
+  <!-- ASI -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
@@ -31,7 +31,7 @@
     </offsets>
   </model>
 
-  <!-- ai -->
+  <!-- AI -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
@@ -41,7 +41,7 @@
     </offsets>
   </model>
 
-  <!-- alt -->
+  <!-- ALT -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
@@ -51,7 +51,7 @@
     </offsets>
   </model>
 
-  <!-- Ki206 -->
+  <!-- KI206 -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
     <offsets>
@@ -61,7 +61,7 @@
     </offsets>
   </model>
 
-  <!-- turn -->
+  <!-- TURN -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
@@ -71,7 +71,7 @@
     </offsets>
   </model>
 
-  <!-- hdg -->
+  <!-- HDG -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
     <offsets>
@@ -81,7 +81,7 @@
     </offsets>
   </model>
 
-  <!-- vsi -->
+  <!-- VSI -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
@@ -91,7 +91,7 @@
     </offsets>
   </model>
 
-  <!-- adf -->
+  <!-- ADF -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/adf/adf.xml</path>
     <offsets>
@@ -111,13 +111,61 @@
     </offsets>
   </model>
 
-  <!-- rpm -->
+  <!-- RPM -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
       <x-m>  0.115 </x-m>
       <y-m> -0.094 </y-m>
       <z-m>  0.014 </z-m>
+    </offsets>
+  </model>
+
+  <!-- EGT -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> 0.112 </x-m>
+      <y-m> 0.354 </y-m>
+      <z-m> 0.115 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Magnetic Compass -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <offsets>
+      <x-m> 0.232 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.344 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fuel Left, Center, Right -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelL.xml</path>
+    <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m> -0.165 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelC.xml</path>
+    <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m> -0.095 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelR.xml</path>
+    <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m> -0.050 </z-m>
     </offsets>
   </model>
 
