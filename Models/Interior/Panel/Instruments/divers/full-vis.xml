@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.331 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.331 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.229 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.229 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.165 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.165 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.125 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.133 </y-m>
+      <z-m>  0.189 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.061 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.061 </y-m>
+      <z-m>  0.177 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.025 </y-m>
+      <z-m>  0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m>  0.187 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.113 </x-m>
+      <y-m> 0.039 </y-m>
+      <z-m> 0.240 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.113 </x-m>
+      <y-m> 0.039 </y-m>
+      <z-m> 0.177 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.331 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.331 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.268 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.229 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.237 </y-m>
+      <z-m>  0.086 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.165 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.165 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.125 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.125 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.061 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.061 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.025 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.025 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.113 </x-m>
+      <y-m> 0.039 </y-m>
+      <z-m> 0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.113 </x-m>
+      <y-m> 0.039 </y-m>
+      <z-m> 0.078 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.424 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.424 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.360 </y-m>
+      <z-m>  0.141 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.360 </y-m>
+      <z-m>  0.078 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.111 </x-m>
+      <y-m> -0.414 </y-m>
+      <z-m>  0.131 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.111 </x-m>
+      <y-m> -0.414 </y-m>
+      <z-m>  0.093 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.111 </x-m>
+      <y-m> -0.371 </y-m>
+      <z-m>  0.131 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m>  0.111 </x-m>
+      <y-m> -0.371 </y-m>
+      <z-m>  0.093 </z-m>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.113 </x-m>
+      <y-m> 0.066 </y-m>
+      <z-m> 0.129 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/vis.xml</path>
+    <offsets>
+      <x-m> 0.111 </x-m>
+      <y-m> 0.234 </y-m>
+      <z-m> 0.129 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

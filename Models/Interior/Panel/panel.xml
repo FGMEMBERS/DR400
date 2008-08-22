@@ -169,6 +169,21 @@
     </offsets>
   </model>
 
+ <!-- KT76A -->>
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
+    <offsets>
+      <x-m> 0.103 </x-m>
+      <y-m> 0.151 </y-m>
+      <z-m> 0.129 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Toutes les visses -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/full-vis.xml</path>
+  </model>
+
   <!-- Les alertes -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning01.xml</path>
@@ -246,7 +261,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
-      <x-m> 0.179 </x-m>
+      <x-m> 0.175 </x-m>
       <y-m> 0.181 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
@@ -255,7 +270,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
-      <x-m> 0.179 </x-m>
+      <x-m> 0.175 </x-m>
       <y-m> 0.203 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
@@ -264,7 +279,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
-      <x-m> 0.179 </x-m>
+      <x-m> 0.175 </x-m>
       <y-m> 0.227 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
@@ -273,7 +288,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
-      <x-m> 0.179 </x-m>
+      <x-m> 0.175 </x-m>
       <y-m> 0.250 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
@@ -282,7 +297,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
-      <x-m> 0.179 </x-m>
+      <x-m> 0.175 </x-m>
       <y-m> 0.273 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
@@ -290,7 +305,7 @@
 
   <!-- Les switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
       <x-m>  0.177 </x-m>
       <y-m> -0.255 </y-m>
@@ -299,7 +314,7 @@
   </model>
 
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/switch.xml</path>
     <offsets>
       <x-m>  0.178 </x-m>
       <y-m> -0.017 </y-m>
@@ -309,7 +324,7 @@
 
   <!-- Réglages des lumières -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/lights.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/lights.xml</path>
     <offsets>
       <x-m> 0.181 </x-m>
       <y-m> 0.054 </y-m>
@@ -318,7 +333,7 @@
   </model>
 
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/lights.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/lights.xml</path>
     <offsets>
       <x-m> 0.181 </x-m>
       <y-m> 0.097 </y-m>
@@ -327,7 +342,7 @@
   </model>
 
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switch/lights.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/lights.xml</path>
     <offsets>
       <x-m> 0.181 </x-m>
       <y-m> 0.140 </y-m>
