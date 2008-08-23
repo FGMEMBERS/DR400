@@ -9,16 +9,15 @@
     <object-name>Face</object-name>
     <object-name>PointerTip</object-name>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
-      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>PointerCentre</object-name>
     <object-name>PointerTip</object-name>
     <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
     <interpolation>

@@ -169,13 +169,23 @@
     </offsets>
   </model>
 
- <!-- KT76A -->>
+ <!-- KT76A -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
     <offsets>
       <x-m> 0.103 </x-m>
       <y-m> 0.151 </y-m>
       <z-m> 0.129 </z-m>
+    </offsets>
+  </model>
+
+ <!-- Je ne sais pas -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/idontknow/idontknow.xml</path>
+    <offsets>
+      <x-m> 0.103 </x-m>
+      <y-m> 0.151 </y-m>
+      <z-m> 0.177 </z-m>
     </offsets>
   </model>
 

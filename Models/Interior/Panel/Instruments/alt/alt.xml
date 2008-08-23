@@ -2,54 +2,54 @@
 
 <PropertyList>
 
-    <path>alt.ac</path>
-    
-    <animation>
-        <type>material</type>
-        <object-name>face</object-name>
-        <object-name>needle100</object-name>
-        <object-name>needle1000</object-name>
-        <object-name>needle10000</object-name>
-        <object-name>inhg</object-name>
-        <object-name>inhg.up</object-name>
-        <object-name>inhg.dn</object-name>
-        <object-name>onhgknob</object-name>
-        <emission>
-            <red>0.028</red>
-            <green>0.014</green>
-            <blue>0.007</blue>
-            <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-        </emission>
-    </animation>
+  <path>alt.ac</path>
 
-   <animation>
-     <type>noshadow</type>
-     <object-name>vitre</object-name>
-   </animation>
-    
-    <animation>
-        <type>rotate</type>
-        <object-name>needle100</object-name>
-        <property>instrumentation/altimeter/indicated-altitude-ft</property>
-        <factor>0.36</factor>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle100</object-name>
+    <object-name>needle1000</object-name>
+    <object-name>needle10000</object-name>
+    <object-name>inhg</object-name>
+    <object-name>inhg.up</object-name>
+    <object-name>inhg.dn</object-name>
+    <object-name>onhgknob</object-name>
+    <emission>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
 
-    <animation>
-        <type>rotate</type>
-        <object-name>needle1000</object-name>
-        <property>instrumentation/altimeter/indicated-altitude-ft</property>
-        <factor>0.036</factor>
-        <axis>
-            <x>-1</x>
-            <y>0</y>
-            <z>0</z>
-        </axis>
-    </animation>
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle100</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.36</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle1000</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.036</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
     <animation>
         <type>rotate</type>

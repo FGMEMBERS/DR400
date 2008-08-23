@@ -5,45 +5,45 @@ Syd Adams
 -->
 <PropertyList>
 
-    <path>ki206.ac</path>
-    
-    <animation>
-        <type>material</type>
-        <object-name>KI206.gsflag</object-name>
-        <object-name>KI206.toflag</object-name>
-        <object-name>KI206.fromflag</object-name>
-        <object-name>KI206.navflag</object-name>
-        <object-name>KI206.face</object-name>
-        <object-name>KI206card</object-name>
-        <object-name>KI206.locneedle</object-name>
-        <object-name>KI206.gsneedle</object-name>
-        <object-name>KI206.knob</object-name>
-        <emission>
-            <red>0.028</red>
-            <green>0.014</green>
-            <blue>0.007</blue>
-            <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-        </emission>
-    </animation>
-    
-    <animation>
-        <type>select</type>
-        <object-name>KI206.navflag</object-name>
-        <condition>
-            <or>
-                <not>
-                    <property>instrumentation/nav/data-is-valid</property>
-                </not>
-                <less-than>	
-                            <property>systems/electrical/outputs/nav</property>
-                    <value>0.1</value>	
-                </less-than>		
-                <not>	
-                            <property>instrumentation/nav/in-range</property>
-                </not>
-            </or>
-        </condition>
-    </animation>
+  <path>ki206.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>KI206.gsflag</object-name>
+    <object-name>KI206.toflag</object-name>
+    <object-name>KI206.fromflag</object-name>
+    <object-name>KI206.navflag</object-name>
+    <object-name>KI206.face</object-name>
+    <object-name>KI206card</object-name>
+    <object-name>KI206.locneedle</object-name>
+    <object-name>KI206.gsneedle</object-name>
+    <object-name>KI206.knob</object-name>
+    <emission>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>KI206.navflag</object-name>
+    <condition>
+      <or>
+        <not>
+          <property>instrumentation/nav/data-is-valid</property>
+        </not>
+        <less-than>
+          <property>systems/electrical/outputs/nav</property>
+          <value>0.1</value>
+        </less-than>
+        <not>
+          <property>instrumentation/nav/in-range</property>
+        </not>
+      </or>
+    </condition>
+  </animation>
     
     <animation>
         <type>select</type>
