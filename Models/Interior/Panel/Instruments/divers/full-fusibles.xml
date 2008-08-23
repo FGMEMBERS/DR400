@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.573 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.037 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.546 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.037 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.518 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.037 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.491 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.037 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.464 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.037 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.436 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.037 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.573 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.058 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.546 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.058 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.518 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.058 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.491 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.058 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.464 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.058 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/fusible.xml</path>
+    <offsets>
+      <x-m> -1.436 </x-m>
+      <y-m>  0.514 </y-m>
+      <z-m> -0.058 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>    41.299 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

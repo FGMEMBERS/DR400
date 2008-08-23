@@ -35,5 +35,18 @@
     </offsets>
   </model>
 
+  <!-- Les fusibles -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/full-fusibles.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
 </PropertyList>
 
