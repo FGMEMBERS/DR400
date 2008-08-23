@@ -278,7 +278,7 @@ OBJECT poly
 name "Cube.002"
 data 8
 Cube.008
-texture "glass.rgb"
+texture "glass.png"
 texrep 1 1
 crease 30.000000
 numvert 4
