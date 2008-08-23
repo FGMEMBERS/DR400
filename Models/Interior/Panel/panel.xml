@@ -13,12 +13,6 @@
     <object-name>panel2</object-name>
 
     <!-- Objets transparents -->
-    <object-name>panel3</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>panel3</object-name>
   </animation>
 
   <!-- ASI -->
