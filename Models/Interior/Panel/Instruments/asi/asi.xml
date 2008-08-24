@@ -21,14 +21,15 @@
     <object-name>PointerTip</object-name>
     <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
     <interpolation>
-     <entry><ind>  0 </ind><dep>   0 </dep></entry>
-     <entry><ind> 55 </ind><dep>  45 </dep></entry>
-     <entry><ind> 70 </ind><dep>  90 </dep></entry>
-     <entry><ind> 90 </ind><dep> 145 </dep></entry>
-     <entry><ind>110 </ind><dep> 190 </dep></entry>
-     <entry><ind>130 </ind><dep> 240 </dep></entry>
-     <entry><ind>150 </ind><dep> 290 </dep></entry>
-     <entry><ind>170 </ind><dep> 335 </dep></entry>
+     <entry><ind>   0 </ind><dep>   0 </dep></entry>
+     <entry><ind>  30 </ind><dep>  10 </dep></entry>
+     <entry><ind>  50 </ind><dep>  45 </dep></entry>
+     <entry><ind>  70 </ind><dep>  90 </dep></entry>
+     <entry><ind>  90 </ind><dep> 140 </dep></entry>
+     <entry><ind> 110 </ind><dep> 190 </dep></entry>
+     <entry><ind> 130 </ind><dep> 240 </dep></entry>
+     <entry><ind> 135 </ind><dep> 290 </dep></entry>
+     <entry><ind> 170 </ind><dep> 335 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
