@@ -190,74 +190,11 @@
 
   <!-- Les alertes -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning01.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning.xml</path>
     <offsets>
       <x-m>  0.179 </x-m>
-      <y-m> -0.215 </y-m>
-      <z-m>  0.301 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning02.xml</path>
-    <offsets>
-      <x-m>  0.179 </x-m>
-      <y-m> -0.191 </y-m>
-      <z-m>  0.301 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning03.xml</path>
-    <offsets>
-      <x-m>  0.179 </x-m>
-      <y-m> -0.167 </y-m>
-      <z-m>  0.301 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning04.xml</path>
-    <offsets>
-      <x-m>  0.179 </x-m>
-      <y-m> -0.142 </y-m>
-      <z-m>  0.301 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning05.xml</path>
-    <offsets>
-      <x-m>  0.179 </x-m>
-      <y-m> -0.118 </y-m>
-      <z-m>  0.301 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning06.xml</path>
-    <offsets>
-      <x-m>  0.179 </x-m>
-      <y-m> -0.094 </y-m>
-      <z-m>  0.301 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning07.xml</path>
-    <offsets>
-      <x-m>  0.179 </x-m>
-      <y-m> -0.069 </y-m>
-      <z-m>  0.301 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning08.xml</path>
-    <offsets>
-      <x-m>  0.179 </x-m>
-      <y-m> -0.045 </y-m>
-      <z-m>  0.301 </z-m>
+      <y-m> -0.130 </y-m>
+      <z-m>  0.302 </z-m>
     </offsets>
   </model>
 
