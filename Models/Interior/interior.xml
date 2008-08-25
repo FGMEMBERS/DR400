@@ -7,6 +7,13 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>tour</object-name>
+    <object-name>portefusibles</object-name>
+    <object-name>sieges</object-name>
+    <object-name>ceintures</object-name>
+    <object-name>sono</object-name>
+    <object-name>bout1</object-name>
+    <object-name>bout2</object-name>
 
     <!-- Objets transparents -->
   </animation>
