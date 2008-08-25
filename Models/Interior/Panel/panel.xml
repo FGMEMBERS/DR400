@@ -163,6 +163,16 @@
     </offsets>
   </model>
 
+  <!-- Température d'huile -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/oil-temp/oil-temp.xml</path>
+    <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m> -0.171 </y-m>
+      <z-m>  0.027 </z-m>
+    </offsets>
+  </model>
+
  <!-- KT76A -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
