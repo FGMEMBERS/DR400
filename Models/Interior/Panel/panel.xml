@@ -173,6 +173,26 @@
     </offsets>
   </model>
 
+  <!-- Pression d'huile -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
+    <offsets>
+      <x-m>  0.115 </x-m>
+      <y-m> -0.235 </y-m>
+      <z-m>  0.027 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pression d'essence -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel-press/fuel-press.xml</path>
+    <offsets>
+      <x-m> 0.115 </x-m>
+      <y-m> 0.013 </y-m>
+      <z-m> 0.030 </z-m>
+    </offsets>
+  </model>
+
  <!-- KT76A -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>

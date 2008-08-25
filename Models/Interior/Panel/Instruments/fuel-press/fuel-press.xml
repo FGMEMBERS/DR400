@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>fuel-press.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>Needle</object-name>
+    <emission>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <property>/engines/engine[0]/fuel-pressure-psi</property>
+    <interpolation>
+      <entry><ind>   0.00000 </ind><dep>  0 </dep></entry> <!--   0 mbar -->
+      <entry><ind>   2.17557 </ind><dep> 18 </dep></entry> <!-- 150 mbar -->
+      <entry><ind>   3.62594 </ind><dep> 50 </dep></entry> <!-- 250 mbar -->
+      <entry><ind>   5.07632 </ind><dep> 70 </dep></entry> <!-- 350 mbar -->
+    </interpolation>
+    <center>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.015 </z-m>  
+    </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
+
