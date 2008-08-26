@@ -307,7 +307,7 @@
     <object-name>cacheA</object-name>
     <object-name>roueA</object-name>
     <property>controls/flight/rudder</property>
-    <factor> 10.0 </factor>
+    <factor> 25.0 </factor>
     <center>
       <x-m> -2.560 </x-m>
       <y-m>  0.000 </y-m>
