@@ -300,6 +300,55 @@
     </axis>
   </animation>
 
+  <!-- Compression -->
+  <animation>
+    <type>translate</type>
+    <object-name>roueA</object-name>
+    <object-name>cacheA</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -0.04 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.029387 </x>
+      <y>  0.000000 </y>
+      <z> -0.155914 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>roueG</object-name>
+    <object-name>cacheG</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -0.04 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.029387 </x>
+      <y>  0.000000 </y>
+      <z> -0.155914 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>roueD</object-name>
+    <object-name>cacheD</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> -0.04 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0.25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.029387 </x>
+      <y>  0.000000 </y>
+      <z> -0.155914 </z>
+    </axis>
+  </animation>
+
   <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
   <animation>
     <type>rotate</type>
