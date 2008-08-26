@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+
+<!-- 26-08-2008 Updated by AJ -->
  
 <PropertyList>
 
@@ -9,7 +11,7 @@
    <path>Aircraft/DR400/Sounds/dr400-starter.wav</path>
    <property>/engines/engine/cranking</property>
    <volume>
-    <offset>0.4</offset>
+    <offset>0.5</offset>
    </volume>
   </crank>
 
@@ -33,7 +35,7 @@
    <path>Sounds/coughing.wav</path>
    <property>/engines/engine/running</property>
    <volume>
-    <offset>0.3</offset>
+    <offset>0.2</offset>
    </volume>
   </crank>
 
@@ -45,8 +47,8 @@
    <volume>
     <property>/engines/engine/mp-osi</property>
     <factor>0.00375</factor>
-    <min>0.15</min>
-    <max>0.5</max>
+    <min>1.0</min>
+    <max>2.0</max>
    </volume>
    <volume>
     <property>/orientation/alpha-deg</property>
@@ -57,7 +59,7 @@
    <volume>
     <property>/sim/current-view/internal</property>
     <offset>1.0</offset>
-    <factor>-0.7</factor>
+    <factor>-0.5</factor>
    </volume>
    <pitch>
     <property>/engines/engine/rpm</property>

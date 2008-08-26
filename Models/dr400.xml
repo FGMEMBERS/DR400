@@ -40,6 +40,8 @@
     <object-name>tourverriere</object-name>
     <object-name>antenne</object-name>
     <object-name>protege</object-name>
+    <object-name>tringleG</object-name>
+    <object-name>tringleD</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -97,6 +99,8 @@
     <object-name>tourverriere</object-name>
     <object-name>antenne</object-name>
     <object-name>protege</object-name>
+    <object-name>tringleG</object-name>
+    <object-name>tringleD</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>

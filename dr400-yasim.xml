@@ -1,5 +1,6 @@
 <!-- Robin DR 400 2008 - Emmanuel BARANGER 
      Based on Pierre GEOFFROY FDM
+     Engine udpated by Guillaume CHAUVAT
 -->
 
 <airplane mass="1742.9">
@@ -8,15 +9,13 @@
   <approach speed="55" aoa="6" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>  <!--0.2-->
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
     <control-setting axis="/controls/flight/flaps" value="1.0"/>
   </approach>
 
   <!-- Cruise configuration -->
-  <cruise speed="156" alt="9000" fuel="1.0">
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.6"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.8"/>
+  <cruise speed="147" alt="0" fuel="1.0">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/flight/flaps" value="0.0"/>
   </cruise>
 
@@ -85,20 +84,16 @@
   <propeller x="2.540" y="0.0" z="-0.067" 
              mass="700" 
              moment="6"
-             radius="1"
-	     cruise-speed="131" 
-	     cruise-rpm="2400"
-	     cruise-alt="9000" 
-	     cruise-power="113"
-	     takeoff-power="250" 
-	     takeoff-rpm="2575"
-	     min-rpm="800" 
-	     max-rpm="2575"
-             fine-stop="1.0" 
-             coarse-stop="4.0" >
+             radius="0.882"
+             cruise-speed="131" 
+             cruise-rpm="2400"
+             cruise-alt="9000" 
+             cruise-power="130"
+             takeoff-power="140" 
+             takeoff-rpm="2575" >
              <piston-engine eng-rpm="2575" 
                             alt="9000" 
-                            eng-power="250" 
+                            eng-power="140" 
                             displacement="541.5" 
                             compression="8.5"/>
              <actionpt x="3.146" y="0.0" z="0.029" />
@@ -106,13 +101,12 @@
              <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
              <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
              <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" />
-             <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
   </propeller>
 
   <gear x="2.560" y="0" z="-1.115" 
         compression="0.15" 
         spring="0.6">
-        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.1" dst1="0.1"/>
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.2" dst1="0.2"/>
    </gear>
 
   <gear x="1.020" y="1.236" z="-1.115" 

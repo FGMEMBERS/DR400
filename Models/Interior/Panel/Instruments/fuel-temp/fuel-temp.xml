@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>fuel-temp.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>Needle</object-name>
+    <emission>
+      <red>   0.030 </red>
+      <green> 0.015 </green>
+      <blue>  0.005 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <property>/engines/engine[0]/fuel-temperature-degf</property>
+    <interpolation>
+      <entry><ind> -22 </ind><dep>  10 </dep></entry> <!-- -30 deg C -->
+      <entry><ind>  -4 </ind><dep>  35 </dep></entry> <!-- -20 deg C -->
+      <entry><ind> -14 </ind><dep>  52 </dep></entry> <!-- -10 deg C -->
+      <entry><ind>  32 </ind><dep>  74 </dep></entry> <!--   0 deg C -->
+      <entry><ind>  50 </ind><dep>  96 </dep></entry> <!--  10 deg C -->
+      <entry><ind>  68 </ind><dep> 114 </dep></entry> <!--  20 deg C -->
+      <entry><ind>  86 </ind><dep> 138 </dep></entry> <!--  30 deg C -->
+    </interpolation>
+    <center>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.005 </z-m>  
+    </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
+

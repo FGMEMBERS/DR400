@@ -193,6 +193,16 @@
     </offsets>
   </model>
 
+  <!-- Température essence -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel-temp/fuel-temp.xml</path>
+    <offsets>
+      <x-m> 0.112 </x-m>
+      <y-m> 0.283 </y-m>
+      <z-m> 0.116 </z-m>
+    </offsets>
+  </model>
+
  <!-- KT76A -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
