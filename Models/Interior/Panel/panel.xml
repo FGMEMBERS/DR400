@@ -8,9 +8,11 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>panel0</object-name>
     <object-name>panel1</object-name>
     <object-name>panel2</object-name>
+    <object-name>panel3</object-name>
+    <object-name>flaps</object-name>
+    <object-name>rouetrim</object-name>
 
     <!-- Objets transparents -->
   </animation>
@@ -378,7 +380,7 @@
     </offsets>
   </model>
 
-  <!-- Magnetoq -->
+  <!-- Magnetos -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
     <offsets>
@@ -387,6 +389,24 @@
       <z-m> -0.054 </z-m>
     </offsets>
   </model>
+
+  <!-- Levier des volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>flaps</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>20.0</factor>
+    <center>
+      <x-m>  0.718 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.300 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 
