@@ -19,11 +19,11 @@
     <interpolation>
       <entry>
         <ind>  0.00 </ind>
-        <dep>  0.00 </dep>
+        <dep>  0.10 </dep>
       </entry>
       <entry>
         <ind>  1.00 </ind>
-        <dep>  0.10 </dep>
+        <dep>  0.00 </dep>
       </entry>
     </interpolation>
     <axis>
