@@ -353,8 +353,8 @@
     <object-name>cacheA</object-name>
     <property>gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.25 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
     </interpolation>
     <axis>
       <x> -0.029387 </x>
@@ -369,8 +369,8 @@
     <object-name>cacheG</object-name>
     <property>gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.25 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
     </interpolation>
     <axis>
       <x> -0.029387 </x>
@@ -385,8 +385,8 @@
     <object-name>cacheD</object-name>
     <property>gear/gear[2]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 1.0 </ind><dep>  0.25 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
     </interpolation>
     <axis>
       <x> -0.029387 </x>
