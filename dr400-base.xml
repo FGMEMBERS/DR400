@@ -33,17 +33,17 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
       </generic>
     </multiplay>
 
     <help>
-      <title>Robin DR400-120</title>
+      <title>Robin DR400</title>
       <key>
         <name>d</name>
         <desc>Open/Close canopy</desc>
@@ -64,6 +64,7 @@
       <file>Aircraft/DR400/Nasal/light.nas</file>
       <file>Aircraft/DR400/Nasal/liveries.nas</file>
       <file>Aircraft/DR400/Nasal/immat.nas</file>
+      <file>Aircraft/DR400/Nasal/dr400.nas</file>
     </dr400>
   </nasal>
    

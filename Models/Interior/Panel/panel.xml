@@ -225,9 +225,9 @@
     </offsets>
   </model>
 
- <!-- Je ne sais pas -->
+ <!-- KX165 -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/idontknow/idontknow.xml</path>
+    <path>Aircraft/Instruments-3d/kx165/kx165-1.xml</path>
     <offsets>
       <x-m> 0.103 </x-m>
       <y-m> 0.151 </y-m>
