@@ -42882,9 +42882,9 @@ refs 3
 255 0.752581715584 0.331803381443
 kids 0
 OBJECT poly
-name "vitre"
+name "verriere2"
 data 5
-vitre
+verriere2
 crease 30.000000
 numvert 102
 -0.753132 0.558255 0.430139

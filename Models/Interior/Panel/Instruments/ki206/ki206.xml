@@ -27,6 +27,13 @@ Syd Adams
   </animation>
 
   <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>KI206.gsflag</object-name>
     <object-name>KI206.toflag</object-name>

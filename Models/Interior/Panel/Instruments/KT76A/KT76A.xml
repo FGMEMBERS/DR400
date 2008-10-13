@@ -29,6 +29,18 @@
     <object-name>vitre</object-name>
   </animation>
 
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
   <animation> 
     <type>rotate</type>
     <object-name>Dial1000</object-name>

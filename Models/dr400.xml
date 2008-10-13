@@ -45,6 +45,7 @@
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
     <object-name>lampe</object-name>
     <object-name>lampetoitOn</object-name>
     <object-name>lampeGOn</object-name>
@@ -52,7 +53,6 @@
     <object-name>lampetoitOff</object-name>
     <object-name>lampeGOff</object-name>
     <object-name>lampeDOff</object-name>
-    <object-name>vitre</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
@@ -62,13 +62,14 @@
     <shader>chrome</shader>
     <texture>glass_shader.png</texture>
     <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
     <object-name>lampe</object-name>
-    <object-name>vitre</object-name>  <!-- all instruments and rear cabin -->
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
     <object-name>lampe</object-name>
     <object-name>lampetoitOn</object-name>
     <object-name>lampeGOn</object-name>
@@ -76,7 +77,6 @@
     <object-name>lampetoitOff</object-name>
     <object-name>lampeGOff</object-name>
     <object-name>lampeDOff</object-name>
-    <object-name>vitre</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
