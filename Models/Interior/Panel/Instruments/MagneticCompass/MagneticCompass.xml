@@ -5,6 +5,12 @@
   <path>MagneticCompass.ac</path>
 
   <animation>
+    <object-name>Ball</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>Ball</object-name>
     <emission>

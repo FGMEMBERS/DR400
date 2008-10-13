@@ -5,6 +5,18 @@
   <path>oil-temp.ac</path>
 
   <animation>
+    <object-name>Face</object-name>
+    <object-name>Needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>Face</object-name>
     <object-name>Needle</object-name>

@@ -5,6 +5,22 @@
   <path>turn.ac</path>
 
   <animation>
+    <object-name>Face</object-name>
+    <object-name>PtrTip</object-name>   
+    <object-name>BallEnclosure</object-name>
+    <object-name>PtrCtr</object-name>
+    <object-name>PtrTip</object-name>
+    <object-name>Ball</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>Face</object-name>
     <object-name>PtrTip</object-name>   

@@ -5,6 +5,13 @@
   <path>hdg.ac</path>
 
   <animation>
+    <object-name>HDGneedle</object-name>
+    <object-name>HDGpointer</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>HDGneedle</object-name>
     <object-name>HDGpointer</object-name>

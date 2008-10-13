@@ -9134,11 +9134,9 @@ refs 4
 4 0.0 1.0
 kids 0
 OBJECT poly
-name "verre"
+name "vitre"
 data 5
-verre
-texture "glass.png"
-texrep 1 1
+vitre
 crease 30.000000
 numvert 4
 0.001 0.053 -0.02
@@ -9149,8 +9147,8 @@ numsurf 1
 SURF 0x00
 mat 4
 refs 4
-0 0.731071710587 0.67719078064
-3 0.268928229809 0.67719078064
-2 0.268928229809 0.376797586679
-1 0.731071710587 0.376797586679
+0 1.0 1.0
+3 0.0 1.0
+2 0.0 0.0
+1 1.0 0.0
 kids 0

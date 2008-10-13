@@ -5,6 +5,24 @@
   <path>alt.ac</path>
 
   <animation>
+    <object-name>face</object-name>
+    <object-name>needle100</object-name>
+    <object-name>needle1000</object-name>
+    <object-name>needle10000</object-name>
+    <object-name>inhg</object-name>
+    <object-name>inhg.up</object-name>
+    <object-name>inhg.dn</object-name>
+    <object-name>onhgknob</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>face</object-name>
     <object-name>needle100</object-name>
@@ -20,11 +38,6 @@
       <blue>  0.005 </blue>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
   </animation>
 
   <animation>

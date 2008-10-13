@@ -5,6 +5,20 @@
   <path>ai.ac</path>
 
   <animation>
+    <object-name>Background</object-name>
+    <object-name>Scale</object-name>
+    <object-name>Float</object-name>
+    <object-name>Markings</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>Background</object-name>
     <object-name>Scale</object-name>
