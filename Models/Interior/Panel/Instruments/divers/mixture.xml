@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>mixture.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>mixture</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Mixture -->  
+ <animation>
+  <type>rotate</type>
+  <object-name>mixture</object-name>
+  <property>controls/engines/engine[0]/mixture</property>
+  <factor>22</factor>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+
+</PropertyList>

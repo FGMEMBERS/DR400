@@ -30,6 +30,7 @@ Thanks
 
 Guillaume CHAUVAT for JSBSim FDM
 Laurent HAYVEL for texture
+Brisa for mixture on panel
 
 ===============
 BARANGER Emmanuel
@@ -71,6 +72,7 @@ Remerciements
 
 Guillaume CHAUVAT pour le FDM JSBSim
 Laurent HAYVEL pour la texture
+Brisa pour la mixture sur la tableau de bord
 
 ===============
 BARANGER Emmanuel
