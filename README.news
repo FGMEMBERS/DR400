@@ -1,0 +1,14 @@
+December 08 2008, By Brisa
+
+Added:
+
+* binded and animated alternator button to /controls/engines/engine/master-alt property (alternator.xml)
+* binded and animated battery button to /controls/electric/battery-switch (battery.xml)
+* added  labels for mixture and flap position
+* added flap position indicator binded to: surface-positions/flap-pos-norm
+* added color2.png for texture needed by labels
+
+Modifications:
+* modified color.png and colors.xcf.gz to add ALT e BAT labels
+* modified panel.ac to add 4 labels (ALT,BAT,mixture,flaps)  and the panel.xml to add flaps indicatore animation
+

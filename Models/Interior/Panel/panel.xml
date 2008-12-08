@@ -12,6 +12,7 @@
     <object-name>panel2</object-name>
     <object-name>panel3</object-name>
     <object-name>flaps</object-name>
+    <object-name>flapsindicator</object-name>
     <object-name>rouetrim</object-name>
 
     <!-- Objets transparents -->
@@ -296,8 +297,9 @@
     </offsets>
   </model>
 
+  <!-- battery switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off-R.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/battery.xml</path>
     <offsets>
       <x-m>  0.113 </x-m>
       <y-m> -0.376 </y-m>
@@ -305,8 +307,9 @@
     </offsets>
   </model>
 
+  <!-- alternator switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off-R.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/alternator.xml</path>
     <offsets>
       <x-m>  0.113 </x-m>
       <y-m> -0.356 </y-m>
@@ -420,6 +423,18 @@
       <x> 0.000 </x>
       <y> 1.000 </y>
       <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>flapsindicator</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor>0.07</factor>
+    <axis>
+      <x>  0.27 </x>
+      <y>  0.0 </y>
+      <z> -0.66 </z>
     </axis>
   </animation>
 
