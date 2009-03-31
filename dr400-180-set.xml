@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="dr400-180-jsbsim-cnf.xml"> -->
+<PropertyList include="dr400-180-yasim-cnf.xml">
+
+  <sim>
+    <description>Robin DR 400 180 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), Laurent WROMMAN (FDM), Laurent HAYVEL (texture)</author>
+  </sim>
+
+</PropertyList>
+

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -11,6 +11,7 @@
     <object-name>panel1</object-name>
     <object-name>panel2</object-name>
     <object-name>panel3</object-name>
+    <object-name>labels</object-name>
     <object-name>flaps</object-name>
     <object-name>flapsindicator</object-name>
     <object-name>rouetrim</object-name>
@@ -395,8 +396,6 @@
       <heading-deg> 0.0 </heading-deg>
     </offsets>
   </model>
-
-   
 
   <!-- Magnetos -->
   <model>

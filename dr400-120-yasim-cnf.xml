@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="dr400-120-base.xml">
+
+  <sim>
+
+    <description>Robin DR400-120 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), Laurent WROMMAN (FDM), Laurent HAYVEL (texture)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">dr400-120-yasim</aero>
+
+  </sim>
+
+</PropertyList>

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -10,7 +10,7 @@
     <fuel-fraction>1.0</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/DR400/dr400-splash.png</splash-texture>
+      <splash-texture>Aircraft/DR400/Splash/dr400-180-splash.png</splash-texture>
     </startup>
 
     <sound>
@@ -43,7 +43,7 @@
     </multiplay>
 
     <help>
-      <title>Robin DR400</title>
+      <title>Robin DR400 180</title>
       <key>
         <name>d</name>
         <desc>Open/Close canopy</desc>
@@ -52,7 +52,35 @@
 
     <menubar include="Dialogs/dr400-menu.xml"/>
 
-  </sim>
+    <weight n="0">
+        <name>Pilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>100</min-lb>
+    </weight>
+
+    <weight n="1">
+        <name>Copilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+        <name>Pax</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="3">
+        <name>Cargo</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+</sim>
  
   <input>
     <keyboard include="Nasal/dr400-keyboard.xml"/>

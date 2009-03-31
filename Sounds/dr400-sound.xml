@@ -1,4 +1,5 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!-- 26-08-2008 
      30-08-2008 Updated by AJ -->
 
@@ -35,6 +36,8 @@
       <volume>
         <offset>0.2</offset>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </crank>
 
     <engine>
@@ -71,6 +74,8 @@
         <max>2.0</max>
         <offset>0.15</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </engine>
 
     <engine-internal>
@@ -128,6 +133,8 @@
         <max>2.0</max>
         <offset>0.9</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </propeller>
 
     <rumble>
@@ -163,6 +170,8 @@
         <factor>0.5</factor>
         <max>2.5</max>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
 
     <squeal>
@@ -196,6 +205,8 @@
         <factor>0.0025</factor>
         <offset>1.2</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
 
     <flap>
@@ -208,6 +219,8 @@
       </volume>
       <reference-dist>10.0</reference-dist>
       <max-dist>20.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </flap>
 
     <stall>
@@ -246,6 +259,8 @@
         <property>velocities/airspeed-kt</property>
         <factor>0.005</factor>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </wind>
 
     <!--                  Toggle Switches                  -->

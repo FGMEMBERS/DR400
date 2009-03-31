@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -18,6 +18,22 @@
     <object-name>mancheD</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
   </animation>
 
   <!-- Pilote -->
@@ -59,7 +75,6 @@
 
   <!-- Les palonniers -->
   <model>
-    <name>Pilote</name>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/pedals/pedals.xml</path>
     <offsets>
       <x-m> -2.047 </x-m>
@@ -69,7 +84,6 @@
   </model>
 
   <model>
-    <name>Pilote</name>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/pedals/pedals.xml</path>
     <offsets>
       <x-m> -2.047 </x-m>
@@ -144,6 +158,28 @@
       <x> -1 </x>
       <y>  0 </y>
       <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Canopy -->
+  <animation>
+    <type>translate</type>
+    <object-name>intverriere</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind> 0.00 </ind>
+        <dep> 0.00 </dep>
+      </entry>
+      <entry>
+        <ind> 1.00 </ind>
+        <dep> 0.80 </dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
     </axis>
   </animation>
 
