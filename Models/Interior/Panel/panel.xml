@@ -15,6 +15,13 @@
     <object-name>flaps</object-name>
     <object-name>flapsindicator</object-name>
     <object-name>rouetrim</object-name>
+    <object-name>trottleplus</object-name>
+    <object-name>trottlemoins</object-name>
+    <object-name>flaps0</object-name>
+    <object-name>flaps1</object-name>
+    <object-name>flaps1</object-name>
+    <object-name>mixtureplus</object-name>
+    <object-name>mixturemoins</object-name>
 
     <!-- Objets transparents -->
   </animation>
@@ -391,11 +398,41 @@
       <x-m>  0.000 </x-m>
       <y-m>  0.018 </y-m>
       <z-m> -0.190 </z-m>
-      <roll-deg>    0.0 </roll-deg>
-      <pitch-deg>   -9.0 </pitch-deg>
-      <heading-deg> 0.0 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -9 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>mixtureplus</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>mixturemoins</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
 
   <!-- Magnetos -->
   <model>
@@ -411,7 +448,7 @@
   <animation>
     <type>rotate</type>
     <object-name>flaps</object-name>
-    <property>surface-positions/flap-pos-norm</property>
+    <property>/surface-positions/flap-pos-norm</property>
     <factor>20.0</factor>
     <center>
       <x-m>  0.718 </x-m>
@@ -419,12 +456,57 @@
       <z-m> -0.300 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>flaps0</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/flaps</property>
+        <value type="double">0</value>
+      </binding>          
+    </action>
+  </animation>
+                                    
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>flaps1</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/flaps</property>
+        <value type="double">0.25</value>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>flaps2</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/flight/flaps</property>
+        <value type="double">1</value>
+      </binding>          
+    </action>
+  </animation>
+                                    
   <animation>
     <type>translate</type>
     <object-name>flapsindicator</object-name>
@@ -432,9 +514,39 @@
     <factor>0.07</factor>
     <axis>
       <x>  0.27 </x>
-      <y>  0.0 </y>
+      <y>  0.00 </y>
       <z> -0.66 </z>
     </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>trottleplus</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>trottlemoins</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
   </animation>
 
 </PropertyList>

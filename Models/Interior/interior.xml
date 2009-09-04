@@ -54,9 +54,9 @@
       <x-m> -1.859 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.099 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>  -5.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>  -5 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -64,12 +64,12 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/full-fusibles.xml</path>
     <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
-      <roll-deg>    0.0 </roll-deg>
-      <pitch-deg>   0.0 </pitch-deg>
-      <heading-deg> 0.0 </heading-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -167,19 +167,13 @@
     <object-name>intverriere</object-name>
     <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
-      <entry>
-        <ind> 0.00 </ind>
-        <dep> 0.00 </dep>
-      </entry>
-      <entry>
-        <ind> 1.00 </ind>
-        <dep> 0.80 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.8 </dep></entry>
     </interpolation>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 

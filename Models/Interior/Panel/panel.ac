@@ -2,11 +2,11 @@ AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
-kids 8
+kids 15
 OBJECT poly
 name "flaps"
-data 9
-flaps.001
+data 5
+flaps
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -1775,9 +1775,66 @@ refs 3
 224 0.42355287075 0.0781264603138
 kids 0
 OBJECT poly
+name "flaps0"
+data 6
+flaps0
+crease 30.000000
+numvert 4
+0.121223 -0.105355 0.035402
+0.121223 -0.105355 0.025901
+0.130671 -0.128943 0.035402
+0.130671 -0.128943 0.025901
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "flaps1"
+data 6
+flaps1
+crease 30.000000
+numvert 4
+0.130671 -0.128943 0.025901
+0.14012 -0.152532 0.025901
+0.130671 -0.128943 0.035402
+0.14012 -0.152532 0.035402
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+1 0 0
+0 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "flaps2"
+data 6
+flaps2
+crease 30.000000
+numvert 4
+0.14012 -0.152532 0.025901
+0.14012 -0.152532 0.035402
+0.149568 -0.17612 0.025901
+0.149568 -0.17612 0.035402
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+2 0 0
+0 0 0
+1 0 0
+3 0 0
+kids 0
+OBJECT poly
 name "flapsindicator"
-data 8
-Cube.009
+data 14
+flapsindicator
 texture "colors2.png"
 texrep 1 1
 crease 30.000000
@@ -1836,8 +1893,8 @@ refs 4
 kids 0
 OBJECT poly
 name "labels"
-data 10
-panel1.001
+data 6
+labels
 texture "colors2.png"
 texrep 1 1
 crease 30.000000
@@ -2015,6 +2072,44 @@ refs 4
 28 0.123318500817 0.994056940079
 29 0.123161189258 0.502228677273
 30 0.185651123524 0.502037227154
+kids 0
+OBJECT poly
+name "mixturemoins"
+data 12
+mixturemoins
+crease 30.000000
+numvert 4
+0.149568 -0.17612 -0.012634
+0.149568 -0.17612 -0.001788
+0.135396 -0.140737 -0.001788
+0.135396 -0.140737 -0.012634
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "mixtureplus"
+data 11
+moxtureplus
+crease 30.000000
+numvert 4
+0.135396 -0.140737 -0.012634
+0.135396 -0.140737 -0.001788
+0.121223 -0.105355 -0.001788
+0.121223 -0.105355 -0.012634
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
 kids 0
 OBJECT poly
 name "panel0"
@@ -2990,8 +3085,8 @@ refs 4
 kids 0
 OBJECT poly
 name "panel1"
-data 10
-panel1.002
+data 6
+panel1
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -16458,8 +16553,8 @@ refs 3
 kids 0
 OBJECT poly
 name "panel3"
-data 10
-panel3.001
+data 6
+panel3
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -26845,8 +26940,8 @@ refs 3
 kids 0
 OBJECT poly
 name "rouetrim"
-data 12
-rouetrim.001
+data 8
+rouetrim
 texture "colors.png"
 texrep 1 1
 crease 30.000000
@@ -27526,4 +27621,64 @@ refs 3
 1 0.582155764103 0.0845876410604
 65 0.618453204632 0.120885081589
 64 0.624837100506 0.11310634017
+kids 0
+OBJECT poly
+name "trottlemoins"
+data 12
+trottlemoins
+crease 30.000000
+numvert 8
+0.118886 0.04092 -0.096081
+0.118886 0.04092 -0.051919
+0.118945 0.040919 0.434919
+0.118945 0.040919 0.479081
+0.118886 0.063 -0.096081
+0.118886 0.063 -0.051919
+0.118945 0.063 0.434919
+0.118945 0.063 0.479081
+numsurf 2
+SURF 0x20
+mat 0
+refs 4
+0 0 0
+4 0 0
+5 0 0
+1 0 0
+SURF 0x20
+mat 0
+refs 4
+7 0 0
+3 0 0
+2 0 0
+6 0 0
+kids 0
+OBJECT poly
+name "trottleplus"
+data 11
+trottleplus
+crease 30.000000
+numvert 8
+0.118945 0.063 0.479081
+0.118945 0.063 0.434919
+0.118886 0.063 -0.051919
+0.118886 0.063 -0.096081
+0.118945 0.085081 0.479081
+0.118945 0.085081 0.434919
+0.118886 0.085081 -0.051919
+0.118886 0.085081 -0.096081
+numsurf 2
+SURF 0x20
+mat 0
+refs 4
+4 0 0
+0 0 0
+1 0 0
+5 0 0
+SURF 0x20
+mat 0
+refs 4
+6 0 0
+2 0 0
+3 0 0
+7 0 0
 kids 0

@@ -560,11 +560,47 @@
   </model>
 
   <model>
-    <path>Aircraft/DR400/Models/light/Whitelight.xml</path>
+    <path>Aircraft/Velocity-XL/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -1.297 </x-m>
+      <y-m> -4.253 </y-m>
+      <z-m>  0.005 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Velocity-XL/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -1.297 </x-m>
+      <y-m>  4.253 </y-m>
+      <z-m>  0.005 </z-m>
+   </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/light/WhiteLight.xml</path>
     <offsets>
       <x-m> -2.574 </x-m>
       <y-m>  0.074 </y-m>
       <z-m> -0.643 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -1.749 </x-m>
+      <y-m> -2.091 </y-m>
+      <z-m> -0.382 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m> -1.749 </x-m>
+      <y-m> -2.192 </y-m>
+      <z-m> -0.382 </z-m>
     </offsets>
   </model>
 
