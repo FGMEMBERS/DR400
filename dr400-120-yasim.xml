@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Robin DR 400-120 - Laurent Vromman
+                        Oliver FAIVRE 30-01-2010
+
      Based on DR400 2008 - Emmanuel BARANGER 
 -->
 
@@ -82,7 +84,7 @@
        <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
   </vstab>
 
-  <!--  Lycoming O-235-L2A  -->
+  <!-- Lycoming O-235-L2A -->
   <!-- http://www.lycoming.textron.com/engines/series/pdfs/235ci%20Insert.pdf -->
   <!-- Propeller McCauley 1A135 -->
   <propeller x="2.540" y="0.0" z="-0.067" 
@@ -143,7 +145,7 @@
   <weight x="-0.1" y="0.30" z="0"
         mass-prop="sim/weight[3]/weight-lb"/>
 
-  <!-- Laurent Vromman : Correction du CG à vide : x~=1.5, soit 50cm avant la roue -->
+  <!-- Laurent Vromman : Correction du CG a vide : x~=1.5, soit 50cm avant la roue -->
   <ballast x="4.0" y="0.0" z="0.0" mass="250"/>
 
 </airplane>

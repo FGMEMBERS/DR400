@@ -31,11 +31,7 @@
 
   <cockpit x="1.289" y="0.195" z="0.555"/>
 
-  <fuselage ax="3.480" ay="0" az="0.029" 
-            bx="-3.268" by="0" bz="-0.142" 
-            width="1.139"  
-            taper="0.4" 
-            midpoint="1"/>
+  <fuselage ax="3.480" ay="0" az="0.029" bx="-3.268" by="0" bz="-0.142" width="1.139" taper="0.4" midpoint="0.30"/>
 
   <wing x="0.896" y="0.0" z="-0.384"
         taper="0.95" 
@@ -152,7 +148,7 @@
   <weight x="-0.1" y="0.30" z="0"
         mass-prop="sim/weight[3]/weight-lb"/>
 
-  <!-- Laurent Vromman : Correction du CG à vide : x~=1.5, soit 50cm avant la roue -->
+  <!-- Laurent Vromman : Correction du CG a vide : x~=1.5, soit 50cm avant la roue -->
   <ballast x="5.5" y="0.0" z="0.0" mass="200"/>
 
 </airplane>
