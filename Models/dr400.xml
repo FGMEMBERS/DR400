@@ -266,7 +266,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ProfondeurComplete</object-name>
-    <property>/controls/flight/elevator</property>
+    <property>/surface-positions/elevator-pos-norm</property>
     <interpolation>
       <entry><ind> -0.75 </ind><dep> -12.0 </dep></entry>
       <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
@@ -288,7 +288,7 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>/surface-positions/rudder-pos-norm</property>
     <interpolation>
       <entry><ind> -0.75 </ind><dep> -25.0 </dep></entry>
       <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
@@ -354,16 +354,16 @@
     <type>rotate</type>
     <object-name>LesVolets</object-name>
     <property>/surface-positions/flap-pos-norm</property>
-    <factor>60.0</factor>
+    <factor> 60 </factor>
     <center>
       <x-m> -0.211 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.396 </z-m>
     </center>
     <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -442,7 +442,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainAvant</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>/surface-positions/rudder-pos-norm</property>
     <factor> 25.0 </factor>
     <center>
       <x-m> -2.560 </x-m>
@@ -560,7 +560,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/StrobeWhite.xml</path>
+    <path>Aircraft/DR400/Models/light/StrobeWhite.xml</path>
     <offsets>
       <x-m> -1.297 </x-m>
       <y-m> -4.253 </y-m>
@@ -569,7 +569,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Velocity-XL/Models/lights/StrobeWhite.xml</path>
+    <path>Aircraft/DR400/Models/light/StrobeWhite.xml</path>
     <offsets>
       <x-m> -1.297 </x-m>
       <y-m>  4.253 </y-m>

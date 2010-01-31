@@ -7,7 +7,7 @@
   <animation>
     <type>translate</type>
     <object-name>Pedal-L</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/surface-positions/rudder-pos-norm</property>
     <factor>0.1</factor>
     <axis>
       <x> 1.0 </x>
@@ -36,7 +36,7 @@
   <animation>
     <type>translate</type>
     <object-name>Pedal-R</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/surface-positions/rudder-pos-norm</property>
     <factor>-0.1</factor>
     <axis>
       <x> 1.0 </x>
