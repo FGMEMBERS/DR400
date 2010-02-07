@@ -35,8 +35,8 @@
         camber="0.01">
         <stall aoa="18" width="1.0" peak="1.5"/>
         <flap0 start="0.24" end="0.99" lift="1.4" drag="1.5"/>
-        
-        <control-input axis="/controls/flight/flaps" control="FLAP0" invert="true"/>
+        <!-- 03/02/2010 O.Faivre - Suppression de la commande invert="false" -->
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
         
