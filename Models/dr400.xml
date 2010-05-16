@@ -59,30 +59,6 @@
   </animation>
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>lampe</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>lampe</object-name>
-    <object-name>lampetoitOn</object-name>
-    <object-name>lampeGOn</object-name>
-    <object-name>lampeDOn</object-name>
-    <object-name>lampetoitOff</object-name>
-    <object-name>lampeGOff</object-name>
-    <object-name>lampeDOff</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>echappe</object-name>
@@ -145,6 +121,30 @@
       <shininess-prop>shininess</shininess-prop>
     </shininess>
 -->
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
+    <object-name>lampe</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
+    <object-name>lampe</object-name>
+    <object-name>lampetoitOn</object-name>
+    <object-name>lampeGOn</object-name>
+    <object-name>lampeDOn</object-name>
+    <object-name>lampetoitOff</object-name>
+    <object-name>lampeGOff</object-name>
+    <object-name>lampeDOff</object-name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
   </animation>
 
   <!-- Interieur -->
@@ -533,6 +533,7 @@
 
   <!-- Essais d'ajout des effets lumineux d'après le G115 -->
   <model>
+    <name>Nav1-Light</name>
     <path>Aircraft/DR400/Models/light/beacon.xml</path>
     <offsets>
       <x-m> 0.708 </x-m>
@@ -542,6 +543,7 @@
   </model>
 
   <model>
+    <name>Nav2-Light</name>
     <path>Aircraft/DR400/Models/light/RedLight.xml</path>
     <offsets>
       <x-m> -1.297 </x-m>
@@ -551,6 +553,7 @@
   </model>
 
   <model>
+    <name>Nav3-Light</name>
     <path>Aircraft/DR400/Models/light/GreenLight.xml</path>
     <offsets>
       <x-m> -1.297 </x-m>
@@ -559,7 +562,26 @@
     </offsets>
   </model>
 
+  <animation>
+    <name>AllNavLight</name>
+    <object-name>Nav1-Light</object-name>
+    <object-name>Nav2-Light</object-name>
+    <object-name>Nav3-Light</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>AllNavLight</object-name>
+    <condition>
+      <equals>
+        <property>controls/switches/nav-lights</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+
   <model>
+    <name>Strobe1-Light</name>
     <path>Aircraft/DR400/Models/light/StrobeWhite.xml</path>
     <offsets>
       <x-m> -1.297 </x-m>
@@ -569,6 +591,7 @@
   </model>
 
   <model>
+    <name>Strobe2-Light</name>
     <path>Aircraft/DR400/Models/light/StrobeWhite.xml</path>
     <offsets>
       <x-m> -1.297 </x-m>
@@ -576,6 +599,23 @@
       <z-m>  0.005 </z-m>
    </offsets>
   </model>
+
+  <animation>
+    <name>AllStrobeLight</name>
+    <object-name>Strobe1-Light</object-name>
+    <object-name>Strobe2-Light</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>AllStrobeLight</object-name>
+    <condition>
+      <equals>
+        <property>controls/switches/strobe-lights</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
 
   <model>
     <name>NozeGear</name>
@@ -622,7 +662,19 @@
     </axis>
   </animation>
 
+  <animation>
+    <type>select</type>
+    <object-name>Taxi-Light</object-name>
+    <condition>
+      <equals>
+        <property>controls/switches/taxi-lights</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+
   <model>
+    <name>Wing1-Light</name>
     <path>Aircraft/DR400/Models/light/WhiteLight.xml</path>
     <offsets>
       <x-m> -1.749 </x-m>
@@ -632,6 +684,7 @@
   </model>
 
   <model>
+    <name>Wing2-Light</name>
     <path>Aircraft/DR400/Models/light/WhiteLight.xml</path>
     <offsets>
       <x-m> -1.749 </x-m>
@@ -642,6 +695,7 @@
 
   <!-- Wing light cone -->
   <model>
+    <name>Landing-Light</name>
     <path>Aircraft/DR400/Models/light/light-cone.xml</path>
     <offsets>
       <x-m>       -1.749 </x-m>
@@ -650,6 +704,24 @@
       <pitch-deg> -7.500 </pitch-deg>
     </offsets>
   </model>
+
+  <animation>
+    <name>AllWingLight</name>
+    <object-name>Wing1-Light</object-name>
+    <object-name>Wing2-Light</object-name>
+    <object-name>Landing-Light</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>AllWingLight</object-name>
+    <condition>
+      <equals>
+        <property>controls/switches/landing-light</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
 
 </PropertyList>
 

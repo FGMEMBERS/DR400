@@ -261,36 +261,36 @@
 
   <!-- Commutateurs -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/atterr.xml</path>
     <offsets>
-      <x-m> 0.175 </x-m>
+      <x-m> 0.177 </x-m>
       <y-m> 0.181 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/roulag.xml</path>
     <offsets>
-      <x-m> 0.175 </x-m>
+      <x-m> 0.177 </x-m>
       <y-m> 0.203 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/strobe.xml</path>
     <offsets>
-      <x-m> 0.175 </x-m>
+      <x-m> 0.177 </x-m>
       <y-m> 0.227 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/nav.xml</path>
     <offsets>
-      <x-m> 0.175 </x-m>
+      <x-m> 0.177 </x-m>
       <y-m> 0.250 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
@@ -299,7 +299,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
     <offsets>
-      <x-m> 0.175 </x-m>
+      <x-m> 0.177 </x-m>
       <y-m> 0.273 </y-m>
       <z-m> 0.291 </z-m>
     </offsets>
