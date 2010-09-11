@@ -205,7 +205,7 @@
     <object-name>propdisc</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1500</value>
       </greater-than>
     </condition>
@@ -217,11 +217,11 @@
     <condition>
     <and>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>600.000</value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1500.001</value>
       </less-than>
     </and>
@@ -233,7 +233,7 @@
     <object-name>helice</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
 	<value>1500</value>
       </less-than>
     </condition>
@@ -242,7 +242,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -3.274 </x-m>
@@ -266,7 +266,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ProfondeurComplete</object-name>
-    <property>/surface-positions/elevator-pos-norm</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <interpolation>
       <entry><ind> -0.75 </ind><dep> -12.0 </dep></entry>
       <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
@@ -288,11 +288,11 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <interpolation>
-      <entry><ind> -0.75 </ind><dep> -25.0 </dep></entry>
-      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
-      <entry><ind>  0.75 </ind><dep>  25.0 </dep></entry>
+      <entry><ind> -0.75 </ind><dep> -25 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>  25 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  2.824 </x1-m>
@@ -308,11 +308,11 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronG</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
     <interpolation>
-      <entry><ind> -0.75 </ind><dep>  15.0 </dep></entry>
-      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
-      <entry><ind>  0.75 </ind><dep> -10.0 </dep></entry>
+      <entry><ind> -0.75 </ind><dep>  15 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep> -10 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -0.457 </x1-m>
@@ -327,11 +327,11 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronD</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
     <interpolation>
-      <entry><ind> -0.75 </ind><dep> -10.0 </dep></entry>
-      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
-      <entry><ind>  0.75 </ind><dep>  15.0 </dep></entry>
+      <entry><ind> -0.75 </ind><dep> -10 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>  15 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -0.457 </x1-m>
@@ -353,7 +353,7 @@
   <animation>
     <type>rotate</type>
     <object-name>LesVolets</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor> 60 </factor>
     <center>
       <x-m> -0.211 </x-m>
@@ -377,10 +377,10 @@
   <animation>
     <type>translate</type>
     <object-name>RoueAvant</object-name>
-    <property>/gear/gear[0]/compression-norm</property>
+    <property>gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0.04 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.25 </dep></entry>
     </interpolation>
     <axis>
       <x> -0.029387 </x>
@@ -398,10 +398,10 @@
   <animation>
     <type>translate</type>
     <object-name>RoueGauche</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
+    <property>gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0.04 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.25 </dep></entry>
     </interpolation>
     <axis>
       <x> -0.029387 </x>
@@ -419,10 +419,10 @@
   <animation>
     <type>translate</type>
     <object-name>RoueDroite</object-name>
-    <property>/gear/gear[2]/compression-norm</property>
+    <property>gear/gear[2]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>  0.04 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.04 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.25 </dep></entry>
     </interpolation>
     <axis>
       <x> -0.029387 </x>
@@ -442,7 +442,7 @@
   <animation>
     <type>rotate</type>
     <object-name>TrainAvant</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor> 25 </factor>
     <center>
       <x-m> -2.560 </x-m>
@@ -460,7 +460,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>/gear/gear[0]/rollspeed-ms</property>
+    <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -2.560 </x-m>
@@ -477,7 +477,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -1.020 </x-m>
@@ -494,7 +494,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -1.020 </x-m>
@@ -519,7 +519,7 @@
   <animation>
     <type>translate</type>
     <object-name>LaVerriere</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.8 </dep></entry>
@@ -648,7 +648,7 @@
   <animation>
     <type>rotate</type>
     <object-name>AllGearLight</object-name>
-    <property>/surface-positions/rudder-pos-norm</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor> 25 </factor>
     <center>
       <x-m> -2.560 </x-m>
