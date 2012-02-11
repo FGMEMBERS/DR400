@@ -7,8 +7,9 @@
   <path>charge.ac</path>
 
   <animation>
-    <object-name>Face</object-name>
-    <object-name>Needle</object-name>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -21,14 +22,14 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
 
   <animation>
     <type>material</type>
-    <object-name>Face</object-name>
-    <object-name>Needle</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
     <emission>
       <red>   0.030 </red>
       <green> 0.015 </green>
@@ -39,7 +40,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Needle</object-name>
+    <object-name>needle</object-name>
     <property>consumables/fuel/tank[1]/level-lbs</property>
     <interpolation>
       <entry><ind>   0.00 </ind><dep>  5 </dep></entry>
@@ -61,5 +62,4 @@
   </animation>
 
 </PropertyList>
-
 

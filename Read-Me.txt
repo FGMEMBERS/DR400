@@ -1,4 +1,4 @@
-English/Français
+English/FranÃ§ais
 
 [English]
 ----------
@@ -30,7 +30,6 @@ d : canopy
 Thanks
 ======
 
-Guillaume CHAUVAT for JSBSim FDM
 Laurent HAYVEL for texture
 Brisa for mixture on panel
 Laurent WROMMAN for new multi FDM
@@ -41,12 +40,13 @@ May, 25, 2007.
 August, 11, 2008.
 December, 08, 2008.
 February, 11, 2009.
+February, 11, 2012.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[Français]
+[FranÃ§ais]
 ----------
 
 Un peu d'histoire
@@ -59,13 +59,13 @@ Robin DR 400
 
 Constructeur                  :
 Type                          :
-Année                         :
+AnnÃ©e                         :
 Moteur                        :
 Envergure                     :
 Longueur                      :
 Hauteur                       :
-Poids à vide                  :
-Vitesse de croisière          :
+Poids Ã  vide                  :
+Vitesse de croisiÃ¨re          :
 Equipage                      :
 
 
@@ -77,7 +77,6 @@ d : cockpit
 Remerciements
 =============
 
-Guillaume CHAUVAT pour le FDM JSBSim
 Laurent HAYVEL pour la texture
 Brisa pour la mixture sur la tableau de bord
 Laurent WROMMAN pour les nouveaux FDM
@@ -85,9 +84,10 @@ Laurent WROMMAN pour les nouveaux FDM
 ===============
 BARANGER Emmanuel
 25 Mai 2007.
-11 Août 2008.
-08 Décembre 2008.
-11 Février 2009.
+11 AoÃ»t 2008.
+08 DÃ©cembre 2008.
+11 FÃ©vrier 2009.
+11 FÃ©vrier 2012
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr

@@ -5,6 +5,11 @@
   <path>pedals.ac</path> 
 
   <animation>
+    <object-name>Pedal-L</object-name>
+    <object-name>Pedal-R</object-name>
+  </animation>
+
+  <animation>
     <type>translate</type>
     <object-name>Pedal-L</object-name>
     <property>/surface-positions/rudder-pos-norm</property>
@@ -63,3 +68,4 @@
   </animation>
 
 </PropertyList>
+

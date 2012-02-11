@@ -7,16 +7,29 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/DR400/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>echappe</object-name>
     <object-name>aile</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -25,12 +38,8 @@
     <object-name>trimprof</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-    <object-name>roueA</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name>
     <object-name>bol</object-name>
     <object-name>toitverriere</object-name>
-    <object-name>helice</object-name>
     <object-name>axeA</object-name>
     <object-name>axeG</object-name>
     <object-name>axeD</object-name>
@@ -42,6 +51,12 @@
     <object-name>protege</object-name>
     <object-name>tringleG</object-name>
     <object-name>tringleD</object-name>
+
+    <object-name>helice</object-name>
+    <object-name>roueA</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>echappe</object-name>
     <object-name>trous</object-name>
 
     <!-- Objets transparents -->
@@ -61,7 +76,6 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
-    <object-name>echappe</object-name>
     <object-name>aile</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -70,12 +84,8 @@
     <object-name>trimprof</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-    <object-name>roueA</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name>
     <object-name>bol</object-name>
     <object-name>toitverriere</object-name>
-    <object-name>helice</object-name>
     <object-name>axeA</object-name>
     <object-name>axeG</object-name>
     <object-name>axeD</object-name>
@@ -87,6 +97,12 @@
     <object-name>protege</object-name>
     <object-name>tringleG</object-name>
     <object-name>tringleD</object-name>
+
+    <object-name>helice</object-name>
+    <object-name>roueA</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>echappe</object-name>
     <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
@@ -123,6 +139,32 @@
 -->
   </animation>
 
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>aile</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>bol</object-name>
+    <object-name>toitverriere</object-name>
+    <object-name>axeA</object-name>
+    <object-name>axeG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>tourverriere</object-name>
+    <object-name>antenne</object-name>
+    <object-name>protege</object-name>
+    <object-name>tringleG</object-name>
+    <object-name>tringleD</object-name>
+  </effect>
+
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
@@ -147,48 +189,25 @@
     <object-name>propblur</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/DR400/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.045 </z-m>
+    </offsets>
+  </model>
+
   <!-- Interieur -->
   <model>
     <path>Aircraft/DR400/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
-      <roll-deg>    0.0 </roll-deg>
-      <pitch-deg>   0.0 </pitch-deg>
-      <heading-deg> 0.0 </heading-deg>
-    </offsets>
   </model>
 
   <!-- Immatriculatoin -->
   <model>
     <path>Aircraft/DR400/Models/Immat/immat.xml</path>
-    <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
-      <roll-deg>    0.0 </roll-deg>
-      <pitch-deg>   0.0 </pitch-deg>
-      <heading-deg> 0.0 </heading-deg>
-    </offsets>
   </model>
-
-  <!-- Une ombre pour OSG -->
-  <model>
-    <name>shadowOSG</name>
-    <path>Aircraft/DR400/Models/shadow.xml</path>
-  </model>
-
-  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <equals>
-        <property>sim[0]/rendering/shadows-ac</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation>
 
   <!-- L'hélice --> 
   <animation>
@@ -315,12 +334,12 @@
       <entry><ind>  0.75 </ind><dep> -10 </dep></entry>
     </interpolation>
     <axis>
-      <x1-m> -0.457 </x1-m>
+      <x1-m> -0.428 </x1-m>
       <y1-m> -2.752 </y1-m>
       <z1-m> -0.382 </z1-m>
-      <x2-m> -1.058 </x2-m>
-      <y2-m> -4.331 </y2-m>
-      <z2-m>  0.006 </z2-m>
+      <x2-m> -1.028 </x2-m>
+      <y2-m> -4.325 </y2-m>
+      <z2-m>  0.005 </z2-m>
     </axis>
   </animation>
 
@@ -334,12 +353,12 @@
       <entry><ind>  0.75 </ind><dep>  15 </dep></entry>
     </interpolation>
     <axis>
-      <x1-m> -0.457 </x1-m>
+      <x1-m> -0.428 </x1-m>
       <y1-m>  2.752 </y1-m>
       <z1-m> -0.382 </z1-m>
-      <x2-m> -1.058 </x2-m>
-      <y2-m>  4.331 </y2-m>
-      <z2-m>  0.006 </z2-m>
+      <x2-m> -1.028 </x2-m>
+      <y2-m>  4.325 </y2-m>
+      <z2-m>  0.005 </z2-m>
     </axis>
   </animation>
 
