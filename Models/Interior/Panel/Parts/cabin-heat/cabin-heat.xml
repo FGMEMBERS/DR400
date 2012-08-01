@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>cabin-heat.ac</path>
+   
+  <animation>
+    <object-name>support</object-name>
+    <object-name>manette001</object-name>
+    <object-name>manette002</object-name>
+    <object-name>manette003</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>manette001</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/pressurization/outflow-valve</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>manette001</object-name>
+    <property>controls/pressurization/outflow-valve</property>
+    <factor>0.018</factor>
+    <axis>
+      <x> 6 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!--
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>manette002</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/pressurization/outflow-valve</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>manette002</object-name>
+    <property>controls/pressurization/outflow-valve</property>
+    <factor> 0.018 </factor>
+    <axis>
+      <x> 6 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>manette003</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/pressurization/outflow-valve</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>manette003</object-name>
+    <property>controls/pressurization/outflow-valve</property>
+    <factor> 0.018 </factor>
+    <axis>
+      <x> 6 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation
+  -->
+  
+</PropertyList>
+

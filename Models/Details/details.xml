@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>details.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>ecrous-canopy</object-name>
+    <object-name>vis-bol</object-name>
+    <object-name>vis_sabotAB</object-name>
+    <object-name>vis_sabotAH</object-name>
+    <object-name>vis_sabotD</object-name>
+    <object-name>vis_sabotG</object-name>
+    <object-name>vis_profondeur</object-name>
+
+    <object-name>ecrou_vis</object-name>
+  </animation>
+
+  <!-- Bol -->
+  <animation>
+    <type>spin</type>
+    <object-name>vis-bol</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> -3.274 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.029 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>vis_profondeur</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <interpolation>
+      <entry><ind> -0.75 </ind><dep> -12.0 </dep></entry>
+      <entry><ind>  0.00 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>   9.5 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 2.543 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.154 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Canopy -->
+  <animation>
+    <name>LaVerriereDetail</name>
+    <object-name>ecrous-canopy</object-name>
+    <object-name>ecrous_verriere</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>LaVerriereDetail</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.8 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Compression -->
+  <animation>
+    <type>translate</type>
+    <object-name>vis_sabotAB</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.029387 </x>
+      <y>  0.000000 </y>
+      <z> -0.155914 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>vis_sabotG</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.029387 </x>
+      <y>  0.000000 </y>
+      <z> -0.155914 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>vis_sabotD</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -0.25 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -0.029387 </x>
+      <y>  0.000000 </y>
+      <z> -0.155914 </z>
+    </axis>
+  </animation>
+
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>vis_sabotAH</object-name>
+    <object-name>vis_sabotAB</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> -2.560 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.980 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

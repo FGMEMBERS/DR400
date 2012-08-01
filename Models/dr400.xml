@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -30,7 +30,8 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>aile</object-name>
+    <object-name>bouchon_reservoir</object-name>
+    <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -49,26 +50,34 @@
     <object-name>tourverriere</object-name>
     <object-name>antenne</object-name>
     <object-name>protege</object-name>
+    <object-name>poignees_bas</object-name>
+    <object-name>poignees_haut</object-name>
+    <object-name>strobe</object-name>
+    <object-name>garmin</object-name>
+
     <object-name>tringleG</object-name>
     <object-name>tringleD</object-name>
-
     <object-name>helice</object-name>
+    <object-name>troucacheA</object-name>
     <object-name>roueA</object-name>
+    <object-name>troucacheG</object-name>
     <object-name>roueG</object-name>
+    <object-name>troucacheD</object-name>
     <object-name>roueD</object-name>
     <object-name>echappe</object-name>
     <object-name>trous</object-name>
+    <object-name>axeflapsG</object-name>
+    <object-name>axeflapsD</object-name>
+    <object-name>tringleaileronG</object-name>
+    <object-name>tringleaileronD</object-name>
+    <object-name>lampe_aile</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>lampe</object-name>
-    <object-name>lampetoitOn</object-name>
-    <object-name>lampeGOn</object-name>
-    <object-name>lampeDOn</object-name>
-    <object-name>lampetoitOff</object-name>
-    <object-name>lampeGOff</object-name>
-    <object-name>lampeDOff</object-name>
+    <object-name>verriereAR</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>strobetrs</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
@@ -76,7 +85,8 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
-    <object-name>aile</object-name>
+    <object-name>bouchon_reservoir</object-name>
+    <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -95,54 +105,48 @@
     <object-name>tourverriere</object-name>
     <object-name>antenne</object-name>
     <object-name>protege</object-name>
+    <object-name>poignees_bas</object-name>
+    <object-name>poignees_haut</object-name>
+    <object-name>strobe</object-name>
+    <object-name>garmin</object-name>
+
     <object-name>tringleG</object-name>
     <object-name>tringleD</object-name>
-
     <object-name>helice</object-name>
+    <object-name>troucacheA</object-name>
     <object-name>roueA</object-name>
+    <object-name>troucacheG</object-name>
     <object-name>roueG</object-name>
+    <object-name>troucacheD</object-name>
     <object-name>roueD</object-name>
     <object-name>echappe</object-name>
     <object-name>trous</object-name>
+    <object-name>axeflapsG</object-name>
+    <object-name>axeflapsD</object-name>
+    <object-name>tringleaileronG</object-name>
+    <object-name>tringleaileronD</object-name>
+    <object-name>lampe_aile</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
-    <object-name>aile</object-name>
+    <object-name>bouchon_reservoir</object-name>
+    <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
     <object-name>voletG</object-name>
@@ -161,8 +165,10 @@
     <object-name>tourverriere</object-name>
     <object-name>antenne</object-name>
     <object-name>protege</object-name>
-    <object-name>tringleG</object-name>
-    <object-name>tringleD</object-name>
+    <object-name>poignees_bas</object-name>
+    <object-name>poignees_haut</object-name>
+    <object-name>strobe</object-name>
+    <object-name>garmin</object-name>
   </effect>
 
   <animation>
@@ -170,32 +176,36 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>lampe</object-name>
+    <object-name>verriereAR</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>strobetrs</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>lampe</object-name>
-    <object-name>lampetoitOn</object-name>
-    <object-name>lampeGOn</object-name>
-    <object-name>lampeDOn</object-name>
-    <object-name>lampetoitOff</object-name>
-    <object-name>lampeGOff</object-name>
-    <object-name>lampeDOff</object-name>
+    <object-name>verriereAR</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>strobetrs</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
-
+<!--
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+  </effect>
+-->
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/DR400/Models/shadow.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -1.045 </z-m>
+      <z-m> -1.040 </z-m>
     </offsets>
   </model>
 
@@ -207,6 +217,56 @@
   <!-- Immatriculatoin -->
   <model>
     <path>Aircraft/DR400/Models/Immat/immat.xml</path>
+  </model>
+
+  <!-- Détails -->
+  <model>
+    <path>Aircraft/DR400/Models/Details/details.xml</path>
+    <condition>
+      <property>sim/model/config/details-high</property>
+    </condition>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/DR400/Models/Effects/ground/ground0.xml</path>   
+    <offsets>
+      <x-m> -2.560 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.115 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cranking effects -->
+  <model>
+    <path>Aircraft/DR400/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.544 </x-m>
+      <y-m>  0.297 </y-m>
+      <z-m> -0.588 </z-m>
+      <pitch-deg>  45 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/DR400/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m>  1.020 </x-m>
+      <y-m> -1.236 </y-m>
+      <z-m> -1.115 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/DR400/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m>  1.020 </x-m>
+      <y-m>  1.236 </y-m>
+      <z-m> -1.115 </z-m>
+    </offsets>
   </model>
 
   <!-- L'hélice --> 
@@ -314,12 +374,12 @@
       <entry><ind>  0.75 </ind><dep>  25 </dep></entry>
     </interpolation>
     <axis>
-      <x1-m>  2.824 </x1-m>
+      <x1-m>  2.878 </x1-m>
       <y1-m>  0.000 </y1-m>
-      <z1-m> -0.200 </z1-m>
-      <x2-m>  3.062 </x2-m>
+      <z1-m> -0.193 </z1-m>
+      <x2-m>  3.093 </x2-m>
       <y2-m>  0.000 </y2-m>
-      <z2-m>  1.113 </z2-m>
+      <z2-m>  1.096 </z2-m>
     </axis>
   </animation>
 
@@ -329,17 +389,17 @@
     <object-name>aileronG</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
     <interpolation>
-      <entry><ind> -0.75 </ind><dep>  15 </dep></entry>
+      <entry><ind> -0.75 </ind><dep> -15 </dep></entry>
       <entry><ind>  0.00 </ind><dep>   0 </dep></entry>
-      <entry><ind>  0.75 </ind><dep> -10 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>  10 </dep></entry>
     </interpolation>
     <axis>
-      <x1-m> -0.428 </x1-m>
-      <y1-m> -2.752 </y1-m>
-      <z1-m> -0.382 </z1-m>
-      <x2-m> -1.028 </x2-m>
-      <y2-m> -4.325 </y2-m>
-      <z2-m>  0.005 </z2-m>
+      <x1-m> -1.031 </x1-m>
+      <y1-m> -4.331 </y1-m>
+      <z1-m> -0.002 </z1-m>
+      <x2-m> -0.430 </x2-m>
+      <y2-m> -2.751 </y2-m>
+      <z2-m> -0.390 </z2-m>
     </axis>
   </animation>
 
@@ -348,17 +408,17 @@
     <object-name>aileronD</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
     <interpolation>
-      <entry><ind> -0.75 </ind><dep> -10 </dep></entry>
+      <entry><ind> -0.75 </ind><dep> -15 </dep></entry>
       <entry><ind>  0.00 </ind><dep>   0 </dep></entry>
-      <entry><ind>  0.75 </ind><dep>  15 </dep></entry>
+      <entry><ind>  0.75 </ind><dep>  10 </dep></entry>
     </interpolation>
     <axis>
-      <x1-m> -0.428 </x1-m>
-      <y1-m>  2.752 </y1-m>
-      <z1-m> -0.382 </z1-m>
-      <x2-m> -1.028 </x2-m>
-      <y2-m>  4.325 </y2-m>
-      <z2-m>  0.005 </z2-m>
+      <x1-m> -0.430 </x1-m>
+      <y1-m>  2.751 </y1-m>
+      <z1-m> -0.390 </z1-m>
+      <x2-m> -1.031 </x2-m>
+      <y2-m>  4.331 </y2-m>
+      <z2-m> -0.002 </z2-m>
     </axis>
   </animation>
 
@@ -391,6 +451,7 @@
     <name>RoueAvant</name>
     <object-name>roueA</object-name>
     <object-name>cacheA</object-name>
+    <object-name>troucacheA</object-name>
   </animation>
 
   <animation>
@@ -412,6 +473,7 @@
     <name>RoueGauche</name>
     <object-name>roueG</object-name>
     <object-name>cacheG</object-name>
+    <object-name>troucacheG</object-name>
   </animation>
 
   <animation>
@@ -433,6 +495,7 @@
     <name>RoueDroite</name>
     <object-name>roueD</object-name>
     <object-name>cacheD</object-name>
+    <object-name>troucacheD</object-name>
   </animation>
 
   <animation>
@@ -456,6 +519,7 @@
     <object-name>axeA</object-name>
     <object-name>cacheA</object-name>
     <object-name>roueA</object-name>
+    <object-name>troucacheA</object-name>
   </animation>
 
   <animation>
@@ -555,7 +619,7 @@
     <name>Nav1-Light</name>
     <path>Aircraft/DR400/Models/light/beacon.xml</path>
     <offsets>
-      <x-m> 0.708 </x-m>
+      <x-m> 0.872 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.527 </z-m>
     </offsets>
@@ -592,10 +656,7 @@
     <type>select</type>
     <object-name>AllNavLight</object-name>
     <condition>
-      <equals>
-        <property>controls/switches/nav-lights</property>
-        <value> 1 </value>
-      </equals>
+      <property>sim/model/lights/nav-lights</property>
     </condition>
   </animation>
 
@@ -603,8 +664,8 @@
     <name>Strobe1-Light</name>
     <path>Aircraft/DR400/Models/light/StrobeWhite.xml</path>
     <offsets>
-      <x-m> -1.297 </x-m>
-      <y-m> -4.253 </y-m>
+      <x-m> -1.397 </x-m>
+      <y-m> -4.353 </y-m>
       <z-m>  0.005 </z-m>
     </offsets>
   </model>
@@ -613,10 +674,10 @@
     <name>Strobe2-Light</name>
     <path>Aircraft/DR400/Models/light/StrobeWhite.xml</path>
     <offsets>
-      <x-m> -1.297 </x-m>
-      <y-m>  4.253 </y-m>
+      <x-m> -1.397 </x-m>
+      <y-m>  4.353 </y-m>
       <z-m>  0.005 </z-m>
-   </offsets>
+    </offsets>
   </model>
 
   <animation>
@@ -629,13 +690,11 @@
     <type>select</type>
     <object-name>AllStrobeLight</object-name>
     <condition>
-      <equals>
-        <property>controls/switches/strobe-lights</property>
-        <value> 1 </value>
-      </equals>
+      <property>sim/model/lights/strobe-lights</property>
     </condition>
   </animation>
 
+  <!-- light cone -->
   <model>
     <name>NozeGear</name>
     <path>Aircraft/DR400/Models/light/WhiteLight.xml</path>
@@ -646,9 +705,8 @@
     </offsets>
   </model>
 
-  <!-- Gear light cone -->
   <model>
-    <name>Taxi-Light</name>
+    <name>TaxiLight</name>
     <path>Aircraft/DR400/Models/light/light-cone.xml</path>
     <offsets>
       <x-m> -2.574 </x-m>
@@ -660,7 +718,7 @@
 
   <animation>
     <name>AllGearLight</name>
-    <object-name>Taxi-Light</object-name>
+    <object-name>TaxiLight</object-name>
     <object-name>NozeGear</object-name>
   </animation>
 
@@ -683,12 +741,12 @@
 
   <animation>
     <type>select</type>
-    <object-name>Taxi-Light</object-name>
+    <object-name>AllGearLight</object-name>
     <condition>
-      <equals>
-        <property>controls/switches/taxi-lights</property>
-        <value> 1 </value>
-      </equals>
+      <and>
+        <property>sim/model/lights/taxi-lights</property>
+        <property>sim/model/config/light-cone</property>
+      </and>
     </condition>
   </animation>
 
@@ -735,10 +793,10 @@
     <type>select</type>
     <object-name>AllWingLight</object-name>
     <condition>
-      <equals>
-        <property>controls/switches/landing-light</property>
-        <value> 1 </value>
-      </equals>
+      <and>
+        <property>sim/model/lights/landing-lights</property>
+        <property>sim/model/config/light-cone</property>
+      </and>
     </condition>
   </animation>
 

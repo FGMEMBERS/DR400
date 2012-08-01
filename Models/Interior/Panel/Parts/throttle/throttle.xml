@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>throttle.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>manette</object-name>
+    <object-name>throttleplus</object-name>
+    <object-name>throttlemoins</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Manette des gazs -->
+  <animation>
+    <type>translate</type>
+    <object-name>manette</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor>-0.125</factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>manette</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/throttle-coupled</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>dr400.set_levers("throttle",0,-1,1);</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/throttle-coupled</property>
+          <value>1</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>throttleplus</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>throttlemoins</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+</PropertyList>

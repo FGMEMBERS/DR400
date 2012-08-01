@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>support2.ac</path>
+
+  <model>
+    <name>Garmin 196</name>
+    <path>Aircraft/Instruments-3d/garmin196/garmin196.xml</path>
+  </model>
+
+</PropertyList>

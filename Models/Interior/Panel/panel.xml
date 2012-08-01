@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
+<!--
+          2008 : Created by Helijah
+    April 2012 : Modified by PAF team
+      May 2012 : Updated by Helijah
+-->
 <PropertyList>
 
   <!-- Based on http://www.aeroclub-montpellier.com/flotte/F-GOZZ/Tableau.jpg -->
@@ -8,29 +13,178 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>panel1</object-name>
-    <object-name>panel2</object-name>
-    <object-name>panel3</object-name>
-    <object-name>labels</object-name>
     <object-name>flaps</object-name>
-    <object-name>flapsindicator</object-name>
+    <object-name>labels</object-name>
+    <object-name>panel0</object-name>
+    <object-name>panel1</object-name>
+    <object-name>panel3</object-name>
+    <object-name>paneltop</object-name>
     <object-name>rouetrim</object-name>
-    <object-name>trottleplus</object-name>
-    <object-name>trottlemoins</object-name>
-    <object-name>flaps0</object-name>
-    <object-name>flaps1</object-name>
-    <object-name>flaps1</object-name>
-    <object-name>mixtureplus</object-name>
-    <object-name>mixturemoins</object-name>
 
     <!-- Objets transparents -->
   </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>labels</object-name>
+    <object-name>panel0</object-name>
+    <object-name>panel1</object-name>
+    <object-name>panel3</object-name>
+    <emission>
+      <red>   0.05 </red>
+      <green> 0.02 </green>
+      <blue>  0.02 </blue>
+      <factor-prop>systems/electrical/outputs/panel-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- 
+       ################################################################
+       PARTS : Audio plug, Throttle, Mixture and trim indicator, Flaps,
+               Fuel valve, Trims, Glove compartment, Cabin Heat, Fuse,
+               Parking brake, Carb Heat
+       ################################################################
+  -->
+
+  <!-- Pilot audio plug -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/audio-plug/audio-plug.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.435 </y-m>
+      <z-m> -0.038 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CoPilot audio plug -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/audio-plug/audio-plug.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m>  0.435 </y-m>
+      <z-m> -0.038 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilot throttle -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/throttle/throttle.xml</path>
+    <offsets>
+      <x-m>  0.110 </x-m>
+      <y-m> -0.457 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CoPilot throttle -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/throttle/throttle.xml</path>
+    <offsets>
+      <x-m> 0.110 </x-m>
+      <y-m> 0.074 </y-m>
+      <z-m> 0.063 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Mixture and trim indicator -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/mixture-trimsindicator/mixture-trimsindicator.xml</path>
+    <offsets>
+      <x-m>  0.133 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.140 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Glove compartment -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/charts/charts.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m>  0.333 </y-m>
+      <z-m> -0.018 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cabin Heat -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/cabin-heat/cabin-heat.xml</path>
+    <offsets>
+      <x-m>  0.111 </x-m>
+      <y-m>  0.452 </y-m>
+      <z-m>  0.030 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Parking break -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/parking-brake/parking-brake.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.091 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Carb Heat -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/carb-heat/carb-heat.xml</path>
+    <offsets>
+      <x-m>  0.028 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fuel valve --> 
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/fuel-valve/fuel-valve.xml</path>
+    <offsets>
+      <x-m>  0.196 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.208 </z-m>
+      <pitch-deg> -70 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Fuse -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/fuse/fuse.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m>  0.320 </y-m>
+      <z-m> -0.038 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Magnetos -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/magneto/magneto.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.304 </y-m>
+      <z-m> -0.054 </z-m>
+    </offsets>
+  </model>
+
+  <!-- All screws -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Parts/screws/all-screws.xml</path>
+  </model>
+
+  <!--
+       ################################################################
+       INSTRUMENTS : ALT, ADF, AI, ASI, RPM, EGT, HDG, HI, VSI, Turn,
+                     Fuel-press, Clock, KI206, KR87, KX165, Volts,
+                     Warning lights, Oil-temp, Oil-press, Garmin196, ELT
+       ################################################################
+  -->
 
   <!-- ASI -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.112 </x-m>
+      <x-m>  0.114 </x-m>
       <y-m> -0.300 </y-m>
       <z-m>  0.208 </z-m>
     </offsets>
@@ -40,7 +194,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.105 </x-m>
+      <x-m>  0.114 </x-m>
       <y-m> -0.196 </y-m>
       <z-m>  0.209 </z-m>
     </offsets>
@@ -50,9 +204,9 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.112 </x-m>
-      <y-m> -0.093 </y-m>
-      <z-m>  0.208 </z-m>
+      <x-m>  0.1140 </x-m>
+      <y-m> -0.0930 </y-m>
+      <z-m>  0.2095 </z-m>
     </offsets>
   </model>
 
@@ -60,9 +214,9 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
     <offsets>
-      <x-m>  0.112 </x-m>
+      <x-m>  0.114 </x-m>
       <y-m>  0.006 </y-m>
-      <z-m>  0.208 </z-m>
+      <z-m>  0.210 </z-m>
     </offsets>
   </model>
 
@@ -73,15 +227,15 @@
       <x-m>  0.112 </x-m>
       <y-m> -0.300 </y-m>
       <z-m>  0.109 </z-m>
-    </offsets>
+   </offsets>
   </model>
 
-  <!-- HDG -->
+  <!-- ADF -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/adf/adf.xml</path>
     <offsets>
-      <x-m>  0.112 </x-m>
-      <y-m> -0.196 </y-m>
+      <x-m>  0.114 </x-m>
+      <y-m>  0.006 </y-m>
       <z-m>  0.109 </z-m>
     </offsets>
   </model>
@@ -90,18 +244,18 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.112 </x-m>
+      <x-m>  0.114 </x-m>
       <y-m> -0.093 </y-m>
       <z-m>  0.109 </z-m>
-    </offsets>
+   </offsets>
   </model>
 
-  <!-- ADF -->
+  <!-- HI -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/adf/adf.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/hi/hi.xml</path>
     <offsets>
-      <x-m>  0.112 </x-m>
-      <y-m>  0.006 </y-m>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.196 </y-m>
       <z-m>  0.109 </z-m>
     </offsets>
   </model>
@@ -110,17 +264,17 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/clock/clock.xml</path>
     <offsets>
-      <x-m>  0.110 </x-m>
+      <x-m>  0.114 </x-m>
       <y-m> -0.392 </y-m>
       <z-m>  0.112 </z-m>
-    </offsets>
+   </offsets>
   </model>
 
   <!-- RPM -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
-      <x-m>  0.115 </x-m>
+      <x-m>  0.112 </x-m>
       <y-m> -0.094 </y-m>
       <z-m>  0.014 </z-m>
     </offsets>
@@ -130,7 +284,7 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/egt/egt.xml</path>
     <offsets>
-      <x-m> 0.112 </x-m>
+      <x-m> 0.117 </x-m>
       <y-m> 0.354 </y-m>
       <z-m> 0.115 </z-m>
     </offsets>
@@ -146,49 +300,11 @@
     </offsets>
   </model>
 
-  <!-- Fuel Left, Center, Right -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelL.xml</path>
-    <offsets>
-      <x-m>  0.115 </x-m>
-      <y-m> -0.165 </y-m>
-      <z-m> -0.050 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelC.xml</path>
-    <offsets>
-      <x-m>  0.115 </x-m>
-      <y-m> -0.095 </y-m>
-      <z-m> -0.050 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelR.xml</path>
-    <offsets>
-      <x-m>  0.115 </x-m>
-      <y-m> -0.028 </y-m>
-      <z-m> -0.050 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Charge -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/charge/charge.xml</path>
-    <offsets>
-      <x-m>  0.115 </x-m>
-      <y-m> -0.233 </y-m>
-      <z-m> -0.050 </z-m>
-    </offsets>
-  </model>
-
   <!-- Température d'huile -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/oil-temp/oil-temp.xml</path>
     <offsets>
-      <x-m>  0.115 </x-m>
+      <x-m>  0.112 </x-m>
       <y-m> -0.171 </y-m>
       <z-m>  0.027 </z-m>
     </offsets>
@@ -198,19 +314,9 @@
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/oil-press/oil-press.xml</path>
     <offsets>
-      <x-m>  0.115 </x-m>
+      <x-m>  0.112 </x-m>
       <y-m> -0.235 </y-m>
       <z-m>  0.027 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Pression d'essence -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel-press/fuel-press.xml</path>
-    <offsets>
-      <x-m> 0.115 </x-m>
-      <y-m> 0.013 </y-m>
-      <z-m> 0.030 </z-m>
     </offsets>
   </model>
 
@@ -224,29 +330,74 @@
     </offsets>
   </model>
 
- <!-- KT76A -->
+  <!-- Pression d'essence -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel-press/fuel-press.xml</path>
     <offsets>
-      <x-m> 0.103 </x-m>
-      <y-m> 0.151 </y-m>
-      <z-m> 0.129 </z-m>
+      <x-m> 0.112 </x-m>
+      <y-m> 0.013 </y-m>
+      <z-m> 0.030 </z-m>
     </offsets>
   </model>
 
- <!-- KX165 -->
+  <!-- KR87 ADF receiver -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/kr87-adf/kr87.xml</path>
+    <offsets>
+      <x-m> 0.112 </x-m>
+      <y-m> 0.151 </y-m>
+      <z-m> 0.099 </z-m>
+    </offsets>
+  </model>
+
+  <!-- KX165-->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/kx165/kx165-1.xml</path>
+    <offsets>
+      <x-m> 0.103 </x-m>
+      <y-m> 0.151 </y-m>
+      <z-m> 0.143 </z-m>
+    </offsets>
+  </model>
+
+ <!-- KX165
   <model>
     <path>Aircraft/Instruments-3d/kx165/kx165-1.xml</path>
     <offsets>
       <x-m> 0.103 </x-m>
       <y-m> 0.151 </y-m>
-      <z-m> 0.177 </z-m>
+      <z-m> 0.143 </z-m>
+    </offsets>
+  </model> -->
+
+  <!-- Charge -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/charge/charge.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.233 </y-m>
+      <z-m> -0.050 </z-m>
     </offsets>
   </model>
 
-  <!-- Toutes les visses -->
+  <!-- Garmin GPS196 -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/full-vis.xml</path>
+    <path>Aircraft/Instruments-3d/garmin196/garmin196.xml</path>
+    <offsets>
+      <x-m> 0.110 </x-m>
+      <y-m> 0.152 </y-m>
+      <z-m> 0.208 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Garmin GPS196 support -->
+  <model>
+  <path>Aircraft/DR400/Models/Interior/Panel/Instruments/garmin196/garmin196_support2.xml</path>
+    <offsets>
+      <x-m> 0.111</x-m>
+      <y-m> 0.152 </y-m>
+      <z-m> 0.208 </z-m>
+    </offsets>
   </model>
 
   <!-- Les alertes -->
@@ -259,9 +410,118 @@
     </offsets>
   </model>
 
-  <!-- Commutateurs -->
+  <!-- ELT -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/atterr.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/elt/ArtexELT.xml</path>
+    <offsets>
+      <x-m>  0.178 </x-m>
+      <y-m>  0.007 </y-m>
+      <z-m>  0.293 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fuel Left, Center, Right -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelL.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.165 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelC.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.095 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/fuel/fuelR.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.028 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+
+  <!-- 
+       ################################################################
+       #                            TEXT                              #
+       ################################################################
+  -->
+
+  <!-- Plaque bagages passagers -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/plaques/plaque_bagages.xml</path>
+    <offsets>
+      <x-m>  2.498 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.132 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Plaque restriction bas de tableau -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/plaques/plaque_restriction.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m>  -0.203 </y-m>
+      <z-m>  -0.012 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Plaque grade du bas de tableau -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/plaques/plaque.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m>  0.174 </y-m>
+      <z-m>  0.002 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Plaque pompe fuel -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/plaques/plaque_pump.xml</path>
+    <offsets>
+      <x-m>  0.116 </x-m>
+      <y-m> 0.033 </y-m>
+      <z-m>  -0.071 </z-m>
+    </offsets>
+  </model>
+   
+  <!-- Plaque frein parking -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/plaques/plaque_frein.xml</path>
+    <offsets>
+      <x-m>  0.132 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m>  -0.124 </z-m>
+    </offsets>
+  </model>
+    
+  <!-- Plaque rechauffe carbu -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/plaques/plaque_anti-ice.xml</path>
+    <offsets>
+      <x-m>  0.120 </x-m>
+      <y-m> -0.029 </y-m>
+      <z-m>  0.013 </z-m>
+    </offsets>
+  </model>
+
+  <!--
+       ########################################
+       ##              SWITCHS               ##
+       ########################################
+  -->
+  <!-- Landing lights switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/landing-lights.xml</path>
     <offsets>
       <x-m> 0.177 </x-m>
       <y-m> 0.181 </y-m>
@@ -269,8 +529,9 @@
     </offsets>
   </model>
 
+  <!-- Taxi lights switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/roulag.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/taxi-lights.xml</path>
     <offsets>
       <x-m> 0.177 </x-m>
       <y-m> 0.203 </y-m>
@@ -278,8 +539,9 @@
     </offsets>
   </model>
 
+  <!-- Strobe lights switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/strobe.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/strobe-lights.xml</path>
     <offsets>
       <x-m> 0.177 </x-m>
       <y-m> 0.227 </y-m>
@@ -287,8 +549,9 @@
     </offsets>
   </model>
 
+  <!-- Nav lights switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/nav.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/nav-lights.xml</path>
     <offsets>
       <x-m> 0.177 </x-m>
       <y-m> 0.250 </y-m>
@@ -296,57 +559,9 @@
     </offsets>
   </model>
 
+  <!-- Instruments lights regulator -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/on-off.xml</path>
-    <offsets>
-      <x-m> 0.177 </x-m>
-      <y-m> 0.273 </y-m>
-      <z-m> 0.291 </z-m>
-    </offsets>
-  </model>
-
-  <!-- battery switch -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/battery.xml</path>
-    <offsets>
-      <x-m>  0.113 </x-m>
-      <y-m> -0.376 </y-m>
-      <z-m> -0.057 </z-m>
-    </offsets>
-  </model>
-
-  <!-- alternator switch -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/alternator.xml</path>
-    <offsets>
-      <x-m>  0.113 </x-m>
-      <y-m> -0.356 </y-m>
-      <z-m> -0.057 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Les switch -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/switch.xml</path>
-    <offsets>
-      <x-m>  0.177 </x-m>
-      <y-m> -0.255 </y-m>
-      <z-m>  0.295 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/switch.xml</path>
-    <offsets>
-      <x-m>  0.178 </x-m>
-      <y-m> -0.017 </y-m>
-      <z-m>  0.296 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Réglages des lumières -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/lights.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/instrument-lights.xml</path>
     <offsets>
       <x-m> 0.181 </x-m>
       <y-m> 0.054 </y-m>
@@ -354,8 +569,9 @@
     </offsets>
   </model>
 
+  <!-- Desk lights regulator -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/lights.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/desk-lights.xml</path>
     <offsets>
       <x-m> 0.181 </x-m>
       <y-m> 0.097 </y-m>
@@ -363,8 +579,9 @@
     </offsets>
   </model>
 
+  <!-- Radio lights regulator -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/lights.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/radio-lights.xml</path>
     <offsets>
       <x-m> 0.181 </x-m>
       <y-m> 0.140 </y-m>
@@ -372,179 +589,107 @@
     </offsets>
   </model>
 
-  <!-- Manette des gaz -->
+  <!-- alternator switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/throttle.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/alternator.xml</path>
     <offsets>
-      <x-m>  0.026 </x-m>
-      <y-m> -0.457 </y-m>
-      <z-m>  0.063 </z-m>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.356 </y-m>
+      <z-m> -0.050 </z-m>
     </offsets>
   </model>
 
+  <!-- Warning test switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/throttle.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/warning-test.xml</path>
     <offsets>
-      <x-m> 0.026 </x-m>
-      <y-m> 0.074 </y-m>
-      <z-m> 0.063 </z-m>
+      <x-m>  0.177 </x-m>
+      <y-m> -0.255 </y-m>
+      <z-m>  0.295 </z-m>
     </offsets>
   </model>
 
-  <!-- Mixture -->
+  <!-- battery switch -->
   <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/divers/mixture.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/battery.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.018 </y-m>
-      <z-m> -0.190 </z-m>
-      <pitch-deg>  -9 </pitch-deg>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.376 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- fuel-pump switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/fuel-pump.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m>  0.034 </y-m>
+      <z-m> -0.050 </z-m>
     </offsets>
   </model>
 
+  <!--
+       ########################################
+       ##            ANIMATIONS              ##
+       ########################################
+  -->
+  <!-- Trims wheel -->
   <animation>
     <type>pick</type>
-    <visible>false</visible>
-    <object-name>mixtureplus</object-name>
+    <visible>true</visible>
+    <object-name>rouetrim</object-name>
     <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
+      <button>3</button>
       <binding>
         <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/mixture</property>
-        <step type="double">0.05</step>
+        <property>controls/flight/elevator-trim</property>
+        <step>0.01</step>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/flight/elevator-trim</property>
+        <step>-0.01</step>
       </binding>
     </action>
   </animation>
 
   <animation>
-    <type>pick</type>
-    <visible>false</visible>
-    <object-name>mixturemoins</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/mixture</property>
-        <step type="double">-0.05</step>
-      </binding>          
-    </action>
+    <type>rotate</type>
+    <object-name>rouetrim</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>-180</factor>
+    <center>
+      <x-m>  0.271 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.312 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
-  <!-- Magnetos -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
-    <offsets>
-      <x-m>  0.114 </x-m>
-      <y-m> -0.304 </y-m>
-      <z-m> -0.054 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Levier des volets -->
+  <!-- Flaps handle -->
   <animation>
     <type>rotate</type>
     <object-name>flaps</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
-    <factor> 20 </factor>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 45 </factor>
     <center>
       <x-m>  0.718 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.300 </z-m>
+      <z-m> -0.299 </z-m>
     </center>
     <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <visible>false</visible>
-    <object-name>flaps0</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-assign</command>
-        <property>/controls/flight/flaps</property>
-        <value type="double">0</value>
-      </binding>          
-    </action>
-  </animation>
-                                    
-  <animation>
-    <type>pick</type>
-    <visible>false</visible>
-    <object-name>flaps1</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-assign</command>
-        <property>/controls/flight/flaps</property>
-        <value type="double">0.25</value>
-      </binding>          
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <visible>false</visible>
-    <object-name>flaps2</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-assign</command>
-        <property>/controls/flight/flaps</property>
-        <value type="double">1</value>
-      </binding>          
-    </action>
-  </animation>
-                                    
-  <animation>
-    <type>translate</type>
-    <object-name>flapsindicator</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
-    <factor> 0.07 </factor>
-    <axis>
-      <x>  0.27 </x>
-      <y>  0.00 </y>
-      <z> -0.66 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <visible>false</visible>
-    <object-name>trottleplus</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/throttle</property>
-        <step type="double">0.05</step>
-      </binding>
-    </action>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <visible>false</visible>
-    <object-name>trottlemoins</object-name>
-    <action>
-      <button>0</button>
-      <repeatable>true</repeatable>
-      <binding>
-        <command>property-adjust</command>
-        <property>/controls/engines/engine[0]/throttle</property>
-        <step type="double">-0.05</step>
-      </binding>          
-    </action>
   </animation>
 
 </PropertyList>

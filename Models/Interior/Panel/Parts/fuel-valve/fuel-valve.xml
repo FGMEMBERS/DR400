@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>fuel-valve.ac</path>
+    
+  <animation>
+    <object-name>FuelSelect</object-name>
+    <object-name>base</object-name>
+    <object-name>start</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>FuelSelect</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/fuel/tank/to_engine</property>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>start</object-name>
+    <visible>true</visible>
+    <action>
+      <name>starter</name>
+      <button>0</button>
+      <binding>
+        <command>property-assign</command>
+        <property>/controls/engines/engine/starter_cmd</property>
+        <value>1</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/engines/engine/starter_cmd</property>
+          <value>0</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>FuelSelect</object-name>
+    <property>controls/fuel/tank/to_engine</property>
+    <factor> 90 </factor>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>         
+ 
+</PropertyList>
+

@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+  Christian Thiriot "Patten" March 2012
+                                       
+  Updated Helijah May 2012
+-->
 
 <PropertyList>
 
@@ -6,66 +12,188 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>box01</object-name>
-    <object-name>box02</object-name>
-    <object-name>box03</object-name>
-    <object-name>box04</object-name>
-    <object-name>box05</object-name>
-    <object-name>box06</object-name>
-    <object-name>box07</object-name>
-    <object-name>box08</object-name>
-    <object-name>warning01</object-name>
-    <object-name>warning02</object-name>
-    <object-name>warning03</object-name>
-    <object-name>warning04</object-name>
-    <object-name>warning05</object-name>
-    <object-name>warning06</object-name>
-    <object-name>warning07</object-name>
-    <object-name>warning08</object-name>
+    <object-name>fond</object-name>
+    <object-name>warning01.on</object-name>
+    <object-name>warning02.on</object-name>
+    <object-name>warning03.on</object-name>
+    <object-name>warning04.on</object-name>
+    <object-name>warning05.on</object-name>
+    <object-name>warning06.on</object-name>
+    <object-name>warning07.on</object-name>
+    <object-name>warning08.on</object-name>
 
     <!-- Objets transparents -->
   </animation>
 
-  <!-- A revoir ne marche pas  -->
-  <animation>
+   <animation>
     <type>material</type>
-    <object-name>warning03</object-name>
+    <object-name>warning01.on</object-name>
+    <object-name>warning02.on</object-name>
+    <object-name>warning03.on</object-name>
+    <object-name>warning04.on</object-name>
+    <object-name>warning05.on</object-name>
+    <object-name>warning06.on</object-name>
+    <object-name>warning07.on</object-name>
+    <object-name>warning08.on</object-name>
     <condition>
-      <and>
-        <and>
-         <less-than>
-           <property>consumables/fuel/tank[0]/level-lbs</property>
-           <value>15.43</value> <!-- 10 litres -->
-         </less-than>
-         <less-than>
-           <property>consumables/fuel/tank[1]/level-lbs</property>
-           <value>15.43</value> <!-- 10 litres -->
-         </less-than>
-        </and>
-        <less-than>
-          <property>consumables/fuel/tank[2]/level-lbs</property>
-          <value>15.43</value> <!-- 10 litres -->
-        </less-than>
-      </and>
+      <or>
+        <not><property>controls/lighting/warning-mode</property></not>
+        <property>controls/lighting/warning-test</property>
+      </or>
     </condition>
     <emission>
-      <red>   1.0 </red>
-      <green> 1.0 </green>
-      <blue>  1.0 </blue>
+      <red>   0.035 </red>
+      <green> 0.035 </green>
+      <blue>  0.035 </blue>
+      <factor-prop>systems/electrical/volts</factor-prop>
     </emission>
   </animation>
 
-  <animation>
+   <animation>
     <type>material</type>
-    <object-name>warning06</object-name>
+    <object-name>warning01.on</object-name>
+    <object-name>warning02.on</object-name>
+    <object-name>warning03.on</object-name>
+    <object-name>warning04.on</object-name>
+    <object-name>warning05.on</object-name>
+    <object-name>warning06.on</object-name>
+    <object-name>warning07.on</object-name>
+    <object-name>warning08.on</object-name>
+    <condition>
+      <property>controls/lighting/warning-mode</property>
+    </condition>
     <emission>
-      <red>   1.0 </red>
-      <green> 1.0 </green>
-      <blue>  1.0 </blue>
-      <factor-prop>surface-positions/flap-pos-norm</factor-prop>
+      <red>   0.012 </red>
+      <green> 0.012 </green>
+      <blue>  0.012 </blue>
+      <factor-prop>systems/electrical/volts</factor-prop>
     </emission>
   </animation>
 
+  <!-- Oil pressure : ON if < 14 psi -->
+  <animation>
+    <type>select</type>
+    <object-name>warning01.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <less-than-equals>
+            <property>engines/engine/oil-pressure-psi</property>
+            <value> 14 </value> 
+          </less-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Fuel pressure : ON if < 1.1 psi -->
+  <animation>
+    <type>select</type>
+    <object-name>warning02.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <less-than-equals>
+            <property>engines/engine/fuel-pressure-psi</property>
+            <value> 1.1 </value> 
+          </less-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Fuel level down : ON if < 10 l with 1 l=  0.264172052 gal -->
+  <animation>
+    <type>select</type>
+    <object-name>warning03.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <less-than-equals>
+            <property>consumables/fuel/tank[0]/level-gal_us</property>
+            <value>2.64172052</value> <!-- 10 litres -->
+          </less-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+   
+  <!-- battery charge : on if the engine not running and / or the alternator not engaged -->
+  <animation>
+    <type>select</type>
+    <object-name>warning04.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <not><property>engines/engine/running</property></not>
+          <not><property>controls/engines/engine/master-alt</property></not>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Starter : ON if voltage > 8V -->
+  <animation>
+    <type>select</type>
+    <object-name>warning05.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <greater-than-equals>
+            <property>systems/electrical/outputs/starter</property>
+            <value> 8 </value>
+          </greater-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Flaps : ON if flap down -->
+  <animation>
+    <type>select</type>
+    <object-name>warning06.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <greater-than-equals>
+            <property>surface-positions/flap-pos-norm</property>
+            <value> 0.06 </value>
+          </greater-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
+  <!-- Pito : ON if voltage > 8V -->
+  <animation>
+    <type>select</type>
+    <object-name>warning07.on</object-name>
+    <condition>
+      <and>
+        <or>
+          <greater-than-equals>
+            <property>systems/electrical/outputs/pitot</property>
+            <value> 8 </value> 
+          </greater-than-equals>
+          <property>controls/lighting/warning-test</property>
+        </or>
+        <property>controls/electric/battery-switch</property>
+      </and>
+    </condition>
+  </animation>
+  
 </PropertyList>
 
 
