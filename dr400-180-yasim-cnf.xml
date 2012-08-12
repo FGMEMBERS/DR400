@@ -1,13 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<PropertyList include="dr400-180-base.xml">
+<PropertyList include="dr400-base.xml">
 
   <sim>
 
     <description>Robin DR400-180 (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM), Laurent VROMMAN (FDM), Laurent HAYVEL (texture)</author>
+    <author>Emmanuel BARANGER (3D/FDM), Laurent VROMMAN (FDM), Laurent HAYVEL (texture), PAF Team (system)</author>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">dr400-180-yasim</aero>
+
+    <startup>
+      <splash-texture>Aircraft/DR400/Splash/dr400-180-splash.png</splash-texture>
+    </startup>
+
+    <help>
+      <title>Robin DR400 180</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
 
   </sim>
 

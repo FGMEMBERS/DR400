@@ -33,6 +33,8 @@ Thanks
 Laurent HAYVEL for texture
 Brisa for mixture on panel
 Laurent WROMMAN for new multi FDM
+patten for new texture
+F-JJTH for system
 
 ===============
 BARANGER Emmanuel
@@ -80,6 +82,8 @@ Remerciements
 Laurent HAYVEL pour la texture
 Brisa pour la mixture sur la tableau de bord
 Laurent WROMMAN pour les nouveaux FDM
+patten pour les nouvelles textures
+F-JJTH pour le système
 
 ===============
 BARANGER Emmanuel

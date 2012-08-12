@@ -181,7 +181,7 @@
     <object-name>lampeD</object-name>
     <object-name>strobetrs</object-name>
   </animation>
-
+<!--  NO REMBRANDT support for transparent objects
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
@@ -192,13 +192,14 @@
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
-<!--
+-->
+  <!--  REMBRANDT support for transparent objects -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </effect>
--->
+
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/DR400/Models/shadow.xml</path>

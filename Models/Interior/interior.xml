@@ -29,12 +29,19 @@
     <object-name>intverriere</object-name>
     <object-name>intverriere2</object-name>
   </animation>
-
+<!--
   <animation>
     <type>noshadow</type>
     <object-name>intverriere</object-name>
     <object-name>intverriere2</object-name>
   </animation>
+-->
+  <!--  REMBRANDT support for transparent objects -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </effect>
 
   <animation>
     <type>select</type>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -9,25 +9,44 @@
 
     <fuel-fraction>1.0</fuel-fraction>
 
-    <startup>
-      <splash-texture>Aircraft/DR400/Splash/dr400-180-splash.png</splash-texture>
-    </startup>
-
     <sound>
       <path archive="y">Aircraft/DR400/Sounds/dr400-sound.xml</path>
     </sound>
 
     <model>
       <path archive="y">Aircraft/DR400/Models/dr400.xml</path>
+      <show-immat type="bool">true</show-immat>
       <livery>
         <file type="string">default</file>
       </livery>
+      <lights>
+        <landing-lights>
+          <state type="bool">false</state>
+        </landing-lights>
+        <taxi-lights>
+          <state type="bool">false</state>
+        </taxi-lights>
+        <nav-lights>
+          <state type="bool">false</state>
+        </nav-lights>
+        <strobe-lights>
+          <state type="bool">false</state>
+        </strobe-lights>
+      </lights>
+      <config>
+        <show-pilot type="bool">1</show-pilot>
+        <show-yokes type="bool">1</show-yokes>
+        <light-cone type="bool">1</light-cone>
+        <glass-reflection type="bool">1</glass-reflection>
+        <details-high type="bool">0</details-high>
+        <show-copilot type="bool">0</show-copilot>
+      </config>
     </model>
 
     <flaps>
-      <setting>0.00</setting>
-      <setting>0.25</setting> <!-- 15 deg -->
-      <setting>1.00</setting> <!-- 60 deg -->
+      <setting> 0.00 </setting>
+      <setting> 0.25 </setting> <!-- 15 deg -->
+      <setting> 1.00 </setting> <!-- 60 deg -->
     </flaps>
 
     <multiplay>
@@ -39,9 +58,11 @@
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
         <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <int n="6" alias="/sim/model/lights/nav-lights/state"/>
+        <int n="7" alias="/sim/model/lights/landing-lights/state"/>
+        <int n="8" alias="/sim/model/lights/taxi-lights/state"/>
+        <int n="9" alias="/sim/model/lights/strobe-lights/state"/>
+        <int n="10" alias="/sim/model/show-immat"/>
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
@@ -51,14 +72,6 @@
         <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
-
-    <help>
-      <title>Robin DR400 180</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close canopy</desc>
-      </key>
-    </help>
 
     <menubar include="Dialogs/dr400-menu.xml"/>
 
@@ -90,11 +103,63 @@
         <min-lb>0</min-lb>
     </weight>
 
+    <systems>
+      <electrical>
+        <path></path>
+      </electrical>
+    </systems>
+
   </sim>
  
   <input>
     <keyboard include="Nasal/dr400-keyboard.xml"/>
   </input>
+ 
+  <instrumentation>
+    <elt>
+      <on type="bool">false</on>
+      <armed type="bool">true</armed>
+      <test type="bool">false</test>
+    </elt>
+    <garmin196>
+      <texture-file>../../DR400/Models/Interior/Panel/Instruments/garmin196/coque1.png</texture-file>
+    </garmin196>
+    <comm n="0">
+      <power-btn type="bool">false</power-btn>
+      <volume type="double">0</volume>
+    </comm>
+    <nav n="0">
+      <power-btn type="bool">false</power-btn>
+      <volume type="double">0</volume>
+    </nav>
+    <adf n="0">      
+      <power-btn type="bool">false</power-btn>
+      <volume type="double">0</volume>
+      <adf-btn type="bool">true</adf-btn>
+    </adf>
+  </instrumentation>
+
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+    <lighting>
+      <warning-test type="bool">false</warning-test>
+      <warning-mode type="bool">false</warning-mode>
+    </lighting>
+    <electric>
+      <battery-switch type="bool">false</battery-switch>
+    </electric>
+    <throttle-coupled type="bool">true</throttle-coupled>
+    <mixture-coupled type="bool">true</mixture-coupled>
+    <prop-coupled type="bool">true</prop-coupled>
+    <movement-scale>0.025</movement-scale>
+    <engines>
+      <engine n="0">
+        <starter_cmd type="bool">false</starter_cmd>
+      </engine>
+    </engines>
+  </controls>
  
   <nasal>
     <doors>
@@ -105,8 +170,15 @@
       <file>Aircraft/DR400/Nasal/liveries.nas</file>
       <file>Aircraft/DR400/Nasal/immat.nas</file>
       <file>Aircraft/DR400/Nasal/dr400.nas</file>
+      <file>Aircraft/DR400/Nasal/electrical.nas</file>
       <file>Aircraft/DR400/Nasal/rpm.nas</file>
     </dr400>
+    <garmin196>
+      <file>Aircraft/Instruments-3d/garmin196/garmin196.nas</file>
+    </garmin196>
+    <kr87>
+      <file>Aircraft/DR400/Models/Interior/Panel/Instruments/kr87-adf/kr87.nas</file>
+    </kr87>
   </nasal>
    
 </PropertyList>

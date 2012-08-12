@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Robin DR 400-120 - Laurent Vromman
                         Oliver FAIVRE 30-01-2010
@@ -108,6 +108,7 @@
                             displacement="233.3" 
                             compression="8.5"/>
              <actionpt x="3.146" y="0.0" z="0.029" />
+             <control-input control="PROPFEATHER" axis="/controls/engines/engine[0]/propeller-feather"/>
              <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
              <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
              <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
