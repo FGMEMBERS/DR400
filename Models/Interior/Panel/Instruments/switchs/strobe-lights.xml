@@ -33,6 +33,10 @@
         <command>property-toggle</command>
         <property>sim/model/lights/strobe-lights</property>
       </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/beacon</property>
+      </binding>
     </action>
   </animation>
 

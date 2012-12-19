@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <name>bumpspecreflect</name>
+  <inherits-from>Effects/model-combined</inherits-from>
+  <parameters>
+    <normalmap-enabled type="int">1</normalmap-enabled>
+    <normalmap-dds type="int">0</normalmap-dds>
+    <texture n="2">
+      <image>Aircraft/DR400/Models/Effects/Normal/normalmap.png</image>
+    </texture>
+  </parameters>
+  
+  <!--
+  #########################
+  ### NORMALMAP INCLUDE ###
+  #########################
+  -->
+  <generate>
+    <tangent type="int">6</tangent>
+    <binormal type="int">7</binormal>
+  </generate>
+
+  <technique n="10">
+    <pass>
+      <program>
+        <attribute>
+          <name>tangent</name>
+          <index>6</index>
+        </attribute>
+        <attribute>
+          <name>binormal</name>
+          <index>7</index>
+        </attribute>
+      </program>
+    </pass>
+  </technique>
+  <!--
+  #############################
+  ### END NORMALMAP INCLUDE ###
+  #############################
+  -->
+  
+</PropertyList>
+

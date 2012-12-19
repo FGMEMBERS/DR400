@@ -19,17 +19,17 @@ var refresh_immat = func {
     }
 }
 
-var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/dr400/status/dialog",
-				  "Aircraft/DR400/Dialogs/immat.xml");
+var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/dr400/status/dialog", "Aircraft/DR400-jsbSim/Dialogs/immat.xml");
 
-setlistener("/sim/signals/fdm-initialized", func {
+var immatInit = setlistener("/sim/signals/fdm-initialized", func {
   if (props.globals.getNode("/sim/model/immat") == nil) {
     var immat = props.globals.getNode("/sim/model/immat",1);
     var callsign = props.globals.getNode("/sim/multiplay/callsign").getValue();
     if (callsign != "callsign") immat.setValue(callsign);
-  else immat.setValue("F-HLBL");
+  else immat.setValue("F-GHYQ");
   }
   refresh_immat();
   setlistener("sim/model/immat", refresh_immat, 0);
+  removelistener(immatInit);
 },0);
 

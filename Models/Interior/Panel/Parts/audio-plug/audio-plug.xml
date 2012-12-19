@@ -5,16 +5,13 @@
   <path>audio-plug.ac</path>
   
   <animation>
-    <object-name>circle</object-name>
-    <object-name>sphere001</object-name>
-    <object-name>sphere002</object-name>
-    <object-name>Plane</object-name>
+    <object-name>audio</object-name>
   </animation>
 
   <animation>
     <type>pick</type>
+    <object-name>audio</object-name>
     <visible>true</visible>
-    <object-name>Plane</object-name>
     <action>
       <button>0</button>
       <repeatable>false</repeatable>
@@ -32,8 +29,8 @@
 
   <animation>
     <type>pick</type>
+    <object-name>audio</object-name>
     <visible>true</visible>
-    <object-name>Plane</object-name>
     <action>
       <button>3</button>
       <binding>

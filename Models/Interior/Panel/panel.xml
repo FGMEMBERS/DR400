@@ -4,6 +4,7 @@
           2008 : Created by Helijah
     April 2012 : Modified by PAF team
       May 2012 : Updated by Helijah
+      Dec 2012 : Updated by Helijah
 -->
 <PropertyList>
 
@@ -20,6 +21,12 @@
     <object-name>panel3</object-name>
     <object-name>paneltop</object-name>
     <object-name>rouetrim</object-name>
+    <object-name>check1</object-name>
+    <object-name>check2</object-name>
+    <object-name>cahier</object-name>
+    <object-name>trsstylo2</object-name>
+    <object-name>trs2stylo2</object-name>
+    <object-name>minestylo2</object-name>
 
     <!-- Objets transparents -->
   </animation>
@@ -45,7 +52,6 @@
                Parking brake, Carb Heat
        ################################################################
   -->
-
   <!-- Pilot audio plug -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Parts/audio-plug/audio-plug.xml</path>
@@ -179,7 +185,6 @@
                      Warning lights, Oil-temp, Oil-press, Garmin196, ELT
        ################################################################
   -->
-
   <!-- ASI -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/asi/asi.xml</path>
@@ -356,19 +361,19 @@
     <offsets>
       <x-m> 0.103 </x-m>
       <y-m> 0.151 </y-m>
-      <z-m> 0.143 </z-m>
+      <z-m> 0.133 </z-m>
     </offsets>
   </model>
 
- <!-- KX165
+  <!-- KT76A-->
   <model>
-    <path>Aircraft/Instruments-3d/kx165/kx165-1.xml</path>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
     <offsets>
-      <x-m> 0.103 </x-m>
-      <y-m> 0.151 </y-m>
-      <z-m> 0.143 </z-m>
+      <x-m> 0.112 </x-m>
+      <y-m> 0.143 </y-m>
+      <z-m>-0.060 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
   <!-- Charge -->
   <model>
@@ -389,7 +394,7 @@
       <z-m> 0.208 </z-m>
     </offsets>
   </model>
-
+  
   <!-- Garmin GPS196 support -->
   <model>
   <path>Aircraft/DR400/Models/Interior/Panel/Instruments/garmin196/garmin196_support2.xml</path>
@@ -399,7 +404,7 @@
       <z-m> 0.208 </z-m>
     </offsets>
   </model>
-
+  
   <!-- Les alertes -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning.xml</path>
@@ -453,7 +458,6 @@
        #                            TEXT                              #
        ################################################################
   -->
-
   <!-- Plaque bagages passagers -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/plaques/plaque_bagages.xml</path>
@@ -693,4 +697,3 @@
   </animation>
 
 </PropertyList>
-

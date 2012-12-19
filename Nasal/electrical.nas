@@ -5,8 +5,9 @@
 ##########################################################
 
 ##########################################################
-### Modified by Clement DE L'HAMAIDE for DR400        ####
-#########################################################
+###    Modified by Clement DE L'HAMAIDE for DR400     ####
+###            http://www.clemaez.fr/                 ####
+##########################################################
 
 var last_time = 0.0;
 var OutPuts = props.globals.getNode("/systems/electrical/outputs",1);
@@ -105,14 +106,14 @@ Alternator = {
     }
 };
 
-var battery = Battery.new(28.0, 90.0, 120.0, 1.0, 90.0);                         # Définition des caractéristiques de la batterie
-var alternator_L = Alternator.new("/engines/engine[0]/rpm", 350.0, 28.0, 120.0); # Définition des caractéristiques de l'alternateur
+var battery = Battery.new(28.0, 90.0, 120.0, 1.0, 90.0); 					# Définition des caractéristiques de la batterie
+var alternator_L = Alternator.new("/engines/engine[0]/rpm", 350.0, 28.0, 120.0);		# Définition des caractéristiques de l'alternateur
 
 ############################################################################
 ############# Définition des proppriétés à l'initialisation ################
 ############################################################################
 
-setlistener("/sim/signals/fdm-initialized", func {
+var elecInit = setlistener("/sim/signals/fdm-initialized", func {
     foreach(var a; props.globals.getNode("/systems/electrical/outputs").getChildren()){
        a.setValue(0);
     }
@@ -140,6 +141,7 @@ setlistener("/sim/signals/fdm-initialized", func {
 
     settimer(update_electrical,1);
     print("Electrical System ... OK");
+    removelistener(elecInit);
 });
 
 ############################################################################
@@ -154,45 +156,43 @@ var update_virtual_bus = func(dt) {
     var BatAmps = battery.get_output_amps();
     var power_source = nil;
     load = 0.0;
-    load += electrical_bus(bus_volts);                                       # On récupère l'ampérage utilisé par le Bus électrique
-    load += avionics_bus(bus_volts);                                         # On récupère l'ampérage utilisé par le Bus Avionics
+    load += electrical_bus(bus_volts);							# On récupère l'ampérage utilisé par le Bus électrique
+    load += avionics_bus(bus_volts);							# On récupère l'ampérage utilisé par le Bus Avionics
 
     #####################################################################
     ################# Définition de la tension au moteur ################
     #####################################################################
 
-    if(PWR){                                                                 # Si le système électrique n'est pas endommagé
+    if(PWR){										# Si le système électrique n'est pas endommagé
       if (ALT_L.getBoolValue() and (AltAmps_L > BatAmps)){				
-          bus_volts = AltVolts_L;                                            # L'alternateur fournit la tension au Bus
-          power_source = "alternator";                                       # L'alternateur est donc la source d'alimentation
-          battery.apply_load(-battery.charge_amps, dt);                      # Et on recharge la batterie
+          bus_volts = AltVolts_L;							# L'alternateur fournit la tension au Bus
+          power_source = "alternator";							# L'alternateur est donc la source d'alimentation
+          battery.apply_load(-battery.charge_amps, dt);					# Et on recharge la batterie
       }											
-      elsif (ALT_L.getBoolValue() and (AltAmps_L < BatAmps)){                # Sinon si le switch Alt Left ou Alt Right est à ON
-                                                                             # mais que le courant de l'alternateur est inférieur
-                                                                             # à ce lui de la batterie
-        if (BATT.getBoolValue()){                                            # Si le switch Batt est à ON 
-          bus_volts = BatVolts;                                              # C'est la batterie qui fournie la tension au Bus
-          power_source = "battery";                                          # La batterie est donc la source d'alimentation
-          battery.apply_load(load, dt);                                      # Et on décharge la batterie
+      elsif (ALT_L.getBoolValue() and (AltAmps_L < BatAmps)){				# Sinon si le switch Alt Left ou Alt Right est à ON mais que le courant de l'alternateur est inférieur à ce lui de la batterie
+        if (BATT.getBoolValue()){							# Si le switch Batt est à ON 
+          bus_volts = BatVolts;								# C'est la batterie qui fournie la tension au Bus
+          power_source = "battery";							# La batterie est donc la source d'alimentation
+          battery.apply_load(load, dt);							# Et on décharge la batterie
         }										
-        else {                                                               # Sinon
-          bus_volts = 0.0;                                                   # La tension du Bus est 0V
+        else {										# Sinon
+          bus_volts = 0.0;								# La tension du Bus est 0V
         }										
       }										
-      elsif (BATT.getBoolValue()){                                           # Sinon si le switch de la batterie est à ON
-          bus_volts = BatVolts;                                              # C'est la batterie qui fournie la tension au Bus
-          power_source = "battery";                                          # La batterie est donc la source d'alimentation
-          battery.apply_load(load, dt);                                      # Et on décharge la batterie
+      elsif (BATT.getBoolValue()){							# Sinon si le switch de la batterie est à ON
+          bus_volts = BatVolts;								# C'est la batterie qui fournie la tension au Bus
+          power_source = "battery";							# La batterie est donc la source d'alimentation
+          battery.apply_load(load, dt);							# Et on décharge la batterie
       }											
-      else {                                                                 # Sinon
-        bus_volts = 0.0;                                                     # La tension du Bus est 0V
+      else {										# Sinon
+        bus_volts = 0.0;								# La tension du Bus est 0V
       }											
-    } else {                                                                 # Sinon c'est le système électrique est endommagé
-        bus_volts = 0.0;                                                     # La tension du Bus est 0V
+    } else {										# Sinon c'est le système électrique est endommagé
+        bus_volts = 0.0;								# La tension du Bus est 0V
     }
 
-    props.globals.getNode("/engines/engine[0]/amp-v",1).setValue(bus_volts); # La tension au moteur est égale à celle du Bus
-    props.globals.getNode("/engines/engine[1]/amp-v",1).setValue(bus_volts); # La tension au moteur est égale à celle du Bus
+    props.globals.getNode("/engines/engine[0]/amp-v",1).setValue(bus_volts);		# La tension au moteur est égale à celle du Bus
+    props.globals.getNode("/engines/engine[1]/amp-v",1).setValue(bus_volts);		# La tension au moteur est égale à celle du Bus
 
     #####################################################################
     ################### Définition de l'ampérage du Bus #################
@@ -200,14 +200,11 @@ var update_virtual_bus = func(dt) {
 
     var bus_amps = 0.0;
 
-    if (bus_volts > 1.0){                                                    # Si la tension du Bus est supérieur à 1V
-        if (power_source == "battery"){                                      # Si la source est la batterie
-            bus_amps = BatAmps-load;                                         # L'intensité du Bus est l'intensité de la batterie
-                                                                             # moins l'intensité de tous les Bus
-        } else {                                                             # Sinon
-            bus_amps = battery.charge_amps;                                  # Sinon l'intensité du Bus est l'intensité fourni
-                                                                             # par l'alternateur (limité par les caractéristiques
-                                                                             # de la batterie)
+    if (bus_volts > 1.0){								# Si la tension du Bus est supérieur à 1V
+        if (power_source == "battery"){							# Si la source est la batterie
+            bus_amps = BatAmps-load;							# L'intensité du Bus est l'intensité de la batterie moins l'intensité de tous les Bus
+        } else {									# Sinon
+            bus_amps = battery.charge_amps;						# Sinon l'intensité du Bus est l'intensité fourni par l'alternateur (limité par les caractéristiques de la batterie)
         }
     }
 
@@ -228,28 +225,28 @@ var electrical_bus = func(bus_volts){
     var load = 0.0;
     var starter_voltsL = 0.0;
 
-    if(props.globals.getNode("/sim/model/lights/landing-lights",1).getBoolValue()){
+    if(props.globals.getNode("/controls/lighting/landing-lights",1).getBoolValue()){
         OutPuts.getNode("landing-lights",1).setValue(bus_volts);
         load += 0.0004;
     } else {
         OutPuts.getNode("landing-lights",1).setValue(0.0);
     }
 
-    if(props.globals.getNode("/sim/model/lights//strobe-lights",1).getBoolValue()){
+    if(props.globals.getNode("/controls/lighting/strobe-lights",1).getBoolValue()){
         OutPuts.getNode("strobe-lights",1).setValue(bus_volts);
         load += 0.000002;
     } else {
         OutPuts.getNode("strobe-lights",1).setValue(0.0);
     }
 
-    if(props.globals.getNode("/sim/model/lights//nav-lights",1).getBoolValue()){
+    if(props.globals.getNode("/controls/lighting/nav-lights",1).getBoolValue()){
         OutPuts.getNode("nav-lights",1).setValue(bus_volts);
         load += 0.000002;
     } else {
         OutPuts.getNode("nav-lights",1).setValue(0.0);
     }
 
-    if(props.globals.getNode("/sim/model/lights//taxi-lights",1).getBoolValue()){
+    if(props.globals.getNode("/controls/lighting/taxi-lights",1).getBoolValue()){
         OutPuts.getNode("taxi-lights",1).setValue(bus_volts);
         load += 0.000002;
     } else {
@@ -357,4 +354,3 @@ var update_electrical = func {
     update_virtual_bus(dt);
     settimer(update_electrical, 0);
 }
-

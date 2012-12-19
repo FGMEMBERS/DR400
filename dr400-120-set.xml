@@ -6,11 +6,11 @@
   <sim>
 
     <description>Robin DR 400 120 (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM), Laurent WROMMAN (FDM), Laurent HAYVEL (texture), PAF Team (system)</author>
+    <author>Emmanuel BARANGER (3D/FDM/System), Laurent WROMMAN (FDM), Laurent HAYVEL (texture), F-JJTH (System)</author>
 
     <rating>
       <FDM type="int">     2 </FDM>
-      <systems type="int"> 2 </systems>
+      <systems type="int"> 3 </systems>
       <cockpit type="int"> 3 </cockpit>
       <model type="int">   4 </model>
     </rating>

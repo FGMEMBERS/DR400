@@ -5,7 +5,7 @@
   <sim>
 
     <description>Robin DR400-120 (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM), Laurent WROMMAN (FDM), Laurent HAYVEL (texture), PAF Team (system)</author>
+    <author>Emmanuel BARANGER (3D/FDM/System), Laurent WROMMAN (FDM), Laurent HAYVEL (texture), F-JJTH (System)</author>
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">dr400-120-yasim</aero>
 

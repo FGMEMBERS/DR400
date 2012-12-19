@@ -81,7 +81,7 @@
     <object-name>ImatFuselageR5</object-name>
     <object-name>ImatFuselageR6</object-name>
     <condition>
-      <property>sim/multiplay/generic/int[10]</property>
+      <property>sim/multiplay/generic/int[8]</property>
     </condition>
   </animation>
 

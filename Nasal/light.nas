@@ -33,4 +33,3 @@ strobe.interval = 0;
 
 setprop( "/instrumentation/nav[0]/ident", 0 );
 setprop( "/instrumentation/nav[1]/ident", 0 );
-

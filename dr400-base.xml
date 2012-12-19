@@ -4,10 +4,12 @@
 
   <sim include="Nasal/views.xml">
 
-    <aircraft-version>0.1</aircraft-version>
+    <description>Robin DR 400 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM/System), Laurent WROMMAN (FDM), Laurent HAYVEL (texture), F-JJTH (System)</author>
+    <aircraft-version>0.5</aircraft-version>
     <status>Alpha</status>
 
-    <fuel-fraction>1.0</fuel-fraction>
+    <fuel-fraction>1</fuel-fraction>
 
     <sound>
       <path archive="y">Aircraft/DR400/Sounds/dr400-sound.xml</path>
@@ -15,31 +17,17 @@
 
     <model>
       <path archive="y">Aircraft/DR400/Models/dr400.xml</path>
-      <show-immat type="bool">true</show-immat>
+      <show-immat type="bool">1</show-immat>
       <livery>
         <file type="string">default</file>
       </livery>
-      <lights>
-        <landing-lights>
-          <state type="bool">false</state>
-        </landing-lights>
-        <taxi-lights>
-          <state type="bool">false</state>
-        </taxi-lights>
-        <nav-lights>
-          <state type="bool">false</state>
-        </nav-lights>
-        <strobe-lights>
-          <state type="bool">false</state>
-        </strobe-lights>
-      </lights>
       <config>
-        <show-pilot type="bool">1</show-pilot>
-        <show-yokes type="bool">1</show-yokes>
-        <light-cone type="bool">1</light-cone>
-        <glass-reflection type="bool">1</glass-reflection>
-        <details-high type="bool">0</details-high>
-        <show-copilot type="bool">0</show-copilot>
+        <show-pilot type="bool">       1 </show-pilot>
+        <show-copilot type="bool">     0 </show-copilot>
+        <show-yokes type="bool">       1 </show-yokes>
+        <glass-reflection type="bool"> 1 </glass-reflection>
+        <light-cone type="bool">       1 </light-cone>
+        <details-high type="bool">     1 </details-high>
       </config>
     </model>
 
@@ -58,22 +46,31 @@
         <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
         <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
         <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int n="6" alias="/sim/model/lights/nav-lights/state"/>
-        <int n="7" alias="/sim/model/lights/landing-lights/state"/>
-        <int n="8" alias="/sim/model/lights/taxi-lights/state"/>
-        <int n="9" alias="/sim/model/lights/strobe-lights/state"/>
-        <int n="10" alias="/sim/model/show-immat"/>
+        <int type="bool" n="6" alias="/smoke/active"/>                             <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="8" alias="/sim/model/show-immat"/>                      <!--  8 Show immat -->
+        <int type="int" n="10" alias="controls/armament/trigger"/>                 <!-- 10 reserved for bombable mode -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
         <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
-        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
-        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
-        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <float n="3" alias="/systems/electrical/outputs/nav-lights"/>
+        <float n="4" alias="/systems/electrical/outputs/landing-lights"/>
+        <float n="5" alias="/systems/electrical/outputs/taxi-lights"/>
+        <float n="6" alias="/systems/electrical/outputs/strobe-lights"/>
+        <float n="7" alias="/systems/electrical/volts"/>
         <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
 
     <menubar include="Dialogs/dr400-menu.xml"/>
+
+    <help>
+      <title>Robin DR400</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
 
     <weight n="0">
         <name>Pilot</name>
@@ -171,6 +168,7 @@
       <file>Aircraft/DR400/Nasal/immat.nas</file>
       <file>Aircraft/DR400/Nasal/dr400.nas</file>
       <file>Aircraft/DR400/Nasal/electrical.nas</file>
+      <file>Aircraft/DR400/Nasal/interpolate.nas</file>
       <file>Aircraft/DR400/Nasal/rpm.nas</file>
     </dr400>
     <garmin196>
@@ -182,4 +180,3 @@
   </nasal>
    
 </PropertyList>
-

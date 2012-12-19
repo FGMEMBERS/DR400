@@ -1,12 +1,11 @@
-######################################################################
-##                                                                  ##
-##  Nasal for DR400                                                 ##
-##                                                                  ##
-##  dany93                                                          ##
-##  Clément de l'Hamaide                                            ##
-##  This file is licensed under the GPL license version 2 or later. ##
-##                                                                  ##
-######################################################################
+###############################################################################
+##
+##  Nasal for DR400
+##
+##  Clément de l'Hamaide - PAF Team
+##  This file is licensed under the GPL license version 2 or later.
+##
+###############################################################################
 
 #####################################
 # Dialogs (please comment the version)
@@ -44,11 +43,11 @@ var Fuel_press=func {
     interpolate("/engines/engine/fuel-pressure-psi", 0, 1);
   }
 
-#  if(getprop("/engines/engine/fuel-pressure-psi") < 0.5){
-#    setprop("fdm/jsbsim/propulsion/tank/priority", 0);
-#  }else{
-#    setprop("fdm/jsbsim/propulsion/tank/priority", 1);
-#  }
+  if(getprop("/engines/engine/fuel-pressure-psi") < 0.5){
+    setprop("fdm/jsbsim/propulsion/tank/priority", 0);
+  }else{
+    setprop("fdm/jsbsim/propulsion/tank/priority", 1);
+  }
 #  settimer(Fuel_press,0);
 }
 
@@ -174,6 +173,47 @@ var set_levers = func(type,num,min,max){
   if(getprop(cpld))setprop(ctrl[1-num],ttl);
 }
 
+##########################################
+# Ground Detection
+##########################################
+
+var terrain_survol = func {
+  var lat = getprop("/position/latitude-deg");
+  var lon = getprop("/position/longitude-deg");
+
+  var info = geodinfo(lat, lon);
+  if (info != nil) {
+    if (info[1] != nil){
+      if (info[1].solid !=nil)
+        setprop("/environment/terrain-type",info[1].solid);
+      if (info[1].load_resistance !=nil)
+        setprop("/environment/terrain-load-resistance",info[1].load_resistance);
+      if (info[1].friction_factor !=nil)
+        setprop("/environment/terrain-friction-factor",info[1].friction_factor);
+      if (info[1].bumpiness !=nil)
+        setprop("/environment/terrain-bumpiness",info[1].bumpiness);
+      if (info[1].rolling_friction !=nil)
+        setprop("/environment/terrain-rolling-friction",info[1].rolling_friction);
+      if (info[1].names !=nil)
+        setprop("/environment/terrain-names",info[1].names[0]);
+    }         
+  }else{
+    setprop("/environment/terrain",1);
+    setprop("/environment/terrain-load-resistance",1e+30);
+    setprop("/environment/terrain-friction-factor",1.05);
+    setprop("/environment/terrain-bumpiness",0);
+    setprop("/environment/terrain-rolling-friction",0.02);
+  }
+
+  if(!getprop("sim/freeze/replay-state") and !getprop("/environment/terrain-type") and getprop("/position/gear-agl-m") < 0.5){
+    setprop("sim/messages/copilot", "You are on water !");
+    setprop("sim/freeze/clock", 1);
+    setprop("sim/freeze/master", 1);
+    setprop("sim/crashed", 1);
+  }
+#  settimer(terrain_survol, 0);
+}
+
 ##############################################
 ######### AUTOSTART / AUTOSHUTDOWN ###########
 ##############################################
@@ -201,9 +241,8 @@ var Startup = func{
   setprop("/instrumentation/nav[0]/volume",1);
   setprop("/instrumentation/adf[0]/power-btn",1);
   setprop("/instrumentation/adf[0]/volume",1);
+  setprop("/instrumentation/adf[0]/volume-norm",1);
   setprop("controls/electric/battery-switch",1);
-  setprop("sim/model/lights/nav-lights",1);
-  setprop("sim/model/lights/strobe-lights",1);
   setprop("sim/messages/copilot", "Now press \"s\" to start engine");
 }
 
@@ -222,41 +261,70 @@ var Shutdown = func{
   setprop("/instrumentation/nav[0]/volume",0);
   setprop("/instrumentation/adf[0]/power-btn",0);
   setprop("/instrumentation/adf[0]/volume",0);
+  setprop("/instrumentation/adf[0]/volume-norm",0);
   setprop("controls/electric/battery-switch",0);
   setprop("controls/fuel/tank/boost-pump", 0);
-  setprop("sim/model/lights/nav-lights",0);
-  setprop("sim/model/lights/strobe-lights",0);
   setprop("sim/messages/copilot", "Engine is stopped");
 }
+
 
 ############################################
 # ELT System from Cessna337
 # Authors: Pavel Cueto, with A LOT of collaboration from Thorsten and AndersG
-# Adaptation by Clément de l'Hamaide for DR400
+# Adaptation by Clément de l'Hamaide and Daniel Dubreuil for DR400 or regent
 ############################################
 
 var eltmsg = func {
   var lat = getprop("/position/latitude-string");
   var lon = getprop("/position/longitude-string");
-  var aircraft = getprop("sim/description");
-  var callsign = getprop("sim/multiplay/callsign");
+  var aircraft = getprop("/sim/description");
+  var callsign = getprop("/sim/multiplay/callsign");
 
-  setlistener("sim/crashed", func(n) {
-    if(n.getBoolValue()){
-      if(getprop("/instrumentation/elt/armed")) {
-        var help_string = "ELT AutoMessage: " ~ aircraft ~ " " ~ callsign ~ " testing ELT at " ~lat~" LAT "~lon~" LON, requesting SAR service";
-        setprop("/sim/multiplay/chat", help_string);
+  if(getprop("/sim/damaged")){
+     if(getprop("/instrumentation/elt/armed")) {
+        var help_string = "" ~ aircraft ~ " " ~ callsign ~ "  DAMAGED, requesting SAR service";
+        screen.log.write(help_string);
       }
     }
-  });
+  ;
+  
+    if(getprop("/sim/crashed")){
+      if(getprop("/instrumentation/elt/armed")) {
+        var help_string = "ELT AutoMessage: " ~ aircraft ~ " " ~ callsign ~ " at " ~lat~" LAT "~lon~" LON, *** CRASHED ***";
+        setprop("/sim/multiplay/chat", help_string);
+        setprop("/sim/freeze/clock", 1);
+        setprop("/sim/freeze/master", 1);
+        screen.log.write("Press p to resume");
+      }
+    }
+  ;
+
+  settimer(eltmsg, 0);  
+};
 
   setlistener("/instrumentation/elt/on", func(n) {
     if(n.getBoolValue()){
-      var help_string = "ELT AutoMessage: " ~ aircraft ~ " " ~ callsign ~ " testing ELT at " ~lat~" LAT "~lon~" LON, requesting SAR service";
-      setprop("/sim/multiplay/chat", help_string);
+       var lat = getprop("/position/latitude-string");
+       var lon = getprop("/position/longitude-string");
+       var aircraft = getprop("/sim/description");
+       var callsign = getprop("/sim/multiplay/callsign");
+       var help_string = "ELT AutoMessage: " ~ aircraft ~ " " ~ callsign ~ " at " ~lat~" LAT "~lon~" LON, MAYDAY, MAYDAY, MAYDAY";
+       setprop("/sim/multiplay/chat", help_string);
+      }
     }
-  });
-}
+  );
+  
+ setlistener("/instrumentation/elt/test", func(n) {
+    if(n.getBoolValue()){
+       var lat = getprop("/position/latitude-string");
+       var lon = getprop("/position/longitude-string");
+       var aircraft = getprop("/sim/description");
+       var callsign = getprop("/sim/multiplay/callsign");
+       var help_string = "Testing ELT: " ~ aircraft ~ " " ~ callsign ~ " at " ~lat~" LAT "~lon~" LON";
+       screen.log.write(help_string);
+      }
+    }
+  );
 
 ############################################
 # Global loop function
@@ -270,8 +338,15 @@ global_system = func{
     setprop("/controls/engines/engine[0]/starter",0);
   }
 
+  if(getprop("/systems/electrical/volts") > 6){
+    setprop("/instrumentation/attitude-indicator/spin",10);
+  }else{
+    setprop("/instrumentation/attitude-indicator/spin",0);
+  }
+
   Fuel_press();
   mouse_accel();
+  terrain_survol();
   EngineMain.update(0);
 
   settimer(global_system, 0);
@@ -281,11 +356,22 @@ global_system = func{
 ##########################################
 # SetListerner must be at the end of this file
 ##########################################
-
 setlistener("/sim/signals/fdm-initialized", func{
-
+  setprop("/environment/terrain-type",1);
+  setprop("/environment/terrain-load-resistance",1e+30);
+  setprop("/environment/terrain-friction-factor",1.05);
+  setprop("/environment/terrain-bumpiness",0);
+  setprop("/environment/terrain-rolling-friction",0.02);
   setprop("/instrumentation/nav[0]/power-btn",0); #force OFF
-  setprop("/instrumentation/adf[0]/power-btn",0); #force OFF
+  setprop("/instrumentation/adf[0]/power-btn",0);
+  setprop("/instrumentation/adf[0]/volume",0);
+  setprop("/instrumentation/adf[0]/volume-norm",0);
+  setprop("/controls/lighting/nav-lights", 0);
+  setprop("/controls/lighting/landing-lights", 0);
+  setprop("/controls/electric/battery-switch", 0);
+});
+
+var nasalInit = setlistener("/sim/signals/fdm-initialized", func{
 
   settimer(eltmsg, 2);
   print('Emergency Locator Transmitter (ELT) loaded');
@@ -297,5 +383,5 @@ setlistener("/sim/signals/fdm-initialized", func{
   });
 
   settimer(global_system, 2);
+  removelistener(nasalInit);
 });
-
