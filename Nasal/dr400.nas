@@ -5,6 +5,8 @@
 ##  Clément de l'Hamaide - PAF Team
 ##  This file is licensed under the GPL license version 2 or later.
 ##
+## Updated for GIT : Helijah April 2013
+##
 ###############################################################################
 
 #####################################
@@ -43,11 +45,11 @@ var Fuel_press=func {
     interpolate("/engines/engine/fuel-pressure-psi", 0, 1);
   }
 
-  if(getprop("/engines/engine/fuel-pressure-psi") < 0.5){
-    setprop("fdm/jsbsim/propulsion/tank/priority", 0);
-  }else{
-    setprop("fdm/jsbsim/propulsion/tank/priority", 1);
-  }
+  #if(getprop("/engines/engine/fuel-pressure-psi") < 0.5){
+  #  setprop("fdm/jsbsim/propulsion/tank/priority", 0);
+  #}else{
+  #  setprop("fdm/jsbsim/propulsion/tank/priority", 1);
+  #}
 #  settimer(Fuel_press,0);
 }
 
