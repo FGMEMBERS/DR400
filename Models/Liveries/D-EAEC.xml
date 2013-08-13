@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">Martin</name>
-        <texture>Liveries/martin.png</texture>
+        <name type="string">D-EAEC</name>
+        <texture>Liveries/D-EAEC.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
