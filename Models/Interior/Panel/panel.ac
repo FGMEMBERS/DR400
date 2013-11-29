@@ -8,7 +8,7 @@ name "cahier"
 loc 0 0 -0
 data 6
 cahier
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 16
@@ -133,7 +133,7 @@ name "check1"
 loc 0 0 -0
 data 6
 check1
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -155,7 +155,7 @@ name "check2"
 loc 0 0 -0
 data 6
 check2
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -177,7 +177,7 @@ name "flaps"
 loc 0 0 -0
 data 5
 flaps
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 225
@@ -1949,7 +1949,7 @@ name "labels"
 loc 0 0 -0
 data 6
 labels
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 8
@@ -1982,7 +1982,7 @@ name "minestylo2"
 loc 0 0 -0
 data 10
 minestylo2
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 99
@@ -2764,7 +2764,7 @@ name "panel0"
 loc 0 0 -0
 data 6
 panel0
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 130
@@ -3737,7 +3737,7 @@ name "panel1"
 loc 0 0 -0
 data 6
 panel1
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1161
@@ -12000,7 +12000,7 @@ name "panel3"
 loc 0 0 -0
 data 6
 panel3
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1373
@@ -22388,7 +22388,7 @@ name "paneltop"
 loc 0 0 -0
 data 8
 paneltop
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 276
@@ -24940,7 +24940,7 @@ name "rouetrim"
 loc 0 0 -0
 data 8
 rouetrim
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 66
@@ -25625,7 +25625,7 @@ name "trs2stylo2"
 loc 0 0 -0
 data 10
 trs2stylo2
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 210
@@ -27218,7 +27218,7 @@ name "trsstylo2"
 loc 0 0 -0
 data 9
 trsstylo2
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 146

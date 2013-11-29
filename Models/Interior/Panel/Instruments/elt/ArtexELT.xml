@@ -101,14 +101,14 @@
     <factor>-15</factor>
     <property>instrumentation/elt/test</property>
     <center>
-      <x-m>0.003</x-m>
-      <y-m>0.000</y-m>
-      <z-m>0.000</z-m>
+      <x-m> 0.003 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
     </center>
     <axis>
-      <x> 0</x>
-      <y>-1</y>
-      <z> 0</z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>    
   </animation>
 
@@ -154,4 +154,3 @@
   </animation>
 
 </PropertyList>
-

@@ -31,6 +31,15 @@
     <object-name>vitre</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>front</object-name>
@@ -314,4 +323,3 @@
   </animation>
   
 </PropertyList>
-

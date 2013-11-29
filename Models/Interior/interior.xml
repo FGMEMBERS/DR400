@@ -112,14 +112,33 @@
  
   <!-- Canopy -->
   <animation>
-    <type>translate</type>
+    <name>IntLaVerriere</name>
     <object-name>intverriere</object-name>
     <object-name>longeronint</object-name>
     <object-name>poingee-longeron</object-name>
     <object-name>toitverriereint</object-name>
     <object-name>toitverriereint2</object-name>
     <object-name>poignee-canopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntLaVerriere</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntLaVerriere</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.8 </dep></entry>
@@ -134,7 +153,7 @@
   <animation>
     <type>rotate</type>
     <object-name>poignee-canopy</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind>  0.00 </ind><dep>  0.00 </dep></entry>
       <entry><ind>  0.12 </ind><dep> 45.00 </dep></entry>
@@ -150,18 +169,6 @@
       <y>  0 </y>
       <z>  1 </z>
     </axis>
-  </animation>
-
-  <animation>
-    <type>pick</type>
-    <object-name>poignee-canopy</object-name>
-    <action>
-      <button>0</button>
-      <binding>
-        <command>nasal</command>
-        <script>doors.doorsystem.crewexport();</script>
-      </binding>
-    </action>
   </animation>
 
 </PropertyList>

@@ -6,14 +6,16 @@
 
   <animation>
     <!-- Objets opaques -->
+    <object-name>mixturetrims</object-name>
+    <object-name>labels</object-name>
     <object-name>mixture</object-name>
+    <object-name>trimindicator</object-name>
+
+    <!-- Objets transparents -->
     <object-name>mixtureplus</object-name>
     <object-name>mixturemoins</object-name>
     <object-name>trimsplus</object-name>
     <object-name>trimsmoins</object-name>
-    <object-name>trimindicator</object-name>
-
-    <!-- Objets transparents -->
   </animation>
 
   <!-- Mixture -->  

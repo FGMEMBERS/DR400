@@ -118,9 +118,6 @@
       <armed type="bool">true</armed>
       <test type="bool">false</test>
     </elt>
-    <garmin196>
-      <texture-file>../../DR400/Models/Interior/Panel/Instruments/garmin196/coque1.png</texture-file>
-    </garmin196>
     <comm n="0">
       <power-btn type="bool">false</power-btn>
       <volume type="double">0</volume>
@@ -171,9 +168,6 @@
       <file>Aircraft/DR400/Nasal/interpolate.nas</file>
       <file>Aircraft/DR400/Nasal/rpm.nas</file>
     </dr400>
-    <garmin196>
-      <file>Aircraft/Instruments-3d/garmin196/garmin196.nas</file>
-    </garmin196>
     <kr87>
       <file>Aircraft/DR400/Models/Interior/Panel/Instruments/kr87-adf/kr87.nas</file>
     </kr87>

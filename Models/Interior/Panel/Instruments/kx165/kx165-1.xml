@@ -22,6 +22,8 @@
     "instrumentation/nav[0]/frequencies/selected-mhz",
     "instrumentation/nav[0]/frequencies/standby-mhz",
   );
+  
+  Updated Nov 2012 by Helijah
   -->
 
   <params>
@@ -48,6 +50,104 @@
   <path>kx165.ac</path>
 
   <animation>
+    <object-name>Chassis</object-name>
+
+    <object-name>CommVolume</object-name>
+    <object-name>CommToggle</object-name>
+    <object-name>CommKHz</object-name>
+    <object-name>CommMHz</object-name>
+    
+    <object-name>NavVolume</object-name>
+    <object-name>NavToggle</object-name>
+    <object-name>NavKHz</object-name>
+    <object-name>NavMHz</object-name>
+
+    <object-name>CommUse100M</object-name>
+    <object-name>CommUse10M</object-name>
+    <object-name>CommUse1M</object-name>
+    <object-name>CommUseDot</object-name>
+    <object-name>CommUse100K</object-name>
+    <object-name>CommUse10K</object-name>
+
+    <object-name>CommStby100M</object-name>
+    <object-name>CommStby10M</object-name>
+    <object-name>CommStby1M</object-name>
+    <object-name>CommStbyDot</object-name>
+    <object-name>CommStby100K</object-name>
+    <object-name>CommStby10K</object-name>
+
+    <object-name>NavUse100M</object-name>
+    <object-name>NavUse10M</object-name>
+    <object-name>NavUse1M</object-name>
+    <object-name>NavUseDot</object-name>
+    <object-name>NavUse100K</object-name>
+    <object-name>NavUse10K</object-name>
+
+    <object-name>NavStby100M</object-name>
+    <object-name>NavStby10M</object-name>
+    <object-name>NavStby1M</object-name>
+    <object-name>NavStbyDot</object-name>
+    <object-name>NavStby100K</object-name>
+    <object-name>NavStby10K</object-name>
+  </animation>
+
+  <animation>
+    <name>CommKnobs</name>
+    <object-name>CommVolume</object-name>
+    <object-name>CommToggle</object-name>
+    <object-name>CommKHz</object-name>
+    <object-name>CommMHz</object-name>
+  </animation>
+
+  <animation>
+    <name>NavKnobs</name>
+    <object-name>NavVolume</object-name>
+    <object-name>NavToggle</object-name>
+    <object-name>NavKHz</object-name>
+    <object-name>NavMHz</object-name>
+  </animation>
+
+  <animation>
+    <name>CommUse</name>
+    <object-name>CommUse100M</object-name>
+    <object-name>CommUse10M</object-name>
+    <object-name>CommUse1M</object-name>
+    <object-name>CommUseDot</object-name>
+    <object-name>CommUse100K</object-name>
+    <object-name>CommUse10K</object-name>
+  </animation>
+
+  <animation>
+    <name>CommStby</name>
+    <object-name>CommStby100M</object-name>
+    <object-name>CommStby10M</object-name>
+    <object-name>CommStby1M</object-name>
+    <object-name>CommStbyDot</object-name>
+    <object-name>CommStby100K</object-name>
+    <object-name>CommStby10K</object-name>
+  </animation>
+
+  <animation>
+    <name>NavUse</name>
+    <object-name>NavUse100M</object-name>
+    <object-name>NavUse10M</object-name>
+    <object-name>NavUse1M</object-name>
+    <object-name>NavUseDot</object-name>
+    <object-name>NavUse100K</object-name>
+    <object-name>NavUse10K</object-name>
+  </animation>
+
+  <animation>
+    <name>NavStby</name>
+    <object-name>NavStby100M</object-name>
+    <object-name>NavStby10M</object-name>
+    <object-name>NavStby1M</object-name>
+    <object-name>NavStbyDot</object-name>
+    <object-name>NavStby100K</object-name>
+    <object-name>NavStby10K</object-name>
+  </animation>
+
+  <animation>
     <type>select</type>
     <object-name>CommUse</object-name>
     <object-name>CommStby</object-name>
@@ -69,13 +169,32 @@
 
   <animation>
     <type>material</type>
-    <object-name>CommToggle</object-name>
-    <object-name>NavToggle</object-name>
+    <object-name>CommStby</object-name>
+    <object-name>CommStby</object-name>
+    <object-name>NavUse</object-name>
+    <object-name>NavStby</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
     <emission>
-      <red>   0.07 </red>
-      <green> 0.04 </green>
-      <blue>  0.04 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Chassis</object-name>
+    <object-name>CommKnobs</object-name>
+    <object-name>NavKnobs</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   0.2 </red>
+      <green> 0.1 </green>
+      <blue>  0.1 </blue>
     </emission>
   </animation>
 
@@ -83,15 +202,20 @@
     <type>material</type>
     <object-name>CommUse</object-name>
     <object-name>CommStby</object-name>
+    <transparency>
+      <alpha-prop>systems/electrical/outputs/comm</alpha-prop>
+      <factor>0.07</factor>
+    </transparency>
+  </animation>
+
+  <animation>
+    <type>material</type>
     <object-name>NavUse</object-name>
     <object-name>NavStby</object-name>
-    <emission>
-      <red>   -1 </red>
-      <green> -1 </green>
-      <blue>  -1 </blue>
-      <factor-prop alias="../../../params/dimming"/>
-      <offset> 1 </offset>
-    </emission>
+    <transparency>
+      <alpha-prop>systems/electrical/outputs/nav</alpha-prop>
+      <factor>0.07</factor>
+    </transparency>
   </animation>
 
   <!-- comm part -->
@@ -99,7 +223,7 @@
     <type>translate</type>
     <object-name>CommToggle</object-name>
     <property alias="../../params/comm-frq-swp"/>
-    <factor> -0.004 </factor>
+    <factor>-0.004</factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -113,7 +237,7 @@
     <property alias="../../params/comm-frq-selected"/>
     <step>100</step>
     <factor>0.001</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -127,7 +251,7 @@
     <property alias="../../params/comm-frq-selected"/>
     <step>10</step>
     <factor>0.01</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -141,7 +265,7 @@
     <property alias="../../params/comm-frq-selected"/>
     <step>1</step>
     <factor>0.1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -155,7 +279,7 @@
     <property alias="../../params/comm-frq-selected"/>
     <step>0.1</step>
     <factor>1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -169,7 +293,7 @@
     <property alias="../../params/comm-frq-selected"/>
     <step>0.01</step>
     <factor>10</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -183,7 +307,7 @@
     <property alias="../../params/comm-frq-standby"/>
     <step>100</step>
     <factor>0.001</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -197,7 +321,7 @@
     <property alias="../../params/comm-frq-standby"/>
     <step>10</step>
     <factor>0.01</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -211,7 +335,7 @@
     <property alias="../../params/comm-frq-standby"/>
     <step>1</step>
     <factor>0.1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -225,7 +349,7 @@
     <property alias="../../params/comm-frq-standby"/>
     <step>0.1</step>
     <factor>1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -239,7 +363,7 @@
     <property alias="../../params/comm-frq-standby"/>
     <step>0.01</step>
     <factor>10</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -252,7 +376,7 @@
     <type>translate</type>
     <object-name>NavToggle</object-name>
     <property alias="../../params/nav-frq-swp"/>
-    <factor> -0.004 </factor>
+    <factor>-0.004</factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -266,7 +390,7 @@
     <property alias="../../params/nav-frq-selected"/>
     <step>100</step>
     <factor>0.001</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -280,7 +404,7 @@
     <property alias="../../params/nav-frq-selected"/>
     <step>10</step>
     <factor>0.01</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -294,7 +418,7 @@
     <property alias="../../params/nav-frq-selected"/>
     <step>1</step>
     <factor>0.1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -308,7 +432,7 @@
     <property alias="../../params/nav-frq-selected"/>
     <step>0.1</step>
     <factor>1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -322,7 +446,7 @@
     <property alias="../../params/nav-frq-selected"/>
     <step>0.01</step>
     <factor>10</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -336,7 +460,7 @@
     <property alias="../../params/nav-frq-standby"/>
     <step>100</step>
     <factor>0.001</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -350,7 +474,7 @@
     <property alias="../../params/nav-frq-standby"/>
     <step>10</step>
     <factor>0.01</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -364,7 +488,7 @@
     <property alias="../../params/nav-frq-standby"/>
     <step>1</step>
     <factor>0.1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -378,7 +502,7 @@
     <property alias="../../params/nav-frq-standby"/>
     <step>0.1</step>
     <factor>1</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -392,7 +516,7 @@
     <property alias="../../params/nav-frq-standby"/>
     <step>0.01</step>
     <factor>10</factor>
-    <bias> 0.0001 </bias>
+    <bias>0.0001</bias>
     <axis>
       <x> 1 </x>
       <y> 0 </y>
@@ -405,7 +529,7 @@
     <type>rotate</type>
     <object-name>CommVolume</object-name>
     <property alias="../../params/comm-volume"/>
-    <factor> -270 </factor>
+    <factor>-270</factor>
     <center>
       <x-m>  0.0188947 </x-m>
       <y-m> -0.0620002 </y-m>
@@ -422,7 +546,7 @@
     <type>rotate</type>
     <object-name>CommMHz</object-name>
     <property alias="../../params/comm-frq-standby"/>
-    <factor> -7 </factor>
+    <factor>-7</factor>
     <center>
       <x-m>  0.0320882 </x-m>
       <y-m> -0.0220000 </y-m>
@@ -456,24 +580,24 @@
     <type>rotate</type>
     <object-name>NavMHz</object-name>
     <property alias="../../params/nav-frq-standby"/>
-    <factor> -7 </factor>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
+    <factor>-7</factor>
     <center>
       <x-m>  0.0320882 </x-m>
       <y-m>  0.0580000 </y-m>
       <z-m> -0.0120000 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
     <type>rotate</type>
     <object-name>NavKHz</object-name>
     <property alias="../../params/nav-frq-standby"/>
-    <factor> -360 </factor>
+    <factor>-360</factor>
     <center>
       <x-m>  0.0320882 </x-m>
       <y-m>  0.0580000 </y-m>
@@ -490,7 +614,7 @@
     <type>rotate</type>
     <object-name>NavVolume</object-name>
     <property alias="../../params/nav-volume"/>
-    <factor> -270 </factor>
+    <factor>-270</factor>
     <center>
       <x-m>  0.0188946 </x-m>
       <y-m>  0.0180001 </y-m>
@@ -806,5 +930,46 @@
     </action>
   </animation>
 
-</PropertyList>
+  <!-- TEXT OSG -->
+  <text>
+    <name>textosg</name>
+    <type type="string">literal</type>
+    <text type="string">COMM 1 / NAV</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.15</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.015 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.015 </z-m>
+    </offsets>
+  </text>
 
+  <animation>
+    <type>material</type>
+    <object-name>textosg</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>textosg</object-name>
+    <condition>
+      <property>sim/panel-hotspots</property>
+    </condition>
+  </animation>
+
+</PropertyList>

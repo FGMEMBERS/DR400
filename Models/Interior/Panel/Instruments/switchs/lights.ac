@@ -7,8 +7,8 @@ name "knob"
 loc 0 0 -0
 data 4
 knob
-texture "colors.png"
-texrep 1 1
+texture "switch.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 197
 0.003641 0.004752 -0.003181

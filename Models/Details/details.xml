@@ -65,9 +65,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>LaVerriereDetail</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>LaVerriereDetail</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.8 </dep></entry>
@@ -145,4 +159,3 @@
   </animation>
 
 </PropertyList>
-

@@ -4,6 +4,27 @@
 
   <path>fuse.ac</path>
 
+  <animation>
+    <object-name>plaque</object-name>
+    <object-name>support</object-name>
+    <object-name>Fusible00</object-name>
+    <object-name>Fusible01</object-name>
+    <object-name>Fusible02</object-name>
+    <object-name>Fusible03</object-name>
+    <object-name>Fusible04</object-name>
+    <object-name>Fusible05</object-name>
+    <object-name>Fusible06</object-name>
+    <object-name>Fusible07</object-name>
+    <object-name>Fusible08</object-name>
+    <object-name>Fusible09</object-name>
+    <object-name>Fusible10</object-name>
+    <object-name>Fusible11</object-name>
+    <object-name>Fusible12</object-name>
+    <object-name>Fusible13</object-name>
+    <object-name>Fusible14</object-name>
+    <object-name>Fusible15</object-name>
+  </animation>
+
   <!--
   animation>
     <type>pick</type>

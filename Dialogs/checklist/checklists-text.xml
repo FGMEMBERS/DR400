@@ -3,1126 +3,1125 @@
 <PropertyList>
 
   <name></name>
+  
   <checklists>
 
-    <checklist n="0">
-      <title>Checks before engine start</title>
+  <checklist n="0">
+    <title>Checks before engine start</title>
+    <line>
+      <text>Preflight check</text>
+      <result>COMPLETED</result>
+    </line>
+    <line>
+      <text>Baggage and tow bar</text>
+      <result>SECURED</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>ON, safety guards closed</result>
+    </line>
+    <line>
+      <text>Power levers (2)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>Parking brake</text>
+      <result>SET</result>
+    </line>
+    <line>
+      <text>Alternate air</text>
+      <result>CLOSED</result>
+    </line>
+    <line>
+      <text>Manual gear extension handle</text>
+      <result>PUSHED</result>
+    </line>
+    <line>
+      <text>Gear selector</text>
+      <result>DOWN</result>
+    </line>
+    <line>
+      <text>Avionic master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Engine masters (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Pitot heat</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Alternators (2)</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>ECU swap (2)</text>
+      <result>AUTO</result>
+    </line>
+    <line>
+      <text>All light switches</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Emergency switch</text>
+      <result>OFF/GUARDED</result>
+    </line>
+    <line>
+      <text>ELT</text>
+      <result>ARMED</result>
+    </line>
+    <line>
+      <text>Circuits breakers</text>
+      <result>CHECKED IN</result>
+    </line>
+    <line>
+      <text>Flap selector</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Rudders pedals</text>
+      <result>ADJUSTED</result>
+    </line>
+    <line>
+      <text>Flight controls</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Trims</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Gear transit warning</text>
+      <result>TEST</result>
+    </line>
+    <line>
+      <text>De-Ice ANNUNC test</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Windshield de-icing</text>
+      <result>Pump 1 + 2 CHECKED</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>LDG</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Passengers</text>
+      <result>INSTRUCTED</result>
+    </line>
+    <line>
+      <text>Seat belts</text>
+      <result>FASTENED</result>
+    </line>
+    <line>
+      <text>Rear door</text>
+      <result>CLOSED and LATCHED</result>
+    </line>
+    <line>
+      <text>G1000</text>
+      <result>POWERED</result>
+    </line>
+    <line>
+      <text>PFD/MFD</text>
+      <result>BACKUP MODE</result>
+    </line>
+    <line>
+      <text>MFD</text>
+      <result>ENGINE - FUEL</result>
+    </line>
+    <line>
+      <text>Fuel quantity</text>
+      <result>CHECKED, RESET/SET if requ.</result>
+    </line>
+    <line>
+      <text>Fuel temperature</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>MFD</text>
+      <result>ENGINE - SYSTEM</result>
+    </line>
+    <line>
+      <text>De-Ice ANNUNC test</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Start key</text>
+      <result>INSERTED</result>
+    </line>
+    <line>
+      <text>Power levers (2)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>ACL (strobe)</text>
+      <result>ON</result>
+    </line>
+  </checklist>
+    
+  <checklist n="1">
+    <title>Engine start procedure</title>
+    <line>
+      <text>Engine master</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Annunciations/Eng. Instr.</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Propeller area</text>
+      <result>CLEAR</result>
+    </line>
+    <line>
+      <text>Start key</text>
+      <result>START</result>
+    </line>
+    <line>
+      <text>Oil pressure</text>
+      <result>OUTSIDE RED within 3 s</result>
+    </line>
+    <line>
+      <text>Voltage, Electrical load</text>
+      <result>CHECK INDICATION</result>
+    </line>
+    <line>
+      <text>Annunciations/Eng. Instr.</text>
+      <result>CHECK</result>
+    </line>
+  </checklist>
+    
+  <checklist n="2">
+    <title>Check after engine start</title>
+    <line>
+      <text>Oil pressure</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>RPM 900 +/- 20</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Warm up time (Idle 2mn, 1400RPM until Oil>50 and Coolant>60)</text>
+      <result>START</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>XFEED</result>
+    </line>
+    <line>
+      <text>Pitot heat</text>
+      <result>ON, annunc + Amps CHECKED</result>
+    </line>
+    <line>
+      <text>Pitot heat</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>PFD/MFD</text>
+      <result>NORMAL MODE</result>
+    </line>
+    <line>
+      <text>Avionics mlaster</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>FMS setup (COM,NAV,ADF,CDI,BRG,Flight Plan,XPDR ...)</text>
+      <result>COMPLETED</result>
+    </line>
+    <line>
+      <text>Autopilot test</text>
+      <result>COMPLETED</result>
+    </line>
+    <line>
+      <text>Flood lights</text>
+      <result>CHECKED, ON as required</result>
+    </line>
+    <line>
+      <text>Position lights</text>
+      <result>ON as required</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Altimeters (2)</text>
+      <result>SET</result>
+    </line>
+    <line>
+      <text>Standby horizon</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Transponder</text>
+      <result>CODE / MODE CHECKED</result>
+    </line>
+    <line>
+      <text>Parking break</text>
+      <result>RELEASED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="3">
+    <title>Before take off check</title>
+    <line>
+      <text>Parking brake</text>
+      <result>SET</result>
+    </line>
+    <line>
+      <text>Seat belts</text>
+      <result>FASTENED</result>
+    </line>
+    <line>
+      <text>Rear door</text>
+      <result>CLOSED and LATCHED</result>
+    </line>
+    <line>
+      <text>Front canopy</text>
+      <result>CLOSED and LATCHED</result>
+    </line>
+    <line>
+      <text>Front baggage dorrs</text>
+      <result>CHECKED CLOSED</result>
+    </line>
+    <line>
+      <text>Door warning light</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Engine instruments</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Fuel temperature</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Circuit breakers</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Elevator trim</text>
+      <result>CHECKED, T/O SET</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>CHECKED ON</result>
+    </line>
+    <line>
+      <text>Rudder trim</text>
+      <result>AS REQUIRED</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>CHECKED UP</result>
+    </line>
+    <line>
+      <text>Flight controls</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Power levers (2)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>ECU test (2)</text>
+      <result>PERFORM</result>
+    </line>
+    <line>
+      <text>ECU swap</text>
+      <result>ECU B, ENGINES CHECKED</result>
+    </line>
+    <line>
+      <text>ECU swap</text>
+      <result>AUTO</result>
+    </line>
+    <line>
+      <text>Pitot heat</text>
+      <result>AS REQUIRED</result>
+    </line>
+    <line>
+      <text>Ice protection</text>
+      <result>AS REQUIRED</result>
+    </line>
+    <line>
+      <text>Transponder</text>
+      <result>CODE / MODE CHECKED</result>
+    </line>
+    <line>
+      <text>Parking brake</text>
+      <result>RELEASED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="4">
+    <title>Line up procedure</title>
+    <line>
+      <text>Landing light</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Approach sector</text>
+      <result>CLEAR</result>
+    </line>
+    <line>
+      <text>Runway</text>
+      <result>IDENTIFIED</result>
+    </line>
+    <line>
+      <text>Power lever max (100% / 10 sec)</text>
+      <result>CHECK LOAD / RPM / FUEL FLOW / OP</result>
+    </line>
+  </checklist>
+    
+  <checklist n="5">
+    <title>After take-off procedure</title>
+    <line>
+      <text>Brakes</text>
+      <result>APPLY</result>
+    </line>
+    <line>
+      <text>Gear</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Landing lights</text>
+      <result>OFF</result>
+    </line>
+  </checklist>
+    
+  <checklist n="6">
+    <title>Climb to cruise check</title>
+    <line>
+      <text>Gear</text>
+      <result>CHECKED UP</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>CHECKED UP</result>
+    </line>
+    <line>
+      <text>Landing light</text>
+      <result>CHECKED OFF</result>
+    </line>
+  </checklist>
+    
+  <checklist n="7">
+    <title>Periodicaly during cruise</title>
+    <line>
+      <text>Fuel</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Radio</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Engine</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Direction</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Altitude</text>
+      <result>CHECKED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="8">
+    <title>Descent / approach check</title>
+    <line>
+      <text>Landing data</text>
+      <result>RECEIVED</result>
+    </line>
+    <line>
+      <text>Altimeters (2)</text>
+      <result>SET</result>
+    </line>
+    <line>
+      <text>COM / NAV / FMS</text>
+      <result>SET</result>
+    </line>
+    <line>
+      <text>Seat belts</text>
+      <result>FASTENED</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>CHECKED ON</result>
+    </line>
+    <line>
+      <text>Parking brake</text>
+      <result>CHECKED RELEASED</result>
+    </line>
+    <line>
+      <text>Gear warning horn</text>
+      <result>CHECKED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="9">
+    <title>Final check</title>
+    <line>
+      <text>Flaps</text>
+      <result>LDG</result>
+    </line>
+    <line>
+      <text>Gear</text>
+      <result>3 GREENS CHECKED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="10">
+    <title>Go around procedure</title>
+    <line>
+      <text>Power</text>
+      <result>MAX</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>APP</result>
+    </line>
+    <line>
+      <text>Positive rate of climb, gears</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>At safe altitude, flaps</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Landing light</text>
+      <result>OFF</result>
+    </line>
+  </checklist>
+    
+  <checklist n="11">
+    <title>After landing check</title>
+    <line>
+      <text>Flaps</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Pitot heat</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Alternate air</text>
+      <result>CLOSED</result>
+    </line>
+    <line>
+      <text>De-ice systems</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Landing/taxi lights</text>
+      <result>AS REQUIRED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="12">
+    <title>Parking check</title>
+    <line>
+      <text>Parking brake</text>
+      <result>SET</result>
+    </line>
+    <line>
+      <text>Power levers</text>
+      <result>IDLE for 2 mn</result>
+    </line>
+    <line>
+      <text>ELT</text>
+      <result>121.5 CHECKED</result>
+    </line>
+    <line>
+      <text>Engine / System page</text>
+      <result>CHECKED</result>
+    </line>
+    <line>
+      <text>Avionics master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Electrical consumers except ACL (strobe)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Engine masters (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>ACL (strobe)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Interior light</text>
+      <result>CHECKED OFF</result>
+    </line>
+    <line>
+      <text>Start key</text>
+      <result>REMOVED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="13">
+    <title>Engines out landing</title>
+    <line>
+      <text>Mayday call</text>
+      <result>CONSIDER</result>
+    </line>
+    <line>
+      <text>Engine masters (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Alternators (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Avionic master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Safety harnesses</text>
+      <result>FASTENED and TIGHT</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>APP or LDG as required</result>
+    </line>
+    <line>
+      <text>Approach speed</text>
+      <result>min (APP)83/(LDG)82 KIAS</result>
+    </line>
+    <line>
+      <text>If gear down landing</text>
+      <result>DOWN, 3 GREENS CHECKED</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+  </checklist>
+    
+  <checklist n="14">
+    <title>Engine failure/fire during take off</title>
+    <line>
+      <text>Power</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Brakes</text>
+      <result>APPLY</result>
+    </line>
+    <line>
+      <text>ATC</text>
+      <result>INFORM</result>
+    </line>
+    <line>
+      <text>Engine masters (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>In case on fire, cabin heat and defrost</text>
+      <result>OFF</result>
+    </line>
+  </checklist>
+    
+  <checklist n="15">
+    <title>Engine failure/fire in flight, airspeed above 71 KIAS</title>
+    <line>
+      <text>Power</text>
+      <result>INCREASE up to MAX</result>
+    </line>
+    <line>
+      <text>Airspeed</text>
+      <result>min vyse 85 KIAS</result>
+    </line>
+    <line>
+      <text>Landing gear</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Power level (affected engine)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>Engine master (affected engine)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Alternator (dead engine)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>fuel selector (dead engine)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>In case on fire, cabin heat and defrost</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Canopy</text>
+      <result>UNLATCH if necessary</result>
+    </line>
+  </checklist>
+   
+  <checklist n="16">
+    <title>Engine troubleshouting</title>
+    <line>
+      <text>Power lever (good engine)</text>
+      <result>INCREASE up to MAX</result>
+    </line>
+    <line>
+      <text>Power lever (affected engine)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>If in icing conditions, alternate air</text>
+      <result>OPEN</result>
+    </line>
+    <line>
+      <text>Fuel quantity</text>
+      <result>CHECK</result>
+    </line>
+    <line>
+      <text>Fuel selector</text>
+      <result>ON or XFEED</result>
+    </line>
+    <line>
+      <text>ECU swap (affected engine)</text>
+      <result>ECU B</result>
+    </line>
+    <line>
+      <text>If successful</text>
+      <result>Land ASAP</result>
+    </line>
+    <line>
+      <text>If unsuccessful, ECU swap (affected engine)</text>
+      <result>AUTO</result>
+    </line>
+    <line>
+      <text>Circuit breakers</text>
+      <result>CHECK / RESET</result>
+    </line>
+    <line>
+      <text>If successful</text>
+      <result>Land ASAP</result>
+    </line>
+    <line>
+      <text>If unsuccessful</text>
+      <result>continue with Engine failure in flight checklist</result>
+    </line>
+  </checklist>
+    
+  <checklist n="17">
+    <title>Engine restart</title>
+    <line>
+      <text>Airspeed</text>
+      <result>110 KIAS - max 120 KIAS</result>
+    </line>
+    <line>
+      <text>Pressure altitude</text>
+      <result>max 8000 ft</result>
+    </line>
+    <line>
+      <text>Power (affected engine)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>Fuel selector (affected engine)</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Alternate air</text>
+      <result>AS REQUIRED</result>
+    </line>
+    <line>
+      <text>Alternator (affected engine)</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Engine master (affected engine)</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Starter</text>
+      <result>If necessary ENGAGE</result>
+    </line>
+    <line>
+      <text>If engine started, power (affected engine)</text>
+      <result>MODERATE</result>
+    </line>
+    <line>
+      <text>Engine instruments</text>
+      <result>Check GREEN range</result>
+    </line>
+    <line>
+      <text>If engine did not start</text>
+      <result>Re-feathering procedure</result>
+    </line>
+  </checklist>
+    
+  <checklist n="18">
+    <title>Re-feathering procedure in flight</title>
+    <line>
+      <text>Airspeed</text>
+      <result>85 KIAS</result>
+    </line>
+    <line>
+      <text>Power lever (affected engine)</text>
+      <result>MAX</result>
+    </line>
+    <line>
+      <text>Engine master (affected engine)</text>
+      <result>CHECKED ON</result>
+    </line>
+    <line>
+      <text>Airspeed</text>
+      <result>Increase to achieve 1800 RPM</result>
+    </line>
+    <line>
+      <text>Engine master (affected engine)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Airspeed</text>
+      <result>Reduce to 85 KIAS</result>
+    </line>
+    <line>
+      <text>Propeller</text>
+      <result>CHECK FEATHERED</result>
+    </line>
+    <line>
+      <text>Alternator (dead engine)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Fuel selector (dead engine)</text>
+      <result>OFF</result>
+    </line>
+  </checklist>
+    
+  <checklist n="19">
+    <title>Oscillating RPM</title>
+    <line>
+      <text>Power lever</text>
+      <result>Change setting</result>
+    </line>
+    <line>
+      <text>If no success, ECU swap</text>
+      <result>ECU B</result>
+    </line>
+    <line>
+      <text>If no success, ECU swap</text>
+      <result>AUTO, land ASAP</result>
+    </line>
+  </checklist>
+    
+  <checklist n="20">
+    <title>RPM overspeed</title>
+    <line>
+      <text>Power setting</text>
+      <result>REDUCE</result>
+    </line>
+    <line>
+      <text>If no success, ECU swap</text>
+      <result>ECU B</result>
+    </line>
+    <line>
+      <text>If no success, ECU swap</text>
+      <result>AUTO, land ASAP, be prepared for Engine failure in flight</result>
+    </line>
+  </checklist>
+    
+  <checklist n="21">
+    <title>Manual extension of landing gear</title>
+    <line>
+      <text>Airspeed</text>
+      <result>max 152 KIAS</result>
+    </line>
+    <line>
+      <text>Gear indicator lights</text>
+      <result>TEST</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>CHECK ON</result>
+    </line>
+    <line>
+      <text>Bus voltage</text>
+      <result>CHECK NORMAL</result>
+    </line>
+    <line>
+      <text>Circuit breaker</text>
+      <result>CHECK</result>
+    </line>
+    <line>
+      <text>Gear selector</text>
+      <result>DOWN</result>
+    </line>
+    <line>
+      <text>Manual extension handle</text>
+      <result>PULL</result>
+    </line>
+    <line>
+      <text>Airspeed</text>
+      <result>max 110 KIAS</result>
+    </line>
+    <line>
+      <text>Gear indicator lights</text>
+      <result>CHECK 3 GREENS</result>
+    </line>
+  </checklist>
+    
+  <checklist n="22">
+    <title>Landing gear up landing</title>
+    <line>
+      <text>Approach</text>
+      <result>NORMAL</result>
+    </line>
+    <line>
+      <text>just before touchdown, power lever</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>After touchdown, Engine masters (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+  </checklist>
+    
+  <checklist n="23">
+    <title>Engine fire on ground</title>
+    <line>
+      <text>Power levers (2)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>Engine masters (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Fuel selectors (1)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Mayday call</text>
+      <result>CONSIDER</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>When engine and aircraft stoppped, canopy</text>
+      <result>OPEN and EVACUATE</result>
+    </line>
+  </checklist>
+    
+  <checklist n="24">
+    <title>Electrical fire on ground</title>
+    <line>
+      <text>Mayday call</text>
+      <result>CONSIDER</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Power levers (2)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>Engine masters (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Fuel selectors (2)</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>When engine and aircraft stoppped, canopy</text>
+      <result>OPEN and EVACUATE</result>
+    </line>
+  </checklist>
+    
+  <checklist n="25">
+    <title>Electrical fire in flight</title>
+    <line>
+      <text>Emergency switch</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Mayday call</text>
+      <result>CONSIDER</result>
+    </line>
+    <line>
+      <text>Avionic master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Electric master</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Cabin heat and defrost</text>
+      <result>OFF</result>
+    </line>
+    <line>
+      <text>Canopy</text>
+      <result>UNLATCH if necessary</result>
+    </line>
+    <line>
+      <text>Max airspeed 117 KIAS</text>
+      <result>Land ASAP</result>
+    </line>
+  </checklist>
+    
+  <checklist n="26">
+    <title>Emergency descent</title>
+    <line>
+      <text>Flaps</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Landing gear</text>
+      <result>DOWN</result>
+    </line>
+    <line>
+      <text>Power levers (2)</text>
+      <result>IDLE</result>
+    </line>
+    <line>
+      <text>Airspeed</text>
+      <result>AS REQUIRED</result>
+    </line>
+  </checklist>
+    
+  <checklist n="27">
+    <title>flight into icing</title>
+    <line>
+      <text>Pitot heat</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Cabin heat and defrost</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Power</text>
+      <result>INCREASE PERIODICALY</result>
+    </line>
+    <line>
+      <text>De-ice systems</text>
+      <result>USE as appropriate</result>
+    </line>
+    <line>
+      <text>Alternate air</text>
+      <result>OPEN as required</result>
+    </line>
+  </checklist>
+    
+  <checklist n="28">
+    <title>Ice protection failure</title>
+    <line>
+      <text>Airspeed</text>
+      <result>MIN 118 KIAS</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>UP</result>
+    </line>
+    <line>
+      <text>Slip angle</text>
+      <result>MINIMIZE</result>
+    </line>
+    <line>
+      <text>Approach with residual ice</text>
+      <result>92 KIAS</result>
+    </line>
+    <line>
+      <text>Landing distance</text>
+      <result>x 1.4</result>
+    </line>
+  </checklist>
+    
+  <checklist n="29">
+    <title>Complete electical failure</title>
       <line>
-	<text>Preflight check</text>
-	<result>COMPLETED</result>
-        </line>
-        <line>
-        <text>Baggage and tow bar</text>
-        <result>SECURED</result>
-        </line>
-        <line>
-        <text>Fuel selectors (2)</text>
-        <result>ON, safety guards closed</result>
-        </line>
-        <line>
-        <text>Power levers (2)</text>
-        <result>IDLE</result>
-        </line>
-        <line>
-        <text>Parking brake</text>
-        <result>SET</result>
-        </line>
-        <line>
-        <text>Alternate air</text>
-        <result>CLOSED</result>
-        </line>
-        <line>
-        <text>Manual gear extension handle</text>
-        <result>PUSHED</result>
-        </line>
-        <line>
-        <text>Gear selector</text>
-        <result>DOWN</result>
-        </line>
-        <line>
-        <text>Avionic master</text>
-        <result>OFF</result>
-        </line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Engine masters (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Pitot heat</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Alternators (2)</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>ECU swap (2)</text>
-				<result>AUTO</result>
-			</line>
-			<line>
-				<text>All light switches</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Emergency switch</text>
-				<result>OFF/GUARDED</result>
-			</line>
-			<line>
-				<text>ELT</text>
-				<result>ARMED</result>
-			</line>
-			<line>
-				<text>Circuits breakers</text>
-				<result>CHECKED IN</result>
-			</line>
-			<line>
-				<text>Flap selector</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Rudders pedals</text>
-				<result>ADJUSTED</result>
-			</line>
-			<line>
-				<text>Flight controls</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Trims</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Gear transit warning</text>
-				<result>TEST</result>
-			</line>
-			<line>
-				<text>De-Ice ANNUNC test</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Windshield de-icing</text>
-				<result>Pump 1 + 2 CHECKED</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>LDG</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Passengers</text>
-				<result>INSTRUCTED</result>
-			</line>
-			<line>
-				<text>Seat belts</text>
-				<result>FASTENED</result>
-			</line>
-			<line>
-				<text>Rear door</text>
-				<result>CLOSED and LATCHED</result>
-			</line>
-			<line>
-				<text>G1000</text>
-				<result>POWERED</result>
-			</line>
-			<line>
-				<text>PFD/MFD</text>
-				<result>BACKUP MODE</result>
-			</line>
-			<line>
-				<text>MFD</text>
-				<result>ENGINE - FUEL</result>
-			</line>
-			<line>
-				<text>Fuel quantity</text>
-				<result>CHECKED, RESET/SET if requ.</result>
-			</line>
-			<line>
-				<text>Fuel temperature</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>MFD</text>
-				<result>ENGINE - SYSTEM</result>
-			</line>
-			<line>
-				<text>De-Ice ANNUNC test</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Start key</text>
-				<result>INSERTED</result>
-			</line>
-			<line>
-				<text>Power levers (2)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>ACL (strobe)</text>
-				<result>ON</result>
-			</line>
-		</checklist>
-		
-		<checklist n="1">
-			<title>Engine start procedure</title>
-			<line>
-				<text>Engine master</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Annunciations/Eng. Instr.</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Propeller area</text>
-				<result>CLEAR</result>
-			</line>
-			<line>
-				<text>Start key</text>
-				<result>START</result>
-			</line>
-			<line>
-				<text>Oil pressure</text>
-				<result>OUTSIDE RED within 3 s</result>
-			</line>
-			<line>
-				<text>Voltage, Electrical load</text>
-				<result>CHECK INDICATION</result>
-			</line>
-			<line>
-				<text>Annunciations/Eng. Instr.</text>
-				<result>CHECK</result>
-			</line>
-		</checklist>
-		
-		<checklist n="2">
-			<title>Check after engine start</title>
-			<line>
-				<text>Oil pressure</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>RPM 900 +/- 20</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Warm up time (Idle 2mn, 1400RPM until Oil>50 and Coolant>60)</text>
-				<result>START</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>XFEED</result>
-			</line>
-			<line>
-				<text>Pitot heat</text>
-				<result>ON, annunc + Amps CHECKED</result>
-			</line>
-			<line>
-				<text>Pitot heat</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>PFD/MFD</text>
-				<result>NORMAL MODE</result>
-			</line>
-			<line>
-				<text>Avionics mlaster</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>FMS setup (COM,NAV,ADF,CDI,BRG,Flight Plan,XPDR ...)</text>
-				<result>COMPLETED</result>
-			</line>
-			<line>
-				<text>Autopilot test</text>
-				<result>COMPLETED</result>
-			</line>
-			<line>
-				<text>Flood lights</text>
-				<result>CHECKED, ON as required</result>
-			</line>
-			<line>
-				<text>Position lights</text>
-				<result>ON as required</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Altimeters (2)</text>
-				<result>SET</result>
-			</line>
-			<line>
-				<text>Standby horizon</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Transponder</text>
-				<result>CODE / MODE CHECKED</result>
-			</line>
-			<line>
-				<text>Parking break</text>
-				<result>RELEASED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="3">
-			<title>Before take off check</title>
-			<line>
-				<text>Parking brake</text>
-				<result>SET</result>
-			</line>
-			<line>
-				<text>Seat belts</text>
-				<result>FASTENED</result>
-			</line>
-			<line>
-				<text>Rear door</text>
-				<result>CLOSED and LATCHED</result>
-			</line>
-			<line>
-				<text>Front canopy</text>
-				<result>CLOSED and LATCHED</result>
-			</line>
-			<line>
-				<text>Front baggage dorrs</text>
-				<result>CHECKED CLOSED</result>
-			</line>
-			<line>
-				<text>Door warning light</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Engine instruments</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Fuel temperature</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Circuit breakers</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Elevator trim</text>
-				<result>CHECKED, T/O SET</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>CHECKED ON</result>
-			</line>
-			<line>
-				<text>Rudder trim</text>
-				<result>AS REQUIRED</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>CHECKED UP</result>
-			</line>
-			<line>
-				<text>Flight controls</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Power levers (2)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>ECU test (2)</text>
-				<result>PERFORM</result>
-			</line>
-			<line>
-				<text>ECU swap</text>
-				<result>ECU B, ENGINES CHECKED</result>
-			</line>
-			<line>
-				<text>ECU swap</text>
-				<result>AUTO</result>
-			</line>
-			<line>
-				<text>Pitot heat</text>
-				<result>AS REQUIRED</result>
-			</line>
-			<line>
-				<text>Ice protection</text>
-				<result>AS REQUIRED</result>
-			</line>
-			<line>
-				<text>Transponder</text>
-				<result>CODE / MODE CHECKED</result>
-			</line>
-			<line>
-				<text>Parking brake</text>
-				<result>RELEASED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="4">
-			<title>Line up procedure</title>
-			<line>
-				<text>Landing light</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Approach sector</text>
-				<result>CLEAR</result>
-			</line>
-			<line>
-				<text>Runway</text>
-				<result>IDENTIFIED</result>
-			</line>
-			<line>
-				<text>Power lever max (100% / 10 sec)</text>
-				<result>CHECK LOAD / RPM / FUEL FLOW / OP</result>
-			</line>
-		</checklist>
-		
-		
-		<checklist n="5">
-			<title>After take-off procedure</title>
-			<line>
-				<text>Brakes</text>
-				<result>APPLY</result>
-			</line>
-			<line>
-				<text>Gear</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Landing lights</text>
-				<result>OFF</result>
-			</line>
-		</checklist>
-		
-		<checklist n="6">
-			<title>Climb to cruise check</title>
-			<line>
-				<text>Gear</text>
-				<result>CHECKED UP</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>CHECKED UP</result>
-			</line>
-			<line>
-				<text>Landing light</text>
-				<result>CHECKED OFF</result>
-			</line>
-		</checklist>
-		
-		<checklist n="7">
-			<title>Periodicaly during cruise</title>
-			<line>
-				<text>Fuel</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Radio</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Engine</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Direction</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Altitude</text>
-				<result>CHECKED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="8">
-			<title>Descent / approach check</title>
-			<line>
-				<text>Landing data</text>
-				<result>RECEIVED</result>
-			</line>
-			<line>
-				<text>Altimeters (2)</text>
-				<result>SET</result>
-			</line>
-			<line>
-				<text>COM / NAV / FMS</text>
-				<result>SET</result>
-			</line>
-			<line>
-				<text>Seat belts</text>
-				<result>FASTENED</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>CHECKED ON</result>
-			</line>
-			<line>
-				<text>Parking brake</text>
-				<result>CHECKED RELEASED</result>
-			</line>
-			<line>
-				<text>Gear warning horn</text>
-				<result>CHECKED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="9">
-			<title>Final check</title>
-			<line>
-				<text>Flaps</text>
-				<result>LDG</result>
-			</line>
-			<line>
-				<text>Gear</text>
-				<result>3 GREENS CHECKED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="10">
-			<title>Go around procedure</title>
-			<line>
-				<text>Power</text>
-				<result>MAX</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>APP</result>
-			</line>
-			<line>
-				<text>Positive rate of climb, gears</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>At safe altitude, flaps</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Landing light</text>
-				<result>OFF</result>
-			</line>
-		</checklist>
-		
-		<checklist n="11">
-			<title>After landing check</title>
-			<line>
-				<text>Flaps</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Pitot heat</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Alternate air</text>
-				<result>CLOSED</result>
-			</line>
-			<line>
-				<text>De-ice systems</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Landing/taxi lights</text>
-				<result>AS REQUIRED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="12">
-			<title>Parking check</title>
-			<line>
-				<text>Parking brake</text>
-				<result>SET</result>
-			</line>
-			<line>
-				<text>Power levers</text>
-				<result>IDLE for 2 mn</result>
-			</line>
-			<line>
-				<text>ELT</text>
-				<result>121.5 CHECKED</result>
-			</line>
-			<line>
-				<text>Engine / System page</text>
-				<result>CHECKED</result>
-			</line>
-			<line>
-				<text>Avionics master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Electrical consumers except ACL (strobe)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Engine masters (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>ACL (strobe)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Interior light</text>
-				<result>CHECKED OFF</result>
-			</line>
-			<line>
-				<text>Start key</text>
-				<result>REMOVED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="13">
-			<title>Engines out landing</title>
-			<line>
-				<text>Mayday call</text>
-				<result>CONSIDER</result>
-			</line>
-			<line>
-				<text>Engine masters (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Alternators (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Avionic master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Safety harnesses</text>
-				<result>FASTENED and TIGHT</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>APP or LDG as required</result>
-			</line>
-			<line>
-				<text>Approach speed</text>
-				<result>min (APP)83/(LDG)82 KIAS</result>
-			</line>
-			<line>
-				<text>If gear down landing</text>
-				<result>DOWN, 3 GREENS CHECKED</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-		</checklist>
-		
-		<checklist n="14">
-			<title>Engine failure/fire during take off</title>
-			<line>
-				<text>Power</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Brakes</text>
-				<result>APPLY</result>
-			</line>
-			<line>
-				<text>ATC</text>
-				<result>INFORM</result>
-			</line>
-			<line>
-				<text>Engine masters (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>In case on fire, cabin heat and defrost</text>
-				<result>OFF</result>
-			</line>
-		</checklist>
-		
-		<checklist n="15">
-			<title>Engine failure/fire in flight, airspeed above 71 KIAS</title>
-			<line>
-				<text>Power</text>
-				<result>INCREASE up to MAX</result>
-			</line>
-			<line>
-				<text>Airspeed</text>
-				<result>min vyse 85 KIAS</result>
-			</line>
-			<line>
-				<text>Landing gear</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Power level (affected engine)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>Engine master (affected engine)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Alternator (dead engine)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>fuel selector (dead engine)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>In case on fire, cabin heat and defrost</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Canopy</text>
-				<result>UNLATCH if necessary</result>
-			</line>
-		</checklist>
-		
-		<checklist n="16">
-			<title>Engine troubleshouting</title>
-			<line>
-				<text>Power lever (good engine)</text>
-				<result>INCREASE up to MAX</result>
-			</line>
-			<line>
-				<text>Power lever (affected engine)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>If in icing conditions, alternate air</text>
-				<result>OPEN</result>
-			</line>
-			<line>
-				<text>Fuel quantity</text>
-				<result>CHECK</result>
-			</line>
-			<line>
-				<text>Fuel selector</text>
-				<result>ON or XFEED</result>
-			</line>
-			<line>
-				<text>ECU swap (affected engine)</text>
-				<result>ECU B</result>
-			</line>
-			<line>
-				<text>If successful</text>
-				<result>Land ASAP</result>
-			</line>
-			<line>
-				<text>If unsuccessful, ECU swap (affected engine)</text>
-				<result>AUTO</result>
-			</line>
-			<line>
-				<text>Circuit breakers</text>
-				<result>CHECK / RESET</result>
-			</line>
-			<line>
-				<text>If successful</text>
-				<result>Land ASAP</result>
-			</line>
-			<line>
-				<text>If unsuccessful</text>
-				<result>continue with Engine failure in flight checklist</result>
-			</line>
-		</checklist>
-		
-		<checklist n="17">
-			<title>Engine restart</title>
-			<line>
-				<text>Airspeed</text>
-				<result>110 KIAS - max 120 KIAS</result>
-			</line>
-			<line>
-				<text>Pressure altitude</text>
-				<result>max 8000 ft</result>
-			</line>
-			<line>
-				<text>Power (affected engine)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>Fuel selector (affected engine)</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Alternate air</text>
-				<result>AS REQUIRED</result>
-			</line>
-			<line>
-				<text>Alternator (affected engine)</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Engine master (affected engine)</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Starter</text>
-				<result>If necessary ENGAGE</result>
-			</line>
-			<line>
-				<text>If engine started, power (affected engine)</text>
-				<result>MODERATE</result>
-			</line>
-			<line>
-				<text>Engine instruments</text>
-				<result>Check GREEN range</result>
-			</line>
-			<line>
-				<text>If engine did not start</text>
-				<result>Re-feathering procedure</result>
-			</line>
-		</checklist>
-		
-		<checklist n="18">
-			<title>Re-feathering procedure in flight</title>
-			<line>
-				<text>Airspeed</text>
-				<result>85 KIAS</result>
-			</line>
-			<line>
-				<text>Power lever (affected engine)</text>
-				<result>MAX</result>
-			</line>
-			<line>
-				<text>Engine master (affected engine)</text>
-				<result>CHECKED ON</result>
-			</line>
-			<line>
-				<text>Airspeed</text>
-				<result>Increase to achieve 1800 RPM</result>
-			</line>
-			<line>
-				<text>Engine master (affected engine)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Airspeed</text>
-				<result>Reduce to 85 KIAS</result>
-			</line>
-			<line>
-				<text>Propeller</text>
-				<result>CHECK FEATHERED</result>
-			</line>
-			<line>
-				<text>Alternator (dead engine)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Fuel selector (dead engine)</text>
-				<result>OFF</result>
-			</line>
-		</checklist>
-		
-		<checklist n="19">
-			<title>Oscillating RPM</title>
-			<line>
-				<text>Power lever</text>
-				<result>Change setting</result>
-			</line>
-			<line>
-				<text>If no success, ECU swap</text>
-				<result>ECU B</result>
-			</line>
-			<line>
-				<text>If no success, ECU swap</text>
-				<result>AUTO, land ASAP</result>
-			</line>
-		</checklist>
-		
-		<checklist n="20">
-			<title>RPM overspeed</title>
-			<line>
-				<text>Power setting</text>
-				<result>REDUCE</result>
-			</line>
-			<line>
-				<text>If no success, ECU swap</text>
-				<result>ECU B</result>
-			</line>
-			<line>
-				<text>If no success, ECU swap</text>
-				<result>AUTO, land ASAP, be prepared for Engine failure in flight</result>
-			</line>
-		</checklist>
-		
-		<checklist n="21">
-			<title>Manual extension of landing gear</title>
-			<line>
-				<text>Airspeed</text>
-				<result>max 152 KIAS</result>
-			</line>
-			<line>
-				<text>Gear indicator lights</text>
-				<result>TEST</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>CHECK ON</result>
-			</line>
-			<line>
-				<text>Bus voltage</text>
-				<result>CHECK NORMAL</result>
-			</line>
-			<line>
-				<text>Circuit breaker</text>
-				<result>CHECK</result>
-			</line>
-			<line>
-				<text>Gear selector</text>
-				<result>DOWN</result>
-			</line>
-			<line>
-				<text>Manual extension handle</text>
-				<result>PULL</result>
-			</line>
-			<line>
-				<text>Airspeed</text>
-				<result>max 110 KIAS</result>
-			</line>
-			<line>
-				<text>Gear indicator lights</text>
-				<result>CHECK 3 GREENS</result>
-			</line>
-		</checklist>
-		
-		<checklist n="22">
-			<title>Landing gear up landing</title>
-			<line>
-				<text>Approach</text>
-				<result>NORMAL</result>
-			</line>
-			<line>
-				<text>just before touchdown, power lever</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>After touchdown, Engine masters (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-		</checklist>
-		
-		<checklist n="23">
-			<title>Engine fire on ground</title>
-			<line>
-				<text>Power levers (2)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>Engine masters (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Fuel selectors (1)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Mayday call</text>
-				<result>CONSIDER</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>When engine and aircraft stoppped, canopy</text>
-				<result>OPEN and EVACUATE</result>
-			</line>
-		</checklist>
-		
-		<checklist n="24">
-			<title>Electrical fire on ground</title>
-			<line>
-				<text>Mayday call</text>
-				<result>CONSIDER</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Power levers (2)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>Engine masters (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Fuel selectors (2)</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>When engine and aircraft stoppped, canopy</text>
-				<result>OPEN and EVACUATE</result>
-			</line>
-		</checklist>
-		
-		<checklist n="25">
-			<title>Electrical fire in flight</title>
-			<line>
-				<text>Emergency switch</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Mayday call</text>
-				<result>CONSIDER</result>
-			</line>
-			<line>
-				<text>Avionic master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Electric master</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Cabin heat and defrost</text>
-				<result>OFF</result>
-			</line>
-			<line>
-				<text>Canopy</text>
-				<result>UNLATCH if necessary</result>
-			</line>
-			<line>
-				<text>Max airspeed 117 KIAS</text>
-				<result>Land ASAP</result>
-			</line>
-		</checklist>
-		
-		<checklist n="26">
-			<title>Emergency descent</title>
-			<line>
-				<text>Flaps</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Landing gear</text>
-				<result>DOWN</result>
-			</line>
-			<line>
-				<text>Power levers (2)</text>
-				<result>IDLE</result>
-			</line>
-			<line>
-				<text>Airspeed</text>
-				<result>AS REQUIRED</result>
-			</line>
-		</checklist>
-		
-		<checklist n="27">
-			<title>flight into icing</title>
-			<line>
-				<text>Pitot heat</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Cabin heat and defrost</text>
-				<result>ON</result>
-			</line>
-			<line>
-				<text>Power</text>
-				<result>INCREASE PERIODICALY</result>
-			</line>
-			<line>
-				<text>De-ice systems</text>
-				<result>USE as appropriate</result>
-			</line>
-			<line>
-				<text>Alternate air</text>
-				<result>OPEN as required</result>
-			</line>
-		</checklist>
-		
-		<checklist n="28">
-			<title>Ice protection failure</title>
-			<line>
-				<text>Airspeed</text>
-				<result>MIN 118 KIAS</result>
-			</line>
-			<line>
-				<text>Flaps</text>
-				<result>UP</result>
-			</line>
-			<line>
-				<text>Slip angle</text>
-				<result>MINIMIZE</result>
-			</line>
-			<line>
-				<text>Approach with residual ice</text>
-				<result>92 KIAS</result>
-			</line>
-			<line>
-				<text>Landing distance</text>
-				<result>x 1.4</result>
-			</line>
-		</checklist>
-		
-    <checklist n="29">
-      <title>Complete electical failure</title>
-        <line>
-        <text>Circuit breakers</text>
-        <result>CHECK all IN</result>
-      </line>
-      <line>
-        <text>Emergency switch</text>
-        <result>ON</result>
-      </line>
-      <line>
-        <text>Flood light, if necessary</text>
-        <result>ON</result>
-      </line>
-      <line>
-        <text>Power</text>
-        <result>SEt according power lever position and engine noise</result>
-      </line>
-      <line>
-        <text>Flaps</text>
-        <result>VERIFY POSITION</result>
-      </line>
-      <line>
-        <text>Land ASAP</text>
-        <result>Landing may slowly extend</result>
-      </line>
-    </checklist>
+      <text>Circuit breakers</text>
+      <result>CHECK all IN</result>
+    </line>
+    <line>
+      <text>Emergency switch</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Flood light, if necessary</text>
+      <result>ON</result>
+    </line>
+    <line>
+      <text>Power</text>
+      <result>SEt according power lever position and engine noise</result>
+    </line>
+    <line>
+      <text>Flaps</text>
+      <result>VERIFY POSITION</result>
+    </line>
+    <line>
+      <text>Land ASAP</text>
+      <result>Landing may slowly extend</result>
+    </line>
+  </checklist>
 
   </checklists>
 
 </PropertyList>
-

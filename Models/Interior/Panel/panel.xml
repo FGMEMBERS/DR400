@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!--
-          2008 : Created by Helijah
+    2008 : Created by Helijah
     April 2012 : Modified by PAF team
-      May 2012 : Updated by Helijah
-      Dec 2012 : Updated by Helijah
+    May 2012 : Updated by Helijah
+    Dec 2012 : Updated by Helijah
+    Nov 2013 : Updated by Helijah
 -->
 <PropertyList>
 
   <!-- Based on http://www.aeroclub-montpellier.com/flotte/F-GOZZ/Tableau.jpg -->
-
   <path>panel.ac</path>
 
   <animation>
@@ -46,11 +46,11 @@
   </animation>
 
   <!-- 
-       ################################################################
-       PARTS : Audio plug, Throttle, Mixture and trim indicator, Flaps,
-               Fuel valve, Trims, Glove compartment, Cabin Heat, Fuse,
-               Parking brake, Carb Heat
-       ################################################################
+    ################################################################
+    PARTS : Audio plug, Throttle, Mixture and trim indicator, Flaps,
+            Fuel valve, Trims, Glove compartment, Cabin Heat, Fuse,
+            Parking brake, Carb Heat
+    ################################################################
   -->
   <!-- Pilot audio plug -->
   <model>
@@ -179,11 +179,11 @@
   </model>
 
   <!--
-       ################################################################
-       INSTRUMENTS : ALT, ADF, AI, ASI, RPM, EGT, HDG, HI, VSI, Turn,
-                     Fuel-press, Clock, KI206, KR87, KX165, Volts,
-                     Warning lights, Oil-temp, Oil-press, Garmin196, ELT
-       ################################################################
+    ################################################################
+    INSTRUMENTS : ALT, ADF, AI, ASI, RPM, EGT, HDG, HI, VSI, Turn,
+                  Fuel-press, Clock, KI206, KR87, KX165, Volts,
+                  Warning lights, Oil-temp, Oil-press, ELT
+     ################################################################
   -->
   <!-- ASI -->
   <model>
@@ -361,7 +361,7 @@
     <offsets>
       <x-m> 0.103 </x-m>
       <y-m> 0.151 </y-m>
-      <z-m> 0.133 </z-m>
+      <z-m> 0.143 </z-m>
     </offsets>
   </model>
 
@@ -385,26 +385,6 @@
     </offsets>
   </model>
 
-  <!-- Garmin GPS196 -->
-  <model>
-    <path>Aircraft/Instruments-3d/garmin196/garmin196.xml</path>
-    <offsets>
-      <x-m> 0.110 </x-m>
-      <y-m> 0.152 </y-m>
-      <z-m> 0.208 </z-m>
-    </offsets>
-  </model>
-  
-  <!-- Garmin GPS196 support -->
-  <model>
-  <path>Aircraft/DR400/Models/Interior/Panel/Instruments/garmin196/garmin196_support2.xml</path>
-    <offsets>
-      <x-m> 0.111</x-m>
-      <y-m> 0.152 </y-m>
-      <z-m> 0.208 </z-m>
-    </offsets>
-  </model>
-  
   <!-- Les alertes -->
   <model>
     <path>Aircraft/DR400/Models/Interior/Panel/Instruments/warning/warning.xml</path>
@@ -454,9 +434,9 @@
   </model>
 
   <!-- 
-       ################################################################
-       #                            TEXT                              #
-       ################################################################
+    ################################################################
+    #                            TEXT                              #
+    ################################################################
   -->
   <!-- Plaque bagages passagers -->
   <model>
@@ -519,9 +499,9 @@
   </model>
 
   <!--
-       ########################################
-       ##              SWITCHS               ##
-       ########################################
+    ########################################
+    ##              SWITCHS               ##
+    ########################################
   -->
   <!-- Landing lights switch -->
   <model>
@@ -634,9 +614,9 @@
   </model>
 
   <!--
-       ########################################
-       ##            ANIMATIONS              ##
-       ########################################
+    ########################################
+    ##            ANIMATIONS              ##
+    ########################################
   -->
   <!-- Trims wheel -->
   <animation>

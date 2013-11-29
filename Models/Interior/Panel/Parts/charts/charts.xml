@@ -3,5 +3,9 @@
 <PropertyList>
 
   <path>charts.ac</path>
+  
+  <animation>
+    <object-name>carte</object-name>
+  </animation>
 
 </PropertyList>

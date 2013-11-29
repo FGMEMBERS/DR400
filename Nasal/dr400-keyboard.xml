@@ -2,16 +2,16 @@
 
 <PropertyList>
 
-   <key n="100">
+  <key n="100">
     <name>d</name>
     <desc>Canopy</desc>
     <binding>
      <command>nasal</command>
-     <script>doors.doorsystem.crewexport();</script>
+     <script>doors.crew.toggle();</script>
     </binding>
-   </key>
+  </key>
 
-   <key n="115">
+  <key n="115">
     <name>s</name>
     <desc>Starter</desc>
     <binding>
@@ -26,7 +26,7 @@
         <value>0</value>
       </binding>
     </mod-up>
-   </key>
+  </key>
 
 </PropertyList>
 

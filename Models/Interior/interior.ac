@@ -8,7 +8,7 @@ name "bout1"
 loc -0.751015 0.656431 0.065
 data 5
 bout1
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -1012,7 +1012,7 @@ name "bout2"
 loc -0.751069 0.656702 -0.065
 data 5
 bout2
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 129
@@ -2016,7 +2016,7 @@ name "ceintures"
 loc 0 0 -0
 data 9
 ceintures
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 616
@@ -6221,7 +6221,7 @@ name "interieur"
 loc 0 0 -0
 data 9
 interieur
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 384
@@ -9212,7 +9212,7 @@ name "inttour"
 loc 0 0 -0
 data 7
 inttour
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 196
@@ -13158,7 +13158,7 @@ name "longeronint"
 loc 0 0 -0
 data 11
 longeronint
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 88
@@ -13859,7 +13859,7 @@ name "poignee-canopy"
 loc 0 0 -0
 data 14
 poignee-canopy
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 267
@@ -16392,7 +16392,7 @@ name "poingee-longeron"
 loc 0 0 -0
 data 16
 poingee-longeron
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 130
@@ -17428,7 +17428,7 @@ name "portefusibles"
 loc 0 0 -0
 data 13
 portefusibles
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 1045
@@ -25939,7 +25939,7 @@ name "sieges"
 loc 0 0 -0
 data 6
 sieges
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 802
@@ -32578,7 +32578,7 @@ name "sono"
 loc 0 0 -0
 data 4
 sono
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 275
@@ -35152,7 +35152,7 @@ name "toitverriereint"
 loc 0 0 -0
 data 15
 toitverriereint
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 119
@@ -35944,7 +35944,7 @@ name "toitverriereint2"
 loc 0 0 -0
 data 16
 toitverriereint2
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 112

@@ -5,9 +5,16 @@
   <path>mags.ac</path>
 
   <animation>
+    <object-name>key</object-name>
+    <object-name>magsw</object-name>
+    
+    <object-name>click-L</object-name>
+    <object-name>click-R</object-name>
+  </animation>
+
+  <animation>
     <type>material</type>
     <object-name>key</object-name>
-    <object-name>start</object-name>
     <object-name>magsw</object-name>
     <emission>
       <red>   0.07500 </red>
@@ -67,5 +74,3 @@
   </animation>
   
 </PropertyList>
-
-

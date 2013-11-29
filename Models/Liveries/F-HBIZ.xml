@@ -7,16 +7,16 @@
     <model>
       <livery>
         <name type="string">F-HBIZ</name>
-        <texture>Liveries/F-HBIZ.png</texture>
+        <texture>Liveries/4096x4096/F-HBIZ.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
           <blue>  0.3 </blue>
         </specular>
         <emission>
-          <red>   0.2 </red>
-          <green> 0.2 </green>
-          <blue>  0.2 </blue>
+          <red>   0.02 </red>
+          <green> 0.02 </green>
+          <blue>  0.02 </blue>
         </emission>
       </livery>
       <show-immat type="bool">false</show-immat>

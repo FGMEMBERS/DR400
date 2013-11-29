@@ -7,8 +7,8 @@ name "on-off"
 loc 0 0 -0
 data 6
 on-off
-texture "colors.png"
-texrep 1 1
+texture "switch.png"
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 46
 -0.00174 0.000964 -0.006112
