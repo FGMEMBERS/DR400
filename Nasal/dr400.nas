@@ -9,6 +9,10 @@
 ##
 ###############################################################################
 
+# Do terrain modelling ourselves.
+setprop("sim/fdm/surface/override-level", 1);
+
+
 #####################################
 # Dialogs (please comment the version)
 #####################################
