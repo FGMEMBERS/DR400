@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>mixture-trimsindicator.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>mixturetrims</object-name>
+    <object-name>labels</object-name>
+    <object-name>mixture</object-name>
+    <object-name>trimindicator</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>mixtureplus</object-name>
+    <object-name>mixturemoins</object-name>
+    <object-name>trimsplus</object-name>
+    <object-name>trimsmoins</object-name>
+  </animation>
+
+  <!-- Mixture -->  
+  <animation>
+    <type>rotate</type>
+    <object-name>mixture</object-name>
+    <property>controls/engines/engine[0]/mixture</property>
+    <factor>60</factor>
+    <offset-deg> -60 </offset-deg>
+    <center>
+      <x-m> -0.043 </x-m>
+      <y-m>  0.018 </y-m>
+      <z-m> -0.027 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>mixture</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.05</interval-sec>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/mixture-coupled</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>dr400.set_levers("mixture",0,-1,1);</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/mixture-coupled</property>
+          <value>1</value>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>mixtureplus</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">0.05</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>mixturemoins</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/mixture</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <!-- Elevator Trim control (NOT FLAPS!) -->
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>trimsplus</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/elevator-trim</property>
+        <step type="double">0.003</step>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>trimsmoins</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/flight/elevator-trim</property>
+        <step type="double">-0.003</step>
+      </binding>          
+    </action>
+  </animation>  
+                                    
+  <animation>
+    <type>translate</type>
+    <object-name>trimindicator</object-name>
+    <property>/controls/flight/elevator-trim</property>
+    <interpolation>
+      <entry><ind>  0.36 </ind> <dep>  0.00 </dep></entry>
+      <entry><ind> -0.36 </ind> <dep>  0.07 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  0.27 </x>
+      <y>  0.00 </y>
+      <z> -0.66 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

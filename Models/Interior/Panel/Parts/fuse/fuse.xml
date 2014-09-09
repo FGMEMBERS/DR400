@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>fuse.ac</path>
+
+  <animation>
+    <object-name>plaque</object-name>
+    <object-name>support</object-name>
+    <object-name>Fusible00</object-name>
+    <object-name>Fusible01</object-name>
+    <object-name>Fusible02</object-name>
+    <object-name>Fusible03</object-name>
+    <object-name>Fusible04</object-name>
+    <object-name>Fusible05</object-name>
+    <object-name>Fusible06</object-name>
+    <object-name>Fusible07</object-name>
+    <object-name>Fusible08</object-name>
+    <object-name>Fusible09</object-name>
+    <object-name>Fusible10</object-name>
+    <object-name>Fusible11</object-name>
+    <object-name>Fusible12</object-name>
+    <object-name>Fusible13</object-name>
+    <object-name>Fusible14</object-name>
+    <object-name>Fusible15</object-name>
+  </animation>
+
+  <!--
+  animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Fusible</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/circuit-breakers/ess-bus</property>
+        <value type="bool">true</value>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>Fusible</object-name>
+    <property>controls/circuit-breakers/ess-bus</property>
+    <factor>0.008</factor>
+    <axis>
+     <x> -1 </x>
+     <y>  0 </y>
+     <z>  0 </z>
+    </axis>
+  </animation
+  -->
+
+</PropertyList>

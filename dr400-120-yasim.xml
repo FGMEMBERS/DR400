@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Robin DR 400-120 : BARANGER Emmanuel Helijah (2008)
+              Updated : Laurent Vromman
+              Updated : Oliver FAIVRE             (30-01-2010)
+              Updated : Helijah                   (19-12-2012 / 28-11-2013)
+
+              source          : http://en.wikipedia.org/wiki/Robin_DR400
+              
+              Wingspan        : 8.72 m (28 ft 71/4 in)
+              Lenght          : 6.96 m (22 ft 10 in)
+              Height          : 2.23 m (7 ft 31/4 in)
+              Empty mass      : 600 kg (1323 lb)
+              Engines         : 1 x Lycoming O-235-L2A flat-four piston engine (118 hp)
+              Maximum speed   : 215 km/h (116 kt)
+-->
+
+<!--MTOW : 1980 lbs -->
+<airplane mass="1207">
+
+  <!-- Approach configuration -->
+  <approach speed="58" aoa="7" fuel="0.3">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="110" alt="5000" fuel="1">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
+  </cruise>
+
+  <cockpit x="1.289" y="0.195" z="0.555"/>
+
+  <fuselage ax="3.061" ay="0" az="0.029" bx="-3.268" by="0" bz="-0.020" width="1.1" midpoint="0.3" taper="0.4"/>
+
+  <wing x="0.896" y="0.0" z="-0.384"
+        chord="1.710" 
+        length="2.72" 
+        taper="1" 
+        incidence="1"
+        camber="0.04">
+        <stall aoa="20" width="1" peak="1.5"/>
+        <flap0 start="0.24" end="0.99" lift="1.2" drag="1.1"/>
+        <!-- 03/02/2010 O.Faivre - Suppression de la commande invert="false" -->
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        
+        <control-speed control="FLAP0" transition-time="5"/>
+  </wing>
+
+  <mstab x="0.896" y="2.72" z="-0.384"
+        chord="1.710" 
+        length="1.7" 
+        taper="0.5"
+        sweep="-7.5" 
+        incidence="1"
+        dihedral="14"
+        camber="0.01">
+        <stall aoa="20" width="1" peak="1.5"/>
+        <flap1 start="0.01" end="1" lift="1.2" drag="1.1"/>
+        
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/> 
+        
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>        
+  </mstab>
+
+  <hstab x="-2.540" y="0.0" z="0.151" 
+         chord="0.8"
+         taper="1"
+         length="1.636">
+         <stall aoa="18" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.4" drag="1.1"/>
+       
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+       
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-2.659" y="0" z="0.169"
+       chord="1.4"
+       length="1.1" 
+       taper="0.40"
+       sweep="30">
+       <stall aoa="16" width="1" peak="1.5"/>
+       <flap0 start="-0.35" end="1" lift="1.2" drag="1.1"/>
+       
+       <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+       <!--<control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>-->
+       
+       <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <!-- Engines   source            : http://www.lycoming.textron.com/engines/series/pdfs/235ci%20Insert.pdf
+                                     http://en.wikipedia.org/wiki/Lycoming_O-235
+
+                 name              : Lycoming O-235-L2A
+                 type              : Four-cylinder, dual magneto, horizontally opposed, four-stroke aircraft engine
+                 Displacement      : 233.3 cu in (3.82 L)
+                 power cruise      : 180 hp at 2700 rpm
+                 weight            : 240 lbs (108.8 kg)
+                 Compression ratio : 6.5:1
+                 Propeller         : McCauley 1A135
+                 Propeller mass    : 5 kg ???? (mass at random)
+
+                 moment: plain stick method (masse*ray^2)/3 = (5 * 0.882^2 ) / 3 =
+                                                              (5 * 0.777924) / 3 =
+                                                              (   3.88962  ) / 3 = 1.29654
+  -->
+  <propeller x="2.540" y="0.0" z="-0.067" 
+             mass="240" 
+             moment="1.29654"
+             radius="0.882"
+             cruise-speed="110" 
+             cruise-rpm="2700"
+             cruise-alt="5000" 
+             cruise-power="100"
+             takeoff-power="112" 
+             takeoff-rpm="2575" >
+             <piston-engine eng-rpm="2800" 
+                            alt="0" 
+                            eng-power="118" 
+                            displacement="233.3" 
+                            compression="6.5"/>
+             <actionpt x="3.146" y="0.0" z="0.029" />
+             <control-input control="PROPFEATHER" axis="/controls/engines/engine[0]/propeller-feather"/>
+             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
+             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
+             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
+             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" />
+  </propeller>
+
+  <gear x="2.560" y="0" z="-1.115" 
+        compression="0.15" 
+        spring="0.6">
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-0.2" dst1="0.2"/>
+   </gear>
+
+  <gear x="1.020" y="1.236" z="-1.115" 
+        compression="0.10" 
+        spring="0.6">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+  </gear>
+
+  <gear x="1.020" y="-1.236" z="-1.115" 
+        compression="0.10" 
+        spring="0.6">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+  </gear>
+
+  <!-- Main tank       : 90 l available on 100 l total
+       Left wings tank : 35 l available on 40 l total
+  
+       90 l = 23.76 gal = 198.45 lb 
+       35 l =  9.24 gal =  77.17 lb
+  -->
+  <tank x="1.95" y=" 0.0" z="-0.382" capacity="198.45" />
+  <tank x="1.40" y=" 1.7" z="-0.382" capacity=" 77.17" />
+  <tank x="1.40" y="-1.7" z="-0.382" capacity=" 77.17" />
+      
+  <!-- Pilot -->
+  <weight x=" 1.40" y=" 0.30" z="0" mass-prop="sim/weight[0]/weight-lb"/>
+  <!-- Copilot -->
+  <weight x=" 1.40" y="-0.30" z="0" mass-prop="sim/weight[1]/weight-lb"/>
+  <!-- Pax -->
+  <weight x=" 0.65" y=" 0.30" z="0" mass-prop="sim/weight[2]/weight-lb"/>
+  <!-- Cargo -->
+  <weight x="-0.10" y=" 0.30" z="0" mass-prop="sim/weight[3]/weight-lb"/>
+
+  <!-- Mass displacment -->
+  <ballast x="-3" y="0" z="1" mass="-100"/>
+
+</airplane>

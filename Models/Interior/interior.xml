@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>longeronint</object-name>
+    <object-name>portefusibles</object-name>
+    <object-name>sieges</object-name>
+    <object-name>ceintures</object-name>
+    <object-name>sono</object-name>
+    <object-name>bout1</object-name>
+    <object-name>bout2</object-name>
+    <object-name>toitverriereint</object-name>
+    <object-name>toitverriereint2</object-name>
+    <object-name>poignee-canopy</object-name>
+    <object-name>poingee-longeron</object-name>
+    
+
+    <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <!--  REMBRANDT support for transparent objects -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </effect>
+
+  <animation>
+    <type>select</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+    <condition>
+      <property>sim/model/config/glass-reflection</property>
+    </condition>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/DR400/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.474 </x-m>
+      <y-m> -0.251 </y-m>
+      <z-m> -0.029 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -1.859 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.099 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Les palonniers -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -2.047 </x-m>
+      <y-m> -0.234 </y-m>
+      <z-m> -0.225 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -2.047 </x-m>
+      <y-m>  0.234 </y-m>
+      <z-m> -0.225 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Manche -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Handle/handle.xml</path>
+    <offsets>
+      <x-m> -1.497 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.210 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Canopy -->
+  <animation>
+    <name>IntLaVerriere</name>
+    <object-name>intverriere</object-name>
+    <object-name>longeronint</object-name>
+    <object-name>poingee-longeron</object-name>
+    <object-name>toitverriereint</object-name>
+    <object-name>toitverriereint2</object-name>
+    <object-name>poignee-canopy</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntLaVerriere</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntLaVerriere</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.8 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>poignee-canopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind>  0.00 </ind><dep>  0.00 </dep></entry>
+      <entry><ind>  0.12 </ind><dep> 45.00 </dep></entry>
+      <entry><ind>  1.00 </ind><dep> 45.00 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.064 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
