@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>Extrainglass.ac</path>
+  
+  <animation>
+    <!-- Objets transparents -->
+    <object-name>Extverriere1</object-name>
+    <object-name>ExtverriereAR1</object-name>
+    
+    <object-name>Extverriere2</object-name>
+    <object-name>ExtverriereAR2</object-name>
+    
+    <object-name>Extverriere3</object-name>
+    <object-name>ExtverriereAR3</object-name>
+  </animation>    
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Diamond-Da42/Models/Effects/Glass/glass</inherits-from>
+    <object-name>Extverriere1</object-name>
+    <object-name>ExtverriereAR1</object-name>
+    
+    <object-name>Extverriere2</object-name>
+    <object-name>ExtverriereAR2</object-name>
+    
+    <object-name>Extverriere3</object-name>
+    <object-name>ExtverriereAR3</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>verriere1</object-name>
+    <object-name>verriereAR1</object-name>
+    
+    <object-name>verriere2</object-name>
+    <object-name>verriereAR2</object-name>
+    
+    <object-name>verriere3</object-name>
+    <object-name>verriereAR3</object-name>
+  </effect>
+  
+  <animation>
+    <name>ensemble1</name>
+    <object-name>Extverriere1</object-name>
+    <object-name>ExtverriereAR1</object-name>
+  </animation>
+  
+  <animation>
+    <name>ensemble2</name>
+    <object-name>Extverriere2</object-name>
+    <object-name>ExtverriereAR2</object-name>
+  </animation>
+  
+  <animation>
+    <name>ensemble3</name>
+    <object-name>Extverriere3</object-name>
+    <object-name>ExtverriereAR3</object-name>
+  </animation>
+  
+  <animation>
+    <type>timed</type>
+    <object-name>ensemble1</object-name>
+    <object-name>ensemble2</object-name>
+    <object-name>ensemble3</object-name>
+    <use-personality type="bool">true</use-personality>
+    <branch-duration-sec>0.1</branch-duration-sec>
+    <branch-duration-sec>0.1</branch-duration-sec>
+    <branch-duration-sec>0.1</branch-duration-sec>
+  </animation>
+  
+  <!-- Canopy -->
+  <animation>
+    <name>ExtVerriereRain</name>
+    <object-name>Extverriere1</object-name>
+    <object-name>Extverriere2</object-name>
+    <object-name>Extverriere3</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>ExtVerriereRain</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>ExtVerriereRain</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.8 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
