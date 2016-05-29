@@ -9,7 +9,7 @@ data 6
 on-off
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 50
 -0.001623 0.00086 -0.008104
 -0.001623 0.00086 0.008104

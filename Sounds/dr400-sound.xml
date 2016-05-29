@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- 26-08-2008 
      30-08-2008  : Updated by AJ
      04-09-2009  : Updated by Helijah
      Janury 2012 : Updated by Christian Thiriot (Sounds modified based on real sounds of Lycoming)
+     19-05-2016  : Updated by Helijah
 -->
-
 <PropertyList>
-
+  
   <fx>
-
+    
     <crank>
       <name>engstart</name>
       <path>Aircraft/DR400/Sounds/DR400-starter.wav</path>
@@ -20,12 +20,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <crank>
       <name>crank</name>
       <mode>looped</mode>
-      <!--path>Sounds/cranking.wav</path-->
-     <path>Aircraft/DR400/Sounds/DR400-starter.wav</path>
+      <path>Aircraft/DR400/Sounds/DR400-starter.wav</path>
       <condition>
         <property>engines/engine/cranking</property>
         <not>
@@ -38,10 +37,9 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <crank>
       <name>cough</name>
-      <!--path>Sounds/coughing.wav</path-->
       <path>Aircraft/DR400/Sounds/DR400_lancement.wav</path>
       <property>engines/engine/running</property>
       <volume>
@@ -50,7 +48,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -88,7 +86,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-
+    
     <engine-internal>
       <name>engine-internal</name>
       <mode>looped</mode>
@@ -117,12 +115,12 @@
       <reference-dist>4.0</reference-dist>
       <max-dist>10.0</max-dist>
       <position>
-      <x> -2.672 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </position>
+        <x> -2.672 </x>
+        <y>  0 </y>
+        <z>  0 </z>
+      </position>
     </engine-internal>
-
+    
     <propeller>
       <name>propeller</name>
       <mode>looped</mode>
@@ -154,26 +152,26 @@
     </propeller>
     
     <stop>
-    <name>stop</name>
-    <path>Aircraft/DR400/Sounds/DR400-shutdown.wav</path>
-    <condition>
-      <not>
-            <property>/engines/engine/running</property>
-      </not>
-    </condition>
-       <volume>
-          <property>/sim/current-view/internal</property>
-               <factor>2.0</factor>
-      <offset>1.0</offset>
-       </volume>
-    <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>
-    <position>
-      <x> -2.627 </x>
-      <y>  1.740 </y>
-      <z>  0.021 </z>
-    </position>
-  </stop>  
+      <name>stop</name>
+      <path>Aircraft/DR400/Sounds/DR400-shutdown.wav</path>
+      <condition>
+        <not>
+          <property>/engines/engine/running</property>
+        </not>
+      </condition>
+      <volume>
+        <property>/sim/current-view/internal</property>
+        <factor>2.0</factor>
+        <offset>1.0</offset>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+      <position>
+        <x> -2.627 </x>
+        <y>  1.740 </y>
+        <z>  0.021 </z>
+      </position>
+    </stop>  
     
     <rumble>
       <name>rumble</name>
@@ -211,7 +209,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </rumble>
-
+    
     <squeal>
       <name>squeal</name>
       <path>Sounds/squeal.wav</path>
@@ -246,12 +244,11 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </squeal>
-
+    
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
       <path>Aircraft/DR400/Sounds/DR400-flaps.wav</path>
-       <!--path>Sounds/flaps.wav</path>-->
       <property>surface-positions/flap-pos-norm</property>
       <volume>
         <factor>5</factor>
@@ -259,7 +256,7 @@
       <reference-dist>10.0</reference-dist>
       <max-dist>100.0</max-dist>
     </flap>
-
+    
     <stall>
       <name>stall</name>
       <mode>looped</mode>
@@ -283,40 +280,40 @@
     </stall>
     
     <!-- Alarme sonore niveau critique carburant  10 litres -->
-     <stall>
+    <stall>
       <name>Alarme-carburant</name>
       <mode>looped</mode>
       <path>Aircraft/DR400/Sounds/DR400-alarme_fuel.wav</path>
-       <condition>
-
-      <less-than>
+      <condition>
+        
+        <less-than>
           <property>consumables/fuel/tank[0]/level-lbs</property>
           <value>15.43</value> 
-       </less-than>
-    </condition>    
+        </less-than>
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </stall>
     
-     <!-- Pompe fuel -->
-     <pump>
+    <!-- Pompe fuel -->
+    <pump>
       <name>Pompe fuel</name>
       <mode>looped</mode>
       <path>Aircraft/DR400/Sounds/DR400-pompe_fuel.wav</path>
-       <condition>
-          <property>systems/electrical/outputs/fuel-pump</property>
-          <value>24</value> 
-    </condition>    
+      <condition>
+        <property>systems/electrical/outputs/fuel-pump</property>
+        <value>24</value> 
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </pump>
-
+    
     <wind>
       <name>wind</name>
       <mode>looped</mode>
@@ -334,10 +331,10 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </wind>            
-
+    
     <!--                  Toggle Switches                  -->
-
-     <click>
+    
+    <click>
       <name>Clickon</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
       <condition>
@@ -347,8 +344,8 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
-     <click>
+    
+    <click>
       <name>Clickoff</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
       <condition>
@@ -359,7 +356,7 @@
       </volume>
     </click>
     
-     <click>
+    <click>
       <name>Prise casque On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
       <condition>
@@ -369,7 +366,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Prise caqsue Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -383,7 +380,7 @@
       </volume>
     </click>
     
-     <click>
+    <click>
       <name>Garmin 196 on</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
       <condition>
@@ -398,9 +395,9 @@
       <name>Garmin 196 off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
       <condition>
-           <not>
-        <property>instrumentation/garmin196/status</property>
-           </not>
+        <not>
+          <property>instrumentation/garmin196/status</property>
+        </not>
       </condition>
       <volume>
         <factor>2.0</factor>
@@ -417,7 +414,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Battery off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -441,7 +438,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Alternator off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -454,7 +451,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Fuel Pump on</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -465,7 +462,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Fuel Pump off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -478,7 +475,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Taxi Light On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -489,7 +486,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Taxi Light Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -502,7 +499,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Landing Light On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -513,7 +510,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Landing Light Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -526,7 +523,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Nav Light On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -537,7 +534,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Nav Light Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -550,7 +547,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Strobe Lights On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -561,7 +558,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Strobe Lights Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -574,7 +571,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Turn and Bank On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -585,7 +582,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Turn and Bank Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -598,31 +595,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-<!--
-    <click>
-      <name>Flashing Beacon On</name>
-      <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
-      <condition>
-        <property>controls/switches/flashing-beacon</property>
-      </condition>
-      <volume>
-        <factor>2.0</factor>
-      </volume>
-    </click> 
-
-    <click>
-      <name>Flashing Beacon Off</name>
-      <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
-      <condition>
-        <not>
-          <property>controls/switches/flashing-beacon</property>
-        </not>
-      </condition>
-      <volume>
-        <factor>2.0</factor>
-      </volume>
-    </click>
--->
+    
     <click>
       <name>Pitot Heat On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -633,7 +606,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Pitot Heat Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -646,7 +619,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Magnetos-off</name>
       <path>Sounds/click.wav</path>
@@ -659,7 +632,7 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Magnetos-R</name>
       <path>Sounds/click.wav</path>
@@ -675,7 +648,7 @@
       <reference-dist>0.5</reference-dist>
       <max-dist>5.0</max-dist>
     </click>
-
+    
     <click>
       <name>Magnetos-L</name>
       <path>Sounds/click.wav</path>
@@ -691,7 +664,7 @@
       <reference-dist>0.5</reference-dist>
       <max-dist>5.0</max-dist>
     </click>
-
+    
     <click>
       <name>Magnetos-B</name>
       <path>Sounds/click.wav</path>
@@ -707,7 +680,7 @@
       <reference-dist>0.5</reference-dist>
       <max-dist>5.0</max-dist>
     </click>
-
+    
     <click>
       <name>Avionics Master On</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -718,7 +691,7 @@
         <factor>2.0</factor>
       </volume>
     </click>
-
+    
     <click>
       <name>Avionics Master Off</name>
       <path>Aircraft/DR400/Sounds/DR400-click.wav</path>
@@ -732,108 +705,108 @@
       </volume>
     </click>
     <!-- Tirettes-->
-
-     <!-- Vanne fuel -->
-   <click>
-     <name> fuel on </name>
-     <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
-     <condition>
-       <property>controls/fuel/tank/to_engine</property>
-     </condition>
-     <volume>
-       <factor>2.0</factor>
-     </volume>
-     <reference-dist>100</reference-dist>
-     <max-dist>1000</max-dist>      
-   </click>
-
-   <click>
+    
+    <!-- Vanne fuel -->
+    <click>
+      <name> fuel on </name>
+      <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
+      <condition>
+        <property>controls/fuel/tank/to_engine</property>
+      </condition>
+      <volume>
+        <factor>2.0</factor>
+      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
+    </click>
+    
+    <click>
       <name> fuel off </name>
       <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
-       <condition>
-         <not>
-             <property>controls/fuel/tank/to_engine</property>
-          </not>
-    </condition>    
+      <condition>
+        <not>
+          <property>controls/fuel/tank/to_engine</property>
+        </not>
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </click>                                            
-                                                
- <!-- Anti ice -->
-     <click>
+    
+    <!-- Anti ice -->
+    <click>
       <name>anti-ice on</name>
       <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
-       <condition>
-          <property>controls/anti-ice/engine/carb-heat</property>
-    </condition>    
+      <condition>
+        <property>controls/anti-ice/engine/carb-heat</property>
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </click>
-
- <click>
+    
+    <click>
       <name>anti-ice off</name>
       <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
-       <condition>
-         <not>
-             <property>controls/anti-ice/engine/carb-heat</property>
-          </not>
-    </condition>    
+      <condition>
+        <not>
+          <property>controls/anti-ice/engine/carb-heat</property>
+        </not>
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </click>
     
     <!-- Frein parc -->
-     <click>
+    <click>
       <name>frein parc on</name>
       <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
-       <condition>
-          <property>controls/gear/brake-parking</property>
-    </condition>    
+      <condition>
+        <property>controls/gear/brake-parking</property>
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </click>
-
+    
     <click>
       <name>frein parc off</name>
       <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
-       <condition>
-         <not>
-             <property>controls/gear/brake-parking</property>
-          </not>
-    </condition>    
+      <condition>
+        <not>
+          <property>controls/gear/brake-parking</property>
+        </not>
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </click>
     
     <!-- Tirettes chauffage -->
-     <click>
+    <click>
       <name>chauffage on</name>
       <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
-       <condition>
-          <property>controls/pressurization/outflow-valve</property>
-    </condition>    
+      <condition>
+        <property>controls/pressurization/outflow-valve</property>
+      </condition>    
       <volume>
-           <factor>2.0</factor>
+        <factor>2.0</factor>
       </volume>
-       <reference-dist>100</reference-dist>
-    <max-dist>1000</max-dist>      
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>      
     </click>
-
+    
     <click>
       <name>chauffage off</name>
       <path>Aircraft/DR400/Sounds/DR400-tirette.wav</path>
@@ -848,7 +821,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>      
     </click>
-
+    
     <squish>
       <name>Primer Out</name>
       <path>Sounds/squeal.wav</path>
@@ -859,7 +832,7 @@
         <factor>0.1</factor>
       </volume>
     </squish>
-
+    
     <squish>
       <name>Primer In</name>
       <path>Sounds/squeal.wav</path>
@@ -872,7 +845,31 @@
         <factor>0.1</factor>
       </volume>
     </squish>
-
+    
+    <rain>
+      <name>rain</name>
+      <mode>looped</mode>
+      <path>Aircraft/DR400/Sounds/rain_canopy.wav</path>
+      <condition>
+        <greater-than>
+          <property>/environment/rain-norm</property>
+          <value>0.2</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>/environment/rain-norm</property>
+        <factor>1.00</factor>
+        <offset>0.00</offset>
+        <min>0.4</min>
+        <max>0.9</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.001</factor>
+        <offset>1.0</offset>
+      </pitch>
+    </rain>
+    
   </fx>
-
+  
 </PropertyList>

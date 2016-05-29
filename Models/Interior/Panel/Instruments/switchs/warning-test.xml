@@ -10,6 +10,7 @@
   <animation>
     <object-name>Switch</object-name>
     <object-name>SwitchNut</object-name>
+    
     <object-name>hotspotUp</object-name>
     <object-name>hotspotDown</object-name>
   </animation>
@@ -96,4 +97,3 @@
   </animation>
 
 </PropertyList>
-

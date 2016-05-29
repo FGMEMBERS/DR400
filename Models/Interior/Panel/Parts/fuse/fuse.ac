@@ -9,7 +9,7 @@ data 9
 Fusible00
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.007353 -0.082346
 -0.001718 0.006674 -0.083209
@@ -405,7 +405,7 @@ data 9
 Fusible01
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.008015 -0.057924
 -0.001718 0.008399 -0.058953
@@ -801,7 +801,7 @@ data 9
 Fusible02
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.007852 -0.034225
 -0.001718 0.008235 -0.035254
@@ -1197,7 +1197,7 @@ data 9
 Fusible03
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.008015 -0.010689
 -0.001718 0.008399 -0.011718
@@ -1593,7 +1593,7 @@ data 9
 Fusible04
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.007688 0.011866
 -0.001718 0.008072 0.010837
@@ -1989,7 +1989,7 @@ data 9
 Fusible05
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.007852 0.034257
 -0.001718 0.008235 0.033228
@@ -2385,7 +2385,7 @@ data 9
 Fusible06
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.007856 0.057483
 -0.001718 0.008239 0.056454
@@ -2781,7 +2781,7 @@ data 9
 Fusible07
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 0.007748 0.080159
 -0.001718 0.008132 0.07913
@@ -3177,7 +3177,7 @@ data 9
 Fusible08
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.015847 -0.080315
 -0.001718 -0.015464 -0.081344
@@ -3573,7 +3573,7 @@ data 9
 Fusible09
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.016183 -0.060118
 -0.001718 -0.016862 -0.060981
@@ -3969,7 +3969,7 @@ data 9
 Fusible10
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.015357 -0.034878
 -0.001718 -0.014974 -0.035907
@@ -4365,7 +4365,7 @@ data 9
 Fusible11
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.015194 -0.010689
 -0.001718 -0.01481 -0.011718
@@ -4761,7 +4761,7 @@ data 9
 Fusible12
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.015194 0.011376
 -0.001718 -0.01481 0.010347
@@ -5157,7 +5157,7 @@ data 9
 Fusible13
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.015357 0.034163
 -0.001718 -0.014974 0.033134
@@ -5553,7 +5553,7 @@ data 9
 Fusible14
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.015035 0.057483
 -0.001718 -0.014651 0.056454
@@ -5949,7 +5949,7 @@ data 9
 Fusible15
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.001008 -0.015189 0.078647
 -0.001718 -0.015619 0.077636
@@ -6345,7 +6345,7 @@ data 6
 plaque
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 8
 0.000305 -0.012422 -0.092347
 0.000305 -0.012422 0.09255
@@ -6399,7 +6399,7 @@ data 7
 support
 texture "color_fusibles_tableau.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 1232
 -0.002069 -0.013405 0.077622
 -0.002069 -0.017348 0.075334

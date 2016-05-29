@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="dr400-180-jsbsim-cnf.xml"> -->
-<PropertyList include="dr400-180-yasim-cnf.xml">
+<PropertyList include="Systems/dr400-base.xml">
 
   <sim>
 
-    <description>Robin DR 400 180 (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM/System), Laurent WROMMAN (FDM), Laurent HAYVEL (texture), F-JJTH (System)</author>
-
+    <description>Robin DR400-180 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM/System), Laurent VROMMAN (FDM), Laurent HAYVEL (texture), F-JJTH (System)</author>
+    
+    <aircraft-version>0.6</aircraft-version>
+    <status>Alpha</status>
+    
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">Systems/dr400-180-yasim</aero>
+    
+    <startup>
+      <splash-texture>Aircraft/DR400/Splash/dr400-180-splash.png</splash-texture>
+    </startup>
+    
     <rating>
       <FDM type="int">     3 </FDM>
       <systems type="int"> 4 </systems>

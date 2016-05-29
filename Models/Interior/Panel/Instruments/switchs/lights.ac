@@ -9,7 +9,7 @@ data 4
 knob
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 197
 0.003641 0.004752 -0.003181
 0.003641 0.00528 -0.002193

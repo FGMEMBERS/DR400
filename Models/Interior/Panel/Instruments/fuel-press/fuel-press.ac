@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 5
 OBJECT poly
@@ -9,8 +9,8 @@ loc 0 0 -0
 data 5
 cache
 texture "fuel-press.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 92
 -0.001184 -0.01152 0.016907
 -0.001184 -0.018666 0.009761
@@ -688,8 +688,8 @@ loc 0 0 -0
 data 4
 face
 texture "fuel-press.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 24
 -0.002093 0.012226 -0.014002
 -0.002093 0.005801 -0.018293
@@ -839,8 +839,8 @@ loc 0 0 -0
 data 4
 fond
 texture "fuel-press.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 122
 0 -0.012143 0.017956
 0 -0.019733 0.010367
@@ -1688,8 +1688,8 @@ loc 0 0 -0
 data 6
 needle
 texture "fuel-press.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 8
 -0.002236 0.001823 0.00955
 -0.002236 -0.012983 -0.000818
@@ -1734,7 +1734,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 25
 0 -0.012143 0.017956
 0 -0.019733 0.010367

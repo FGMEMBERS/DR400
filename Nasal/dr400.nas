@@ -5,13 +5,12 @@
 ##  Clément de l'Hamaide - PAF Team
 ##  This file is licensed under the GPL license version 2 or later.
 ##
-## Updated for GIT : Helijah April 2013
+## Updated for GIT : Helijah April 2013 / 2016
 ##
 ###############################################################################
 
 # Do terrain modelling ourselves.
 setprop("sim/fdm/surface/override-level", 1);
-
 
 #####################################
 # Dialogs (please comment the version)
@@ -24,7 +23,6 @@ fgcommand("loadxml", props.Node.new({filename: getprop("/sim/aircraft-dir")~"/Di
 #####################################
 #Fuel pressure
 #####################################
-
 var Fuel_press=func {
   var fuel_level = getprop("consumables/fuel/tank/level-lbs");
   var engine_run = getprop("/engines/engine/running");
@@ -60,18 +58,17 @@ var Fuel_press=func {
 ##############################################
 ############### ENGINE SYSTEM ################
 ##############################################
-
 #Engine sensors class 
 # ie: var Eng = Engine.new(engine number);
 var Engine = {
     new : func(eng_num){
         m =               { parents : [Engine]};
-	m.air_temp =      props.globals.initNode("environment/temperature-degc");
-	m.oat =           m.air_temp.getValue() or 0;
+        m.air_temp =      props.globals.initNode("environment/temperature-degc");
+        m.oat =           m.air_temp.getValue() or 0;
         m.eng =           props.globals.initNode("engines/engine["~eng_num~"]");
         m.running =       0;
         m.ot_target =     90;
-	m.mp =            m.eng.initNode("mp-inhg");
+        m.mp =            m.eng.initNode("mp-inhg");
         m.cutoff =        props.globals.initNode("controls/engines/engine["~eng_num~"]/cutoff");
         m.mixture =       props.globals.initNode("engines/engine["~eng_num~"]/mixture");
         m.mixture_lever = props.globals.initNode("controls/engines/engine["~eng_num~"]/mixture",1,"DOUBLE");
@@ -79,43 +76,43 @@ var Engine = {
         m.oil_temp =      m.eng.initNode("oil-temp-c",m.oat,"DOUBLE");
         m.cyl_temp =      m.eng.initNode("cyl-temp",m.oat,"DOUBLE");
         m.carb_heat =     m.eng.initNode("carb-heat",0,"DOUBLE");
-	m.carb_temp =     m.eng.initNode("carb-temp-degc",m.oat,"DOUBLE");
+        m.carb_temp =     m.eng.initNode("carb-temp-degc",m.oat,"DOUBLE");
         m.oil_psi =       m.eng.initNode("oil-pressure-psi",0.0,"DOUBLE");
         m.fuel_psi =      m.eng.initNode("fuel-psi-norm",0,"DOUBLE");
         m.fuel_out =      m.eng.initNode("out-of-fuel",0,"BOOL");
         m.fuel_switch =   props.globals.initNode("controls/fuel/switch-position",-1,"INT");
         m.hpump =         props.globals.initNode("systems/hydraulics/pump-psi["~eng_num~"]",0,"DOUBLE");
-	m.Lrunning =      setlistener("engines/engine["~eng_num~"]/running",func (rn){m.running=rn.getValue()},0,0);
-	return m;
+        m.Lrunning =      setlistener("engines/engine["~eng_num~"]/running",func (rn){m.running=rn.getValue()},0,0);
+  return m;
     },
 #### update ####
     update : func(eng_num){
         var rpm =     me.rpm.getValue();
-	var mp =      me.mp.getValue();
-	var OT =      me.oil_temp.getValue();
+        var mp =      me.mp.getValue();
+        var OT =      me.oil_temp.getValue();
         var mx =      me.mixture_lever.getValue();
-	var ctemp =   me.air_temp.getValue();
+        var ctemp =   me.air_temp.getValue();
         var cyltemp = me.cyl_temp.getValue();
         var cheat =   me.carb_heat.getValue();
-	var cooling = (getprop("velocities/airspeed-kt") * 0.1) *2;
+        var cooling = (getprop("velocities/airspeed-kt") * 0.1) *2;
         ###################################
         ######### OIL TEMPERATURE #########
         ###################################
-	cooling += (mx * 5);
-	var tgt  = me.ot_target + mp;
-	var tgt -= cooling;
-	if(me.running){
-		if(OT < tgt) OT += rpm * 0.00001;
-		if(OT > tgt) OT -= cooling * 0.001;
-		}else{
-		if(OT > me.air_temp.getValue()) OT-=0.001; 
-	}
+        cooling += (mx * 5);
+        var tgt  = me.ot_target + mp;
+        var tgt -= cooling;
+        if(me.running){
+          if(OT < tgt) OT += rpm * 0.00001;
+          if(OT > tgt) OT -= cooling * 0.001;
+        }else{
+          if(OT > me.air_temp.getValue()) OT-=0.001; 
+        }
         me.oil_temp.setValue(OT);
         ###################################
         ##### CARBURATOR TEMPERATURE ######
         ###################################
-	var et0 = getprop("/environment/temperature-degc");
-	# var cbt = et0 + 0.85 * mp; #carb temperature
+        var et0 = getprop("/environment/temperature-degc");
+        # var cbt = et0 + 0.85 * mp; #carb temperature
         if(props.globals.getNode("systems/electrical/outputs/carb-heat").getValue() > 24){
           cheat += 0.01;
           if(cheat > 15) cheat = 15;
@@ -127,8 +124,8 @@ var Engine = {
           setprop("engines/engine["~eng_num~"]/carb-heat", cheat);
           # cbt += cheat;
         }
-	ctemp = (rpm * 0.0029);
-	me.carb_temp.setValue(et0 - ctemp + cheat);
+        ctemp = (rpm * 0.0029);
+        me.carb_temp.setValue(et0 - ctemp + cheat);
     },
 };
 
@@ -137,7 +134,6 @@ EngineMain = Engine.new(0);
 ##########################################
 # Mixture/Throttle controlled by mouse
 ##########################################
-
 var mousex =0;
 var msx = 0;
 var msxa = 0;
@@ -182,7 +178,6 @@ var set_levers = func(type,num,min,max){
 ##########################################
 # Ground Detection
 ##########################################
-
 var terrain_survol = func {
   var lat = getprop("/position/latitude-deg");
   var lon = getprop("/position/longitude-deg");
@@ -223,7 +218,6 @@ var terrain_survol = func {
 ##############################################
 ######### AUTOSTART / AUTOSHUTDOWN ###########
 ##############################################
-
 setlistener("/sim/model/start-idling", func(idle){
     var run= idle.getBoolValue();
     if(run){
@@ -234,13 +228,18 @@ setlistener("/sim/model/start-idling", func(idle){
 },0,0);
 
 var Startup = func{
+  setprop("controls/lighting/panel-norm", 0.8);
+  setprop("/controls/lighting/instruments-norm",0.8);
+  setprop("controls/lighting/beacon",1);
+  setprop("sim/model/lights/strobe-lights",1);
+  setprop("sim/model/lights/nav-lights",1);
+  
   setprop("controls/fuel/tank/to_engine", 1);
   setprop("controls/fuel/tank/boost-pump", 1);
   setprop("controls/engines/engine[0]/master-alt",1);
   setprop("/controls/engines/engine[0]/magnetos",3);
   setprop("controls/engines/engine[0]/mixture",1);
   setprop("/controls/gear/brake-parking",1);
-  setprop("/controls/lighting/instruments-norm",1);
   setprop("/instrumentation/comm[0]/power-btn",1);
   setprop("/instrumentation/comm[0]/volume",1);
   setprop("/instrumentation/nav[0]/power-btn",1);  
@@ -253,6 +252,12 @@ var Startup = func{
 }
 
 var Shutdown = func{
+  setprop("controls/lighting/panel-norm", 0);
+  setprop("/controls/lighting/instruments-norm",0);
+  setprop("controls/lighting/beacon",0);
+  setprop("sim/model/lights/strobe-lights",0);
+  setprop("sim/model/lights/nav-lights",0);
+
   setprop("controls/fuel/tank/to_engine", 0);
   setprop("controls/engines/engine[0]/master-alt",0);
   setprop("/controls/engines/engine[0]/magnetos",0);
@@ -260,7 +265,6 @@ var Shutdown = func{
   setprop("/engines/engine[0]/rpm",0);
   setprop("/engines/engine[0]/running",0);
   setprop("/controls/gear/brake-parking",1);
-  setprop("/controls/lighting/instruments-norm",0);
   setprop("/instrumentation/comm[0]/power-btn",0);
   setprop("/instrumentation/comm[0]/volume",0);
   setprop("/instrumentation/nav[0]/power-btn",0);
@@ -273,13 +277,11 @@ var Shutdown = func{
   setprop("sim/messages/copilot", "Engine is stopped");
 }
 
-
 ############################################
 # ELT System from Cessna337
 # Authors: Pavel Cueto, with A LOT of collaboration from Thorsten and AndersG
 # Adaptation by Clément de l'Hamaide and Daniel Dubreuil for DR400 or regent
 ############################################
-
 var eltmsg = func {
   var lat = getprop("/position/latitude-string");
   var lon = getprop("/position/longitude-string");

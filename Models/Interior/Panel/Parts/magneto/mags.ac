@@ -7,7 +7,7 @@ name "click-L"
 loc 0 0 -0
 data 7
 click-L
-crease 30.000001
+crease 180.000005
 numvert 4
 0.006711 0.014227 0.006022
 0.006711 -0.014164 0.006022
@@ -27,7 +27,7 @@ name "click-R"
 loc 0 0 -0
 data 7
 click-R
-crease 30.000001
+crease 180.000005
 numvert 4
 0.006711 0.014227 -0.016991
 0.006711 -0.014164 -0.016992
@@ -49,7 +49,7 @@ data 3
 key
 texture "mag_switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 24
 0.009713 0.004806 0.010561
 0.009713 0.003579 0.011038
@@ -231,7 +231,7 @@ data 5
 magsw
 texture "mag_switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 170
 0.003204 0.006974 -0.006825
 0.003204 0.005524 -0.008015

@@ -9,7 +9,7 @@ data 5
 carte
 texture "charts.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 4
 0.114402 0 0.082094
 -0.105521 0 0.082094
