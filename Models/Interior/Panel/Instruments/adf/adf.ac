@@ -9,8 +9,8 @@ loc 0 0 -0
 data 4
 face
 texture "adf01.png"
-texrep 1 1
-crease 45.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 18
 -0.004292 0.032063 -0.013332
 -0.004292 0.034692 -0.000125
@@ -87,8 +87,8 @@ loc 0 0 -0
 data 4
 fond
 texture "adf01.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 160
 -0.004646 -0.023835 -0.023835
 -0.004646 -0.028027 -0.018727
@@ -1154,8 +1154,8 @@ loc 0 0 -0
 data 6
 needle
 texture "adf01.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 18
 -0.004179 0.022586 -0.000502
 -0.004179 -0.023807 -0.000538
@@ -1273,8 +1273,8 @@ loc 0 0 -0
 data 5
 plane
 texture "adf01.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 88
 -0.003799 -0.000083 -0.027549
 -0.003799 -0.000993 -0.027549
@@ -1791,7 +1791,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 33
 0 -0.025572 -0.025572
 0 -0.03007 -0.020092

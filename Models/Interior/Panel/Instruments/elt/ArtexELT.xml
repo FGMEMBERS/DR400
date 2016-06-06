@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-  <!--
+<!--
   ELT based on an Artex ELT (now Cobham)
   http://www.acrelectronics.com/products/b/aviation/catalog/elt-remote-switches/remote-switch-standard
   Author: Pavel Cueto
@@ -13,23 +13,22 @@
       <file>YOUR/INSTRUMENT/FOLDER/ROUTE/HERE/ELTmessage.nas</file>
     </ELT>
   </nasal>
-  -->
-
+-->
 <PropertyList>
 
   <path>ArtexELT.ac</path>
 
   <animation>
-  <!-- Objets opaques -->
+    <!-- Objets opaques -->
     <object-name>Base</object-name>
     <object-name>BaseSwitch</object-name>
     <object-name>Switch</object-name>
-    <object-name>SwitchUp</object-name>
-    <object-name>SwitchDown</object-name>
     <object-name>vis</object-name>
-    <object-name>vis001</object-name>
     <object-name>Light-ON</object-name>
     <object-name>Light-OFF</object-name>
+    
+    <object-name>SwitchUp</object-name>
+    <object-name>SwitchDown</object-name>
   </animation>
 
   <animation>

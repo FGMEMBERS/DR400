@@ -7,6 +7,7 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>planchet</object-name>
     <object-name>inttour</object-name>
     <object-name>longeronint</object-name>
     <object-name>portefusibles</object-name>
@@ -20,45 +21,40 @@
     <object-name>poignee-canopy</object-name>
     <object-name>poingee-longeron</object-name>
     
-
     <!-- Objets transparents -->
     <object-name>intverriere</object-name>
     <object-name>intverriere2</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intverriere</object-name>
-    <object-name>intverriere2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intverriere</object-name>
-    <object-name>intverriere2</object-name>
-  </animation>
-
-  <!--  REMBRANDT support for transparent objects -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
     <object-name>intverriere</object-name>
     <object-name>intverriere2</object-name>
   </effect>
-
+  
+  <!-- Raind Drops Effect -->
   <animation>
     <type>select</type>
     <object-name>intverriere</object-name>
     <object-name>intverriere2</object-name>
     <condition>
-      <property>sim/model/config/glass-reflection</property>
+      <less-than>
+        <property>/environment/rain-norm</property>
+        <value>0.1</value>
+      </less-than>
     </condition>
   </animation>
-
+  
+  <model>
+    <path>Aircraft/DR400/Models/Effects/RainDrops/rainglass.xml</path>
+    <condition>
+      <greater-than>
+        <property>/environment/rain-norm</property>
+        <value>0.1</value>
+      </greater-than>
+    </condition>
+  </model>
+  
   <!-- Pilote -->
   <model>
     <name>Pilote</name>
@@ -81,35 +77,6 @@
     </offsets>
   </model>
 
-  <!-- Les palonniers -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/pedals/pedals.xml</path>
-    <offsets>
-      <x-m> -2.047 </x-m>
-      <y-m> -0.234 </y-m>
-      <z-m> -0.225 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/pedals/pedals.xml</path>
-    <offsets>
-      <x-m> -2.047 </x-m>
-      <y-m>  0.234 </y-m>
-      <z-m> -0.225 </z-m>
-    </offsets>
-  </model>
-
-  <!-- Manche -->
-  <model>
-    <path>Aircraft/DR400/Models/Interior/Handle/handle.xml</path>
-    <offsets>
-      <x-m> -1.497 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.210 </z-m>
-    </offsets>
-  </model>
- 
   <!-- Canopy -->
   <animation>
     <name>IntLaVerriere</name>
@@ -172,4 +139,3 @@
   </animation>
 
 </PropertyList>
-

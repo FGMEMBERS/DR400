@@ -9,7 +9,7 @@ data 5
 audio
 texture "color_prise_casque.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 782
 0.00241 -0.011783 -0.000283
 0.002187 -0.011193 -0.0004

@@ -9,7 +9,7 @@ data 7
 manette
 texture "throttle.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 321
 0.135253 0.005349 -0.005349
 0.135253 0.004203 -0.00629
@@ -2547,7 +2547,7 @@ name "throttlemoins"
 loc 0 0 -0
 data 13
 throttlemoins
-crease 30.000001
+crease 180.000005
 numvert 4
 0.00886 -0.015 -0.015
 0.00886 -0.015 0.015
@@ -2567,7 +2567,7 @@ name "throttleplus"
 loc 0 0 -0
 data 12
 throttleplus
-crease 30.000001
+crease 180.000005
 numvert 4
 0.00886 0 -0.015
 0.00886 0 0.015

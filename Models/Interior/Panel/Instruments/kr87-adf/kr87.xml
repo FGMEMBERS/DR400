@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- KR-87
-     Bendix/King ADF Reciever
-     Syd Adams
--->
-
+<!-- KR-87 Bendix/King ADF Reciever Syd Adams -->
 <PropertyList>
 
   <path>kr87.ac</path>
@@ -59,24 +55,14 @@
     <object-name>stby.004</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
   <!-- working for Rembrandt -->
   <effect>
+    <inherits-from>Aircraft/DR400/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
     <object-name>vitre</object-name>
   </effect>
   
@@ -92,10 +78,10 @@
     <object-name>KR87.knob</object-name>
     <object-name>KR87.knob1</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.2 </red>
       <green> 0.1 </green>
       <blue>  0.1 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -111,10 +97,10 @@
     <object-name>et.annun</object-name>
     <object-name>stby</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -738,4 +724,3 @@
   </animation>
 
 </PropertyList>
-

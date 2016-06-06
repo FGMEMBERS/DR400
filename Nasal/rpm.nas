@@ -22,4 +22,3 @@ var main_loop = func {
 setlistener("/sim/signals/fdm-initialized", func {
   main_loop();
 });
-

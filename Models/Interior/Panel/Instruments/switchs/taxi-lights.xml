@@ -15,10 +15,10 @@
     <type>material</type>
     <object-name>on-off</object-name>
     <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.07 </red>
       <green> 0.04 </green>
       <blue>  0.04 </blue>
-      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -49,4 +49,3 @@
   </animation>
 
 </PropertyList>
-

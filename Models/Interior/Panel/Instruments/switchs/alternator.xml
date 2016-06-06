@@ -6,9 +6,13 @@
 
   <animation>
     <object-name>on-off</object-name>
+  </animation>
+  
+  <animation>
+    <object-name>on-off</object-name>
     <type>rotate</type>
     <property>/controls/engines/engine/master-alt</property>
-    <factor> 35 </factor>
+    <factor>  35 </factor>
     <min-deg>  0 </min-deg>
     <max-deg> 35 </max-deg>
     <axis>
@@ -33,5 +37,3 @@
   </animation>
 
 </PropertyList>
-
-

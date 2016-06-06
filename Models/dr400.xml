@@ -4,6 +4,11 @@
 
   <path>dr400.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/DR400/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/DR400/Models/Liveries", 10);
@@ -75,6 +80,7 @@
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
     <object-name>verriereAR</object-name>
+    <object-name>lampe</object-name>
     <object-name>lampeG</object-name>
     <object-name>lampeD</object-name>
     <object-name>strobetrs</object-name>
@@ -135,18 +141,10 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>fuselage</object-name>
     <object-name>bouchon_reservoir</object-name>
     <object-name>ailes</object-name>
@@ -174,75 +172,52 @@
     <object-name>garmin</object-name>
   </effect>
 
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-combined-deferred</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>fuselage</object-name>
-    <object-name>bouchon_reservoir</object-name>
-    <object-name>ailes</object-name>
-    <object-name>aileronG</object-name>
-    <object-name>aileronD</object-name>
-    <object-name>voletG</object-name>
-    <object-name>voletD</object-name>
-    <object-name>trimprof</object-name>
-    <object-name>profondeur</object-name>
-    <object-name>direction</object-name>
-    <object-name>bol</object-name>
-    <object-name>toitverriere</object-name>
-    <object-name>axeA</object-name>
-    <object-name>axeG</object-name>
-    <object-name>axeD</object-name>
-    <object-name>cacheA</object-name>
-    <object-name>cacheG</object-name>
-    <object-name>cacheD</object-name>
-    <object-name>tourverriere</object-name>
-    <object-name>antenne</object-name>
-    <object-name>protege</object-name>
-    <object-name>poignees_bas</object-name>
-    <object-name>poignees_haut</object-name>
-    <object-name>strobe</object-name>
-    <object-name>garmin</object-name>
+    <inherits-from>Aircraft/Piper-PA-18/Models/Effects/Glass/glass</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>verriereAR</object-name>
+    <object-name>lampe</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>strobetrs</object-name>
   </effect>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>verriereAR</object-name>
-    <object-name>lampeG</object-name>
-    <object-name>lampeD</object-name>
-    <object-name>strobetrs</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>verriereAR</object-name>
-    <object-name>lampeG</object-name>
-    <object-name>lampeD</object-name>
-    <object-name>strobetrs</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-  </animation>
-
-  <!--  REMBRANDT support for transparent objects -->
+  
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
     <object-name>verriere</object-name>
     <object-name>verriereAR</object-name>
+    <object-name>lampe</object-name>
     <object-name>lampeG</object-name>
     <object-name>lampeD</object-name>
     <object-name>strobetrs</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </effect>
-
+  
+  <!-- Raind Drops Effect -->
+  <animation>
+    <type>select</type>
+    <object-name>verriere</object-name>
+    <object-name>verriereAR</object-name>
+    <condition>
+      <less-than>
+        <property>/environment/rain-norm</property>
+        <value>0.1</value>
+      </less-than>
+    </condition>
+  </animation>
+  
+  <model>
+    <path>Aircraft/DR400/Models/Effects/RainDrops/Extrainglass.xml</path>
+    <condition>
+      <greater-than>
+        <property>/environment/rain-norm</property>
+        <value>0.1</value>
+      </greater-than>
+    </condition>
+  </model>
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/DR400/Models/shadow.xml</path>
@@ -255,15 +230,8 @@
 
   <!-- Interieur -->
   <model>
-    <name>Interieur</name>
     <path>Aircraft/DR400/Models/Interior/interior.xml</path>
   </model>
-
-  <!-- For Rembrandt -->
-  <animation>
-    <type>noshadow</type>
-    <object-name>Interieur</object-name>
-  </animation>
 
   <!-- Immatriculatoin -->
   <model>

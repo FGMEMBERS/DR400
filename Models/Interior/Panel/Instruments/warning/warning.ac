@@ -8,8 +8,8 @@ loc 0 0 -0
 data 4
 fond
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 160
 0.004131 0.010952 -0.095997
 0.004137 -0.010948 -0.095997
@@ -1124,8 +1124,8 @@ loc 0.000217 0 -0
 data 12
 warning01.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 0.074188
 0.004137 -0.010948 0.074188
@@ -1146,8 +1146,8 @@ loc 0.000217 0 -0
 data 12
 warning02.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 0.049834
 0.004137 -0.010948 0.049834
@@ -1168,8 +1168,8 @@ loc 0.000217 0 -0
 data 12
 warning03.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 0.025428
 0.004137 -0.010948 0.025428
@@ -1190,8 +1190,8 @@ loc 0.000217 0 -0
 data 12
 warning04.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 0.001109
 0.004137 -0.010948 0.001109
@@ -1212,7 +1212,7 @@ loc 0 0 -0
 data 13
 warning05.001
 texture "warning.png"
-texrep 1 1
+texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
 0.004137 -0.010948 -0.02308
@@ -1234,8 +1234,8 @@ loc 0.000217 0 -0
 data 12
 warning05.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 -0.02308
 0.004137 -0.010948 -0.02308
@@ -1256,8 +1256,8 @@ loc 0.000217 0 -0
 data 12
 warning06.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 -0.047384
 0.004137 -0.010948 -0.047384
@@ -1278,8 +1278,8 @@ loc 0.000217 0 -0
 data 12
 warning07.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 -0.071694
 0.004137 -0.010948 -0.071694
@@ -1300,8 +1300,8 @@ loc 0.000217 0 -0
 data 12
 warning08.on
 texture "warning.png"
-texrep 1 1
-crease 30.000001
+texrep 1.000000 1.000000
+crease 180.000005
 numvert 4
 0.004131 0.010952 -0.095997
 0.004137 -0.010948 -0.095997

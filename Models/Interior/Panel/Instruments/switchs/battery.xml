@@ -6,6 +6,10 @@
 
   <animation>
     <object-name>on-off</object-name>
+  </animation>
+  
+  <animation>
+    <object-name>on-off</object-name>
     <type>rotate</type>
     <property>controls/electric/battery-switch</property>
     <factor>  35 </factor>
@@ -33,5 +37,3 @@
   </animation>
 
 </PropertyList>
-
-

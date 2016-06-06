@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Landing lights switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/landing-lights.xml</path>
+    <offsets>
+      <x-m> 0.177 </x-m>
+      <y-m> 0.181 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Taxi lights switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/taxi-lights.xml</path>
+    <offsets>
+      <x-m> 0.177 </x-m>
+      <y-m> 0.203 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Strobe lights switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/strobe-lights.xml</path>
+    <offsets>
+      <x-m> 0.177 </x-m>
+      <y-m> 0.227 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Nav lights switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/nav-lights.xml</path>
+    <offsets>
+      <x-m> 0.177 </x-m>
+      <y-m> 0.250 </y-m>
+      <z-m> 0.291 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Instruments lights regulator -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/instrument-lights.xml</path>
+    <offsets>
+      <x-m> 0.181 </x-m>
+      <y-m> 0.054 </y-m>
+      <z-m> 0.294 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Desk lights regulator -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/desk-lights.xml</path>
+    <offsets>
+      <x-m> 0.181 </x-m>
+      <y-m> 0.097 </y-m>
+      <z-m> 0.294 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Radio lights regulator -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/radio-lights.xml</path>
+    <offsets>
+      <x-m> 0.181 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.294 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- alternator switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/alternator.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.356 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- battery switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/battery.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m> -0.376 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Warning test switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/warning-test.xml</path>
+    <offsets>
+      <x-m>  0.177 </x-m>
+      <y-m> -0.255 </y-m>
+      <z-m>  0.295 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- fuel-pump switch -->
+  <model>
+    <path>Aircraft/DR400/Models/Interior/Panel/Instruments/switchs/fuel-pump.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m>  0.034 </y-m>
+      <z-m> -0.050 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
