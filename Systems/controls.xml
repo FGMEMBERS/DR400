@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <gear>
+    <brake-parking type="double">1</brake-parking>
+  </gear>
+  
+  <lighting>
+    <warning-test type="bool">false</warning-test>
+    <warning-mode type="bool">false</warning-mode>
+  </lighting>
+  
+  <electric>
+    <battery-switch type="bool">false</battery-switch>
+  </electric>
+  
+  <throttle-coupled type="bool">true</throttle-coupled>
+  <mixture-coupled type="bool">true</mixture-coupled>
+  <prop-coupled type="bool">true</prop-coupled>
+  <movement-scale>0.025</movement-scale>
+  
+  <engines>
+    <engine n="0">
+      <starter_cmd type="bool">false</starter_cmd>
+    </engine>
+  </engines>
+  
+  <flight>
+    <elevator-trim>-0.015</elevator-trim>
+  </flight>
+  
+</PropertyList>

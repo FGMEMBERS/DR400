@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <setting> 0.00 </setting>
+  <setting> 0.25 </setting> <!-- 15 deg -->
+  <setting> 1.00 </setting> <!-- 60 deg -->
+  
+</PropertyList>
