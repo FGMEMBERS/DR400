@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="views.xml">
+
+    <fuel-fraction>1</fuel-fraction>
+
+    <sound>
+      <path archive="y">Aircraft/DR400/Sounds/dr400-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/DR400/Models/dr400.xml</path>
+      <show-immat type="bool">1</show-immat>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <config>
+        <show-pilot type="bool">       1 </show-pilot>
+        <show-copilot type="bool">     0 </show-copilot>
+        <show-yokes type="bool">       1 </show-yokes>
+        <glass-reflection type="bool"> 1 </glass-reflection>
+        <light-cone type="bool">       1 </light-cone>
+        <details-high type="bool">     1 </details-high>
+      </config>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                         <!--  0 immat -->
+        <int   n="1"  type="int">  0 </int>                                         <!--  1 immat -->
+        <int   n="2"  type="int">  0 </int>                                         <!--  2 immat -->
+        <int   n="3"  type="int">  0 </int>                                         <!--  3 immat -->
+        <int   n="4"  type="int">  0 </int>                                         <!--  4 immat -->
+        <int   n="5"  type="int">  0 </int>                                         <!--  5 immat -->
+        <int   n="6"  type="bool" alias="/smoke/active"/>                           <!--  6 start smoke -->
+        <int   n="7"  type="int"  alias="smoke/particlepersec"> 50 </int>           <!--  7 particlepersec -->
+        <int   n="8"  type="int"  alias="/sim/model/show-immat"/>                   <!--  8 Show immat -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/systems/electrical/outputs/nav-lights"/>
+        <float n="4"  alias="/systems/electrical/outputs/landing-lights"/>
+        <float n="5"  alias="/systems/electrical/outputs/taxi-lights"/>
+        <float n="6"  alias="/systems/electrical/outputs/strobe-lights"/>
+        <float n="7"  alias="/systems/electrical/volts"/>
+        <float n="8"  alias="/engines/engine[0]/rpm"/>
+        <float n="9"  alias="/engines/engine[0]/cranking"/>
+        <float n="10" alias="/gear/gear[0]/wow/"/>
+        <float n="11" alias="/gear/gear[1]/wow/"/>
+        <float n="12" alias="/gear/gear[2]/wow/"/>
+        <float n="13" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="14" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="15" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int   n="10" type="int"/>
+        <string n="9" type="string"/>
+      </generic>
+    </multiplay>
+
+    <weight n="0">
+        <name>Pilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>100</min-lb>
+    </weight>
+
+    <weight n="1">
+        <name>Copilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+        <name>Pax</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="3">
+        <name>Cargo</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <menubar include="../Dialogs/dr400-menu.xml"/>
+    
+    <help include="help.xml"/>
+    
+    <systems include="systems.xml"/>
+
+    <flaps include="flaps.xml"/>
+    
+  </sim>
+ 
+  <input include="dr400-keyboard.xml"/>
+ 
+  <instrumentation include="instrumentation.xml"/>
+
+  <controls include="controls.xml"/>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/DR400/Nasal/doors.nas</file>
+    </doors>
+    <dr400>
+      <file>Aircraft/DR400/Nasal/light.nas</file>
+      <file>Aircraft/DR400/Nasal/liveries.nas</file>
+      <file>Aircraft/DR400/Nasal/immat.nas</file>
+      <file>Aircraft/DR400/Nasal/dr400.nas</file>
+      <file>Aircraft/DR400/Nasal/electrical.nas</file>
+      <file>Aircraft/DR400/Nasal/interpolate.nas</file>
+      <file>Aircraft/DR400/Nasal/rpm.nas</file>
+    </dr400>
+    <kr87>
+      <file>Aircraft/DR400/Models/Interior/Panel/Instruments/kr87-adf/kr87.nas</file>
+    </kr87>
+  </nasal>
+   
+</PropertyList>
