@@ -174,7 +174,7 @@
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Piper-PA-18/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/DR400/Models/Effects/Glass/glass</inherits-from>
     <object-name>verriere</object-name>
     <object-name>verriereAR</object-name>
     <object-name>lampe</object-name>
