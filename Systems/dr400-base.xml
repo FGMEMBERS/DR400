@@ -12,6 +12,7 @@
 
     <model>
       <path archive="y">Aircraft/DR400/Models/dr400.xml</path>
+      <fallback-model-index type="int">7</fallback-model-index>
       <show-immat type="bool">1</show-immat>
       <livery>
         <file type="string">default</file>
@@ -28,7 +29,6 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-      <fallback-model-index type="int">7</fallback-model-index>
       <generic> 
         <int   n="0"  type="int">  0 </int>                                         <!--  0 immat -->
         <int   n="1"  type="int">  0 </int>                                         <!--  1 immat -->
