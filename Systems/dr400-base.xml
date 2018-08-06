@@ -4,6 +4,30 @@
 
   <sim include="views.xml">
 
+    <aircraft-version>0.6</aircraft-version>
+    <status>early production</status>
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 4 </systems>
+      <cockpit type="int"> 4 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    <tags>
+      <tag>ga</tag>
+      <tag>robin</tag>
+      <tag>1970s</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+      <tag>2010s</tag>
+      <tag>fixed-gear</tag>
+      <tag>tricycle</tag>
+      <tag>propeller</tag>
+      <tag>piston</tag>
+      <tag>single-engine</tag>
+      <tag>fixed-pitch</tag>
+    </tags>
+
     <fuel-fraction>1</fuel-fraction>
 
     <sound>
